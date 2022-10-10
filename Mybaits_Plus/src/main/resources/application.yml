@@ -12,7 +12,13 @@ server:
 
 
 
-# 设置日志
+
 mybatis-plus:
+  # 设置日志
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 配置逻辑删除
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0

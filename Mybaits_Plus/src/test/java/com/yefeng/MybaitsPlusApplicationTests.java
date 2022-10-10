@@ -38,9 +38,8 @@ class MybaitsPlusApplicationTests {
 	@Test
 	public void InsertUser() {
 		User user = new User();
-		user.setAge(56);
-		user.setEmail("xiaofang@qq.com");
-		user.setName("小芳");
+		user.setEmail("baidzhou@qq.com");
+		user.setName("白轴");
 		int insert = userMapper.insert(user);
 		System.out.println(insert);
 	}
@@ -105,11 +104,20 @@ class MybaitsPlusApplicationTests {
 
 	@Test
 	void testDeleteByID() {
-		userMapper.deleteById(1579109868562907137L);
+		userMapper.deleteById(1L);
 	}
 
 	@Test
 	void testDeleteByIDs() {
 		userMapper.deleteById(1579109868562907137L);
 	}
+
+	@Test
+	void testDeleteByMap() {
+		HashMap<String, Object> map = new HashMap<>();
+		map.put("name", "白轴");
+		userMapper.deleteByMap(map);
+	}
+
+
 }
