@@ -100,4 +100,21 @@ public class WrapperTest {
         userList.forEach(System.out::println);
     }
 
+    // 查询id=1或者name=叶枫的数据
+    @Test
+    public void testWrapper08() {
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        // select * from user where id = 1 or name = 小枫
+        wrapper.eq("id", 1L).or().eq("name", "小枫");
+        List<User> userList = userMapper.selectList(wrapper);
+        userList.forEach(System.out::println);
+    }
+    @Test
+    public void testWrapper09() {
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        // select * from user where and(name = 小枫 and id <> 1)
+        wrapper.or(i -> i.eq("name", "小枫").ne("id", 1L)); // ne -> <>不等于
+        List<User> userList = userMapper.selectList(wrapper);
+        userList.forEach(System.out::println);
+    }
 }
