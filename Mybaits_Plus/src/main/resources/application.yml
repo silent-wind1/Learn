@@ -1,5 +1,8 @@
-# 连接数据库
 spring:
+  # 开发者模式
+  profiles:
+    active: dev
+  # 连接数据库
   datasource:
     username: root
     password: 123456
