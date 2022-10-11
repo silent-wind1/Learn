@@ -24,9 +24,7 @@ public class NewYefengCode {
                     builder.author("叶枫")               //作者
                             .outputDir(System.getProperty("user.dir") + "/src/main/java")    //输出路径(写到java目录)
                             .enableSwagger()           //开启swagger
-                            .commentDate("yyyy-MM-dd") //调整时间格式
-                            .fileOverride();     //开启覆盖之前生成的文件
-
+                            .commentDate("yyyy-MM-dd"); //调整时间格式
                 })
                 .packageConfig(builder -> {
                     builder.parent("com.xp")
