@@ -109,6 +109,8 @@ public class WrapperTest {
         List<User> userList = userMapper.selectList(wrapper);
         userList.forEach(System.out::println);
     }
+
+    // or()嵌套查询
     @Test
     public void testWrapper09() {
         QueryWrapper<User> wrapper = new QueryWrapper<>();
