@@ -28,4 +28,6 @@ public class User {
 
     @TableLogic//逻辑删除注解
     private Integer deleted;
+
+    private String sex;
 }
