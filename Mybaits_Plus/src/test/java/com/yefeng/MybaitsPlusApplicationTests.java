@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @SpringBootTest
 class MybaitsPlusApplicationTests {
@@ -71,7 +72,7 @@ class MybaitsPlusApplicationTests {
 
 	@Test
 	void testSelectById() {
-		User user = userMapper.selectById(1L);
+		User user = userMapper.selectById(4);
 		System.out.println(user);
 	}
 
@@ -104,12 +105,12 @@ class MybaitsPlusApplicationTests {
 
 	@Test
 	void testDeleteByID() {
-		userMapper.deleteById(1L);
+		userMapper.deleteById(4);
 	}
 
 	@Test
 	void testDeleteByIDs() {
-		userMapper.deleteById(1579109868562907137L);
+		userMapper.deleteById(5);
 	}
 
 	@Test
@@ -119,5 +120,10 @@ class MybaitsPlusApplicationTests {
 		userMapper.deleteByMap(map);
 	}
 
+	@Test
+	void testSelectMapByID() {
+		Map<String, Object> map = userMapper.selectMapByID(1L);
+		System.out.println(map);
+	}
 
 }

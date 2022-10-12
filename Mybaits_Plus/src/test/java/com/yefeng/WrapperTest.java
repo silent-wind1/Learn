@@ -50,8 +50,8 @@ public class WrapperTest {
         List<User> users = userMapper.selectList(wrapper);
         users.forEach(System.out::println);
         // 统计有多少数据
-        Integer count = userMapper.selectCount(wrapper);
-        System.out.println(count);
+//        Integer count = userMapper.selectCount(wrapper);
+//        System.out.println(count);
     }
 
 
