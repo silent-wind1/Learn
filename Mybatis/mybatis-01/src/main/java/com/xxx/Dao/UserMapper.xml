@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace绑定一个对应的接口 -->
+<mapper namespace="com.UserMapper">
+  <select id="getT_user" resultType="com.T_user">
+    select * from user
+  </select>
+  <select id="getUserById" parameterType="int" resultType="com.T_user">
+    select * from user where id = #{id}
+  </select>
+  <insert id="addT_user" parameterType="com.T_user">
+    insert into user values(#{id}, #{userName}, #{password}, #{member})
+  </insert>
+  <update id="updateT_user" parameterType="com.T_user">
+    update user set username = #{userName}, password = #{password}, member = #{member} where id = #{id};
+  </update>
+  <delete id="deleteT_user" parameterType="int">
+    delete from user where id = #{id}
+  </delete>
+
+  <insert id="addT_users" parameterType="com.T_user">
+    insert into user values(#{id}, #{name}, #{pwd}, #{member})
+  </insert>
+</mapper>

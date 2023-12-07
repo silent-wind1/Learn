@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace绑定一个对应的接口 -->
+<mapper namespace="com.UserMapper">
+<!-- 结果集 -->
+  <resultMap id="UserMap" type="T_user">
+<!--  column数据表中的字段， property实体类中的属性  -->
+<!--    <result column="id" property="id"/>-->
+<!--    <result column="userName" property="username"/>-->
+    <result column="password" property="pwd"/>
+<!--    <result column="member" property="member"/>-->
+  </resultMap>
+  <select id="getT_user" resultMap="UserMap">
+    select * from t_user
+  </select>
+</mapper>
