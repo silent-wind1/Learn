@@ -4,7 +4,6 @@ public class School {
     private String schoolName;
     private int schoolYear;
 
-
     public School() {
     }
 
