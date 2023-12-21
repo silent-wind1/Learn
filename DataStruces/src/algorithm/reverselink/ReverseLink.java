@@ -98,4 +98,29 @@ public class ReverseLink {
             return list2;
         }
     }
+
+    /**
+     *
+     * @param head ListNode类
+     * @param k int整型
+     * @return ListNode类
+     */
+    public ListNode reverseKGroup (ListNode head, int k) {
+        ListNode end = head;
+        for (int i = 0; i < k; i++) {//找到翻转部分尾节点的下一个节点
+            if (end == null) {
+                return head;
+            }
+            end = end.next;
+        }
+        ListNode pre = null, cur = head;
+        while(cur != end) {
+            ListNode tmp = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = tmp;
+        }
+        head.next = reverseKGroup(end, k);//尾节点指向下一个翻转的头节点
+        return pre;
+    }
 }
