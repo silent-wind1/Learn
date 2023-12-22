@@ -1,5 +1,7 @@
 package test.extend;
 
+import java.util.HashSet;
+
 public class ExtebdsTest {
     public static void main(String[] args) {
         Student student = new Student();
