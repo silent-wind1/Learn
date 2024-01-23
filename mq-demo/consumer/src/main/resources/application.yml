@@ -1,0 +1,7 @@
+spring:
+  rabbitmq:
+    host: localhost # 你的虚拟机IP
+    port: 5672 # 端口
+    virtual-host: /yefeng # 虚拟主机
+    username: yefeng # 用户名
+    password: 123456 # 密码

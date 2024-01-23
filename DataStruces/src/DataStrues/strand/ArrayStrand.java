@@ -148,7 +148,6 @@ public class ArrayStrand implements Iterable{
         if(pos > N) {
             return false;
         }
-
         for (int i = N - 1; i >= pos; i--) {
             data[i + 1] = data[i];
         }
