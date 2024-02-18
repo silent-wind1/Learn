@@ -35,7 +35,7 @@ public class MqListen {
             key = "china.#"
     ))
     public void listeningMessageByPrintout(Map msg) {
-        System.out.println("spring listener1：【"+msg + "】");
+        System.out.println("spring listener1：【"+ msg.toString() + "】");
     }
 
 
