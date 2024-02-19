@@ -1,12 +1,9 @@
-package com.yefeng.netty1;
+package com.yefeng.nio.buffer;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-
-import static com.yefeng.netty1.ByteBufferUtil.debugAll;
 
 public class TestGatheringWrites {
     public static void main(String[] args) {
@@ -21,8 +18,8 @@ public class TestGatheringWrites {
             // 切换读模式
             buffer.flip();
             buffer1.flip();
-            debugAll(buffer);
-            debugAll(buffer1);
+            ByteBufferUtil.debugAll(buffer);
+            ByteBufferUtil.debugAll(buffer1);
             // 写入到words2.txt文件中
             channel.write(new ByteBuffer[] {buffer, buffer1});
         } catch (IOException e) {
@@ -40,9 +37,9 @@ public class TestGatheringWrites {
             buf1.flip();
             buf2.flip();
             buf3.flip();
-            debugAll(buf1);
-            debugAll(buf2);
-            debugAll(buf3);
+            ByteBufferUtil.debugAll(buf1);
+            ByteBufferUtil.debugAll(buf2);
+            ByteBufferUtil.debugAll(buf3);
         } catch (IOException e) {
             e.printStackTrace();
         }

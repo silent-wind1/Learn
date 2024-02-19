@@ -1,8 +1,7 @@
-package netty2;
+package com.yefeng.netty2.demo4;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
 public class Client {

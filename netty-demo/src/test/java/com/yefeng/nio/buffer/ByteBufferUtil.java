@@ -1,4 +1,4 @@
-package com.yefeng.netty1;
+package com.yefeng.nio.buffer;
 
 import io.netty.util.internal.StringUtil;
 

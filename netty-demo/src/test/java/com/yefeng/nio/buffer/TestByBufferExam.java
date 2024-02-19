@@ -1,8 +1,6 @@
-package com.yefeng.netty1;
+package com.yefeng.nio.buffer;
 
 import java.nio.ByteBuffer;
-
-import static com.yefeng.netty1.ByteBufferUtil.debugAll;
 
 public class TestByBufferExam {
     public static void main(String[] args) {
@@ -23,7 +21,7 @@ public class TestByBufferExam {
                 for (int j = 0; j < len; j++) {
                     buffer.put(source.get());
                 }
-                debugAll(buffer);
+                ByteBufferUtil.debugAll(buffer);
             }
         }
         source.compact();
