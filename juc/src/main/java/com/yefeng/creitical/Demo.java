@@ -1,8 +1,5 @@
 package com.yefeng.creitical;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class Demo {
     static int counter = 0;
     public static void main(String[] args) throws InterruptedException {
