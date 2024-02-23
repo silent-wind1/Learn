@@ -10,12 +10,6 @@ public class Solution {
             }
             System.out.println();
         }
-        int[] x = {1, 2, 3};
-        X x1 = new X();
-        x1.replace(x);
-        for (int i : x) {
-            System.out.println(i);
-        }
     }
 
     public static void rotate(int[][] matrix) {
