@@ -1,5 +1,9 @@
 package com.yefeng.objserver;
 
+import com.yefeng.objserver.obj.BinaryObserver;
+import com.yefeng.objserver.obj.HexaObserver;
+import com.yefeng.objserver.pojo.Subject;
+
 public class Client {
     public static void main(String[] args) {
         // 先定义一个主题
