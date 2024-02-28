@@ -44,6 +44,15 @@ public class SpringAmqpTest {
 
 
     @Test
+    public void testSendFanoutMessage() {
+        // 交换机名称
+        String exchangeName = "yefeng.fanout";
+        String message = "明天下午3点面试";
+        rabbitTemplate.convertAndSend(exchangeName, "yesterday", message);
+    }
+
+
+    @Test
     public void testSendsQueueTipple() {
         // 队列名称
         String queueName = "yefeng.topic";
