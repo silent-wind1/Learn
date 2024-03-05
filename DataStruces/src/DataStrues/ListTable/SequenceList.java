@@ -61,8 +61,8 @@ public class SequenceList<T> implements Iterable<T>, ListMethods<T> {
 
     /**
      * 在i元素处插入元素t
-     * @param i
-     * @param t
+     * @param i 索引
+     * @param t 元素
      */
     public void insert(int i, T t) {
         if (N == listArray.length) {
@@ -78,7 +78,7 @@ public class SequenceList<T> implements Iterable<T>, ListMethods<T> {
     /**
      * 删除线性表中下标为i的元素
      *
-     * @param i
+     * @param i 索引
      * @return
      */
     public T remove(int i) {
