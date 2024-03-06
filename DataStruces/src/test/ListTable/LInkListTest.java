@@ -13,15 +13,10 @@ public class LInkListTest {
         for (String s : list) {
             System.out.println(s);
         }
-//        System.out.println("-------------反转后-------------");
-//        list.reverse();
-//        for (String s : list) {
-//            System.out.println(s);
-//        }
-//
-//        String str = "*";
-//        if(str.equals("*")) {
-//            System.out.println("123");
-//        }
+        System.out.println("-------------反转后-------------");
+        list.reverse();
+        for (String s : list) {
+            System.out.println(s);
+        }
     }
 }
