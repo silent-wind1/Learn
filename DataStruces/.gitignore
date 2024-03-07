@@ -1,9 +1,0 @@
-.idea
-.gitignore
-**/target/
-**/out/
-*.iml
-*.class
-*Test.java
-**/test/
-
