@@ -1,5 +1,28 @@
 # 英语学习
 
+## 第八部分
+
+### 谈论物品的数量和价格
+
+We want to go shopping today. 我们想要今天去购物。
+
+- want to = 想要
+- go shopping 去购物
+
+Do you want to buy some clothes? 你想要买一些衣服吗？
+
+How much is this book? 这本书是多少钱？
+
+- how much 多少钱, 多少
+
+That book is sixteen dollars. 那本书是十六美元。
+
+### 描述你认识的人
+
+My grandpa lives with his dog. 我的爷爷跟他的狗一起住。
+
+Is his hair blue? 他的头发是蓝色的吗？
+
 ## 第九部分
 
 ### 9.1 讲述你想要的食物和饮料
