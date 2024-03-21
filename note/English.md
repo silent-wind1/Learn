@@ -61,3 +61,29 @@ Is there a table in your kitchen? = 在你的厨房里有一张桌子吗？
 There is a small bed in my office.
 
 - there is = 有, 会有
+
+## 第十部分
+
+### 讨论天气
+
+it is hot today. 今天很热
+
+- it is = 很 今天是 天气 天 天气 现在
+
+Do you like the weather in Beijing? 你喜欢北京的天气吗？
+
+- do you like = 你喜欢...?
+
+No, it snows a lot in the winter. 不喜欢，在冬天经常下雪。
+
+- it = 现在, 这个, 这
+- a lot = 多, 很多, 常常
+- in the winter = 在下雪
+
+The weather is nice here in the summer. 在夏天这里的天气不错。
+
+- is nice 很不错, 不错
+- here 在这里, 这里的, 在这
+
+
+### 描述动物
