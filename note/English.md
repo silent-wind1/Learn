@@ -62,6 +62,10 @@ There is a small bed in my office.
 
 - there is = 有, 会有
 
+The bathroom is right here. 浴室就在这里。
+
+- is right here 就在这里
+
 ## 第十部分
 
 ### 讨论天气
@@ -85,5 +89,8 @@ The weather is nice here in the summer. 在夏天这里的天气不错。
 - is nice 很不错, 不错
 - here 在这里, 这里的, 在这
 
+It isn't hot today. 今天不热
+
+- it isn't hot 
 
 ### 描述动物
