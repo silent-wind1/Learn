@@ -66,6 +66,17 @@ The bathroom is right here. 浴室就在这里。
 
 - is right here 就在这里
 
+#### 错题
+
+翻译题：
+
+There is a tree in the garden. 在花园里有一棵树。
+
+There is a small bed in my office. 我的办公室里有一张小床。
+
+- there is 有
+- in my office 在我的办公室
+
 ## 第十部分
 
 ### 讨论天气
@@ -91,6 +102,12 @@ The weather is nice here in the summer. 在夏天这里的天气不错。
 
 It isn't hot today. 今天不热
 
-- it isn't hot 
+- it isn't hot
+
+#### 错题
+
+翻译题：
+
+- it's sunny today 今天是晴天
 
 ### 描述动物
