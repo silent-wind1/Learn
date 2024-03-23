@@ -1,5 +1,23 @@
 # 英语学习
 
+## 第一部分
+
+### 介绍自己的职业
+
+Are you a teacher? 你是一个老师吗？
+
+Yes! I'm a teacher 是的, 我是一个老师
+
+Is your friend a taxi driver? 你的朋友是一个出租车司机吗？
+
+No, she is a doctor. 不是，她是一个医生
+
+陈述句： Your are a math teacher 你是一个数学老师
+
+在英语中疑问句则是把陈述句反过来就是疑问句
+
+疑问句： Are you a math teacher? 你是一个数学老师吗？
+
 ## 第八部分
 
 ### 谈论物品的数量和价格
