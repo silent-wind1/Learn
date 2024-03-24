@@ -127,5 +127,7 @@ It isn't hot today. 今天不热
 翻译题：
 
 - it's sunny today 今天是晴天
+- The weather here in summer 夏天这里的天气
 
 ### 描述动物
+
