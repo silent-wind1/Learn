@@ -122,6 +122,14 @@ It isn't hot today. 今天不热
 
 - it isn't hot
 
+### 不熟练题目
+
+#### 翻译题
+
+It is cold this week. 这周很冷
+
+Is it warmth here in April 在四月这里暖和吗？
+
 #### 错题
 
 翻译题：
@@ -131,3 +139,26 @@ It isn't hot today. 今天不热
 
 ### 描述动物
 
+Is Duo a bird? 多尔是一只鸟吗
+
+Dogs are animals. 狗是动物
+ 
+Duo has a big head. 多尔有一个大头
+
+There is a bird on your head. 你的头上有一只鸟
+
+My head hurts. 我的头疼
+
+We have ten chickens. 我们有十只鸡
+
+Do chickens have hands? 鸡有手吗
+
+Do birds have legs? 鸟有腿吗
+
+#### 错题集
+
+on my hair 在我的头发上
+
+What is on your hair? 你的头发上是什么?
+
+a dog with a big head 一只有一个大头的狗
