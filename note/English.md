@@ -142,7 +142,7 @@ Is it warmth here in April 在四月这里暖和吗？
 Is Duo a bird? 多尔是一只鸟吗
 
 Dogs are animals. 狗是动物
- 
+
 Duo has a big head. 多尔有一个大头
 
 There is a bird on your head. 你的头上有一只鸟
@@ -162,3 +162,19 @@ on my hair 在我的头发上
 What is on your hair? 你的头发上是什么?
 
 a dog with a big head 一只有一个大头的狗
+
+### 描述身体
+
+There is something on your teeth. 你的牙齿上有些东西
+
+- teeth 牙齿
+
+Where is the farm 农场在哪里
+
+The farm is over there 农场在那里
+
+- is over there 在那里
+
+How many fish are there?
+
+- how many 有多少
