@@ -95,6 +95,8 @@ There is a small bed in my office. 我的办公室里有一张小床。
 - there is 有
 - in my office 在我的办公室
 
+How many birds are there under the tree 在树下有多少只鸟？
+
 ## 第十部分
 
 ### 讨论天气
@@ -130,12 +132,23 @@ It is cold this week. 这周很冷
 
 Is it warmth here in April 在四月这里暖和吗？
 
+Do you like warm weather? 你喜欢暖和的天气吗？
+
+It is cold this week. 这周很冷
+
+We like the weather in Australia in the summer. 我们喜欢澳大利亚的天气
+
+it is too hot this week 这周太热。
+
 #### 错题
 
-翻译题：
+it's sunny today 今天是晴天
 
-- it's sunny today 今天是晴天
-- The weather here in summer 夏天这里的天气
+The weather here in summer 夏天这里的天气
+
+Do you like cold weather? 你喜欢冷的天气吗
+
+It is cold this week 这周很冷。
 
 ### 描述动物
 
