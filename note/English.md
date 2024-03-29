@@ -95,7 +95,7 @@ There is a small bed in my office. 我的办公室里有一张小床。
 - there is 有
 - in my office 在我的办公室
 
-How many birds are there under the tree 在树下有多少只鸟？
+How     many birds are there under the tree 在树下有多少只鸟？
 
 ## 第十部分
 
@@ -191,3 +191,58 @@ The farm is over there 农场在那里
 How many fish are there?
 
 - how many 有多少
+
+Is your nose cold? 你的鼻子冷吗
+
+duo has a big head 多儿有一个大头。 
+
+My cat has a small nose. 我的猫有很小的鼻子
+
+Animals need to drink a lot of water. 动物需要喝很多水 
+
+There are many animals in my garden.
+
+There is a cat under the chair.
+
+There are two birds under the tree. 在树下有两只鸟
+
+Is there a bird on my head? 有一只鸟在我的头上吗
+
+There is a bird on my head 在我的头上有一只鸟
+
+There are many animals in Africa. 在非洲有很多动物
+
+Chickens have two legs.
+
+There is a chicken in the garden 在花园里有一只鸡
+
+My legs hurt. 我的腿疼
+
+- legs 加了s hurt则不加s 反之hurts 加了s leg则不加s
+
+That girl has one tooth 那个女孩有一颗牙齿
+
+My right foot doesn't hurt. 我的右脚不疼
+
+- doesn't =  dose not
+
+
+## 第十一部分
+
+### 时间描述
+
+it is six o'clock 现在是六点钟。
+
+We clean our house on sundays
+
+They are not late for work. 他们工作没有迟到
+
+What time does the movie start 电影什么时候开始
+
+Are they late for work? 他们工作迟到了吗
+
+We never go to school on Sundays. 我们从来不在周日去学校
+
+This Friday 这周五
+
+Is the game on Thursday? 比赛是在周四吗
