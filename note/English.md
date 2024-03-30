@@ -246,3 +246,10 @@ We never go to school on Sundays. 我们从来不在周日去学校
 This Friday 这周五
 
 Is the game on Thursday? 比赛是在周四吗
+
+
+## 第十二部分
+
+### 给指令
+
+Please open your book. 请把你的书打开
