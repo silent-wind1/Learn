@@ -253,3 +253,78 @@ Is the game on Thursday? 比赛是在周四吗
 ### 给指令
 
 Please open your book. 请把你的书打开
+
+Don't use my red pen. 不要用我的红色的笔。
+
+I need a pen. 我需要一支笔
+
+three classes 三节课
+
+Do you have classes today? 你今天有课吗
+
+- have classes  上课
+
+We don't have classes on Sunday. 我们在周日没有课
+
+My homework is difficult. 我的作业很难
+
+How many questions are there? 有多少个问题
+
+- how many 有多少
+- questions 问题
+
+Do not open the door. 不要把门打开
+
+Do not open your computer now. 不要现在把你的电脑打开
+
+- do not 不要
+- now 现在
+
+Duo, write your phone number here.  多儿，把你的电话号码写在这里。
+
+Write your name here, Anna. 把你的名字写在这里，安娜
+
+They don't want to study. They want to play 他们不想学习，他们想要玩
+
+Come here! 到这里来
+
+five buses 五辆公交车
+
+There are two buses 
+
+How many buses are there?
+
+Look, Duo is here.
+
+Look, there is a bird on his head.
+
+Where is the bookstore?
+
+Duo, come here, please. 多尔，请到这里来
+
+Write your phone number here, please.
+
+She watches movies every weekend. 
+
+Please don't drink coffee in the evening.
+
+a house with two doors 有两扇门的房子
+
+#### 错题集
+
+John does his homework with his cat John跟他的猫一起做他的作业。
+
+Do not write your name here.  不要把你的名字写在这里。
+
+I don't want to do my homework 我不想做我的作业
+
+We have many classes during the week. 我们在工作日期间有很多课
+
+- during 期间
+- the week 工作日
+
+Anna studies during the week. On Saturday, she works at a restaurant .
+
+I don't have the key Can you open the door?
+
+请把你的书打开  Please open your book. 
