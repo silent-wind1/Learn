@@ -95,7 +95,7 @@ There is a small bed in my office. 我的办公室里有一张小床。
 - there is 有
 - in my office 在我的办公室
 
-How     many birds are there under the tree 在树下有多少只鸟？
+How many birds are there under the tree 在树下有多少只鸟？
 
 ## 第十部分
 
@@ -194,11 +194,11 @@ How many fish are there?
 
 Is your nose cold? 你的鼻子冷吗
 
-duo has a big head 多儿有一个大头。 
+duo has a big head 多儿有一个大头。
 
 My cat has a small nose. 我的猫有很小的鼻子
 
-Animals need to drink a lot of water. 动物需要喝很多水 
+Animals need to drink a lot of water. 动物需要喝很多水
 
 There are many animals in my garden.
 
@@ -224,8 +224,7 @@ That girl has one tooth 那个女孩有一颗牙齿
 
 My right foot doesn't hurt. 我的右脚不疼
 
-- doesn't =  dose not
-
+- doesn't = dose not
 
 ## 第十一部分
 
@@ -247,7 +246,6 @@ This Friday 这周五
 
 Is the game on Thursday? 比赛是在周四吗
 
-
 ## 第十二部分
 
 ### 给指令
@@ -262,7 +260,7 @@ three classes 三节课
 
 Do you have classes today? 你今天有课吗
 
-- have classes  上课
+- have classes 上课
 
 We don't have classes on Sunday. 我们在周日没有课
 
@@ -280,7 +278,7 @@ Do not open your computer now. 不要现在把你的电脑打开
 - do not 不要
 - now 现在
 
-Duo, write your phone number here.  多儿，把你的电话号码写在这里。
+Duo, write your phone number here. 多儿，把你的电话号码写在这里。
 
 Write your name here, Anna. 把你的名字写在这里，安娜
 
@@ -290,7 +288,7 @@ Come here! 到这里来
 
 five buses 五辆公交车
 
-There are two buses 
+There are two buses
 
 How many buses are there?
 
@@ -304,17 +302,29 @@ Duo, come here, please. 多尔，请到这里来
 
 Write your phone number here, please.
 
-She watches movies every weekend. 
+She watches movies every weekend.
 
 Please don't drink coffee in the evening.
 
 a house with two doors 有两扇门的房子
 
+Please use a pen to write your name.
+
+Write your name here, Anna. 把你的名字写在这里，安娜
+
+Look! The school is closed. 看！学校关门了
+
+- is closed 关门了
+
+I study English every day. I don't want to study math! 
+
+- want to 固定搭配
+
 #### 错题集
 
 John does his homework with his cat John跟他的猫一起做他的作业。
 
-Do not write your name here.  不要把你的名字写在这里。
+Do not write your name here. 不要把你的名字写在这里。
 
 I don't want to do my homework 我不想做我的作业
 
@@ -327,4 +337,16 @@ Anna studies during the week. On Saturday, she works at a restaurant .
 
 I don't have the key Can you open the door?
 
-请把你的书打开  Please open your book. 
+请把你的书打开 Please open your book.
+
+Where is my pen? 我的笔在哪里
+
+Do not write your name here. 不要把你的名字写在这里
+
+I want to buy some pens. 我想要买一些笔
+
+I don't have classes today, but I have an English class on Saturday. 我今天不上课，但星期六我有一节英语课。
+
+Do you need to do your homework? 你需要做你的作业吗？
+
+- need to do 固定搭配
