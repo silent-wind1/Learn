@@ -316,9 +316,15 @@ Look! The school is closed. 看！学校关门了
 
 - is closed 关门了
 
-I study English every day. I don't want to study math! 
+I study English every day. I don't want to study math!
 
 - want to 固定搭配
+
+Don't forget your coat. 不要忘记你的外套
+
+She studies Japanese, not Chinese. 她学习日语不是中文
+
+- studies 学习 是 study 的第三人称单数和复数
 
 #### 错题集
 
@@ -350,3 +356,37 @@ I don't have classes today, but I have an English class on Saturday. 我今天�
 Do you need to do your homework? 你需要做你的作业吗？
 
 - need to do 固定搭配
+
+He always does his homework at school. 他总是在学校做他的作业
+
+- does his
+
+John studies languages. He speaks English and Chinese. John学语言。他说英文和中文。
+
+Please don't forget your homework. 请不要忘记你的作业
+
+Emma studies English every day. She's busy. Emma每天都学英语。她很忙。
+
+He works with Mr. Wang. 他跟王先生一起工作。
+
+### 描述地点和方位
+
+How is the weather in Australia?
+
+those cities
+
+How many cities are there in Australia? 在澳大利亚有多少个城市
+
+the weather in those cities
+
+many countries
+
+How many countries are there?
+
+I need a vacation.
+
+do you need a vacation ?你需要一个假期吗？
+
+## 练习题
+
+He's not your boyfriend! 他不是你的男朋友
