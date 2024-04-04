@@ -371,21 +371,55 @@ He works with Mr. Wang. 他跟王先生一起工作。
 
 ### 描述地点和方位
 
-How is the weather in Australia?
+How is the weather in Australia? 澳大利亚的天气怎么样?
 
-those cities
+those cities 那些城市
 
 How many cities are there in Australia? 在澳大利亚有多少个城市
 
-the weather in those cities
+- city -> cities 需要注意的是，一些以 “y”结尾的 名词 的复数形式通常需要把 “y” 变成 “ies”
 
-many countries
+the weather in those cities 那些城市的天气
 
-How many countries are there?
+many countries 多个国家
 
-I need a vacation.
+- country -> countries 国家
+
+How many countries are there? 有多少个国家?
+
+I need a vacation. 我需要一个假期
 
 do you need a vacation ?你需要一个假期吗？
+
+I'm on vacation.我在度假
+
+Emma is not at the office today. She's on vacation. Emma今天不在办公室。她在度假
+
+Is he on vacation this week? 这周他在度假吗
+
+He's on vacation this week. 这周他在度假
+
+Is that a museum? 那是一个博物馆吗？
+
+Both universities are famous. 两个大学都很有名
+
+Are these universities famous? 这些大学很有名吗？
+
+Is there a tree near your house? 在你的房子附近有一颗树吗
+
+Is there a train station near here? 在这附近有一个火车站吗?
+
+a bus stop 一个公交车站
+
+Do you like to travel by car?
+
+### 错题
+
+Is there a bus stop here? 这里有一个公交车站吗
+
+Do you want to go on vacation together this summer?  你们今年夏天想要一起去度假吗？
+
+I want to go on vacation in the summer. 我想要在夏天去度假。
 
 ## 练习题
 
