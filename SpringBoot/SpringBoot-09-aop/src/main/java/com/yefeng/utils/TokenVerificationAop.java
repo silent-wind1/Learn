@@ -50,10 +50,12 @@ public class TokenVerificationAop {
     @Around("pointcut()")
     public Object doBefore(ProceedingJoinPoint joinPoint) throws Throwable {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        // assert 是判断然后报异常的, 符合条件继续往下进行
         assert attributes != null;
         HttpServletRequest request = attributes.getRequest();
         String token = request.getHeader("Authorization");
         if (request.getRequestURI().contains(LOGIN)) {
+            //执行业务逻辑，放行
             return joinPoint.proceed();
         }
         if (StringUtils.isNotBlank(token)) {
@@ -64,6 +66,9 @@ public class TokenVerificationAop {
                 System.out.println(verify);
                 boolean verifyTime = jwt.validate(0);
                 System.out.println(verifyTime);
+                if (!verify) {
+                    return "token 有误";
+                }
             } catch (Exception e) {
                 // 解析jwt令牌出错, 说明令牌过期或者伪造等不合法情况出现 401
                 log.info("AuthorizeFilter  解析jwt令牌出错", e);

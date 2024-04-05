@@ -1,0 +1,10 @@
+person:
+  name: yefeng
+  age: 13
+  happy: true
+  date: 2021/7/26
+  map: {home: 翻到小区2楼, TelePhone_Number: 1234567999}
+  list: [cat, dog, teacher]
+  dog:
+    name: 王杰
+    age: 16
