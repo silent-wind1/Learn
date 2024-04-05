@@ -421,6 +421,21 @@ Do you want to go on vacation together this summer?  你们今年夏天想要一
 
 I want to go on vacation in the summer. 我想要在夏天去度假。
 
+Her house is next to the subway station.
+
+The factory is next to the hospital.
+
+in front of the hotel 
+
+There is a big tree behind this house. 在这个房子后面有一颗大树。
+
+- behind 在后面
+
+Is there a bus stop behind the house? 在房子后面有一个公交车站吗？
+
+Which city is your favorite? 哪个城市是你最喜欢的
+
+
 ## 练习题
 
 He's not your boyfriend! 他不是你的男朋友
