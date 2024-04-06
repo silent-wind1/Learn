@@ -433,7 +433,15 @@ There is a big tree behind this house. 在这个房子后面有一颗大树。
 
 Is there a bus stop behind the house? 在房子后面有一个公交车站吗？
 
-Which city is your favorite? 哪个城市是你最喜欢的
+Which city is your favorite? 哪个城市是你最喜欢的?
+
+I want to visit Canada.  我想要去加拿大游览。
+
+We like to visit New York every summer! It's our favorite city! 我们喜欢每年夏天都去纽约游览！它是我们最爱的城市。
+
+Do you want to visit France in the spring? 你想要在春天去法国游览吗？
+
+Which languages do you like? 你喜欢哪些语言
 
 
 ## 练习题
