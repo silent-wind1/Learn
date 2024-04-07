@@ -1,5 +1,6 @@
 package DataStrues.stack;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class StackArray<T> implements Iterable<T>{
@@ -45,8 +46,9 @@ public class StackArray<T> implements Iterable<T>{
      * @param t
      */
     public void push(T t) {
+        // 如果栈满，进行扩容
         if(isFull()) {
-            return;
+            stackArray = Arrays.copyOf(stackArray, top * 2);
         }
         stackArray[++top] = t;
     }
