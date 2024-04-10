@@ -417,7 +417,7 @@ Do you like to travel by car?
 
 Is there a bus stop here? 这里有一个公交车站吗
 
-Do you want to go on vacation together this summer?  你们今年夏天想要一起去度假吗？
+Do you want to go on vacation together this summer? 你们今年夏天想要一起去度假吗？
 
 I want to go on vacation in the summer. 我想要在夏天去度假。
 
@@ -425,7 +425,7 @@ Her house is next to the subway station.
 
 The factory is next to the hospital.
 
-in front of the hotel 
+in front of the hotel
 
 There is a big tree behind this house. 在这个房子后面有一颗大树。
 
@@ -435,13 +435,52 @@ Is there a bus stop behind the house? 在房子后面有一个公交车站吗？
 
 Which city is your favorite? 哪个城市是你最喜欢的?
 
-I want to visit Canada.  我想要去加拿大游览。
+I want to visit Canada. 我想要去加拿大游览。
 
 We like to visit New York every summer! It's our favorite city! 我们喜欢每年夏天都去纽约游览！它是我们最爱的城市。
 
 Do you want to visit France in the spring? 你想要在春天去法国游览吗？
 
 Which languages do you like? 你喜欢哪些语言
+
+## 第十三部分
+
+###   
+
+This is my favorite game. 这是我最喜爱的游戏
+
+They want to learn to drive. 他们想要学开车
+
+- to drive 开车
+
+I want to learn to ride a horse.
+
+Do you like to play American football? 你喜欢打美式橄榄球吗？
+
+My brother plays American football very well. 我的哥哥打美式橄榄球打得非常好
+
+- very well 非常好
+
+He can't cook. 他不会做饭
+
+He wants to learn to cook. 他想要学做饭
+
+- 第三人称 want 加 s -> He want**s**
+
+He wants to learn to dance. 他想要学跳舞
+
+I don't speak Japanese very well. 我日语说得不是非常好
+
+
+
+## 第十三部分错题
+
+Can you play American football? 你会打美式橄榄球吗？
+
+- American football 美式橄榄球吗
+
+He doesn't drive very well. 他开车开得不是非常好
+
 
 
 ## 练习题
