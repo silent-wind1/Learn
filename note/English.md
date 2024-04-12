@@ -445,7 +445,7 @@ Which languages do you like? 你喜欢哪些语言
 
 ## 第十三部分
 
-###   
+###     
 
 This is my favorite game. 这是我最喜爱的游戏
 
@@ -471,8 +471,6 @@ He wants to learn to dance. 他想要学跳舞
 
 I don't speak Japanese very well. 我日语说得不是非常好
 
-
-
 ## 第十三部分错题
 
 Can you play American football? 你会打美式橄榄球吗？
@@ -481,7 +479,21 @@ Can you play American football? 你会打美式橄榄球吗？
 
 He doesn't drive very well. 他开车开得不是非常好
 
+I want to learn to play the guitar. 我想要学弹吉他。
 
+My wife cooks very well 我妻子做饭做得很好
+
+- 缺少动词，第三人称单数所以用 Cooks
+
+She wants to cook ever day!
+
+- wants to do sth 固定搭配，表示打算干嘛
+- wants to cook
+
+My sister sings, but she cannot dance 我姐姐唱歌，但她不会跳舞
+
+
+Ben always plays soccer with his friends, but he cannot play tennis.
 
 ## 练习题
 
