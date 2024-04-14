@@ -498,3 +498,15 @@ Ben always plays soccer with his friends, but he cannot play tennis.
 ## 练习题
 
 He's not your boyfriend! 他不是你的男朋友
+
+## 听力模块
+
+### Can I Have It
+
+You don't need a new video game.
+
+- video game 电子游戏
+
+Now can I have it? 现在可以给我吗？
+
+You're right. 你说的对
