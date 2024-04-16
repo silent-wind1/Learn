@@ -492,12 +492,31 @@ She wants to cook ever day!
 
 My sister sings, but she cannot dance 我姐姐唱歌，但她不会跳舞
 
-
 Ben always plays soccer with his friends, but he cannot play tennis.
+
+We can have dinner at that restaurant. 我们可以在那个餐厅吃晚饭
+
+What kind of meat do you like? 你喜欢哪种肉
+
+How much money do they have? 他们有多少钱？
+
+Yes Please 好的，谢谢
+
+How many plates do we have？ 我们有多少个盘子
+
+Can you wait for five minutes, Mr. Wang? 你可以等五分钟吗王先生
 
 ## 练习题
 
 He's not your boyfriend! 他不是你的男朋友
+
+My daughter is five years old. 我的女儿五岁了
+
+How old is your son? 你的儿子多少岁
+
+She's not tall 她不高
+
+how much is this ... 这件...多少钱
 
 ## 听力模块
 
