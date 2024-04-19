@@ -445,7 +445,7 @@ Which languages do you like? 你喜欢哪些语言
 
 ## 第十三部分
 
-###     
+###      
 
 This is my favorite game. 这是我最喜爱的游戏
 
@@ -505,6 +505,31 @@ Yes Please 好的，谢谢
 How many plates do we have？ 我们有多少个盘子
 
 Can you wait for five minutes, Mr. Wang? 你可以等五分钟吗王先生
+
+## 第十四部分
+
+我们朋友的生日聚合很好玩
+
+There is a birthday cake for you！有一个生日蛋糕给你的
+
+There are some flowers for you on the table 桌子上有一些给你的花
+
+Don't drink too much beer at the party. 在聚会上不要喝太多啤酒。
+
+Do you know that young man？ 你认识那个年轻的男人吗
+
+a lot of people 许多人
+
+When is your birthday party? 你的生日聚会是什么时候
+
+When is Duo's birthday? 多儿的生日聚会是什么时候
+
+Do you know that young man over there? 你认识在那里的那个年轻人吗？
+
+That restaurant is always busy on Wednesdays.  那个餐厅在周三总是很热闹。
+
+When is the party? 聚会是什么时候
+
 
 ## 练习题
 
