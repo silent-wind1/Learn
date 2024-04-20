@@ -411,7 +411,10 @@ Is there a train station near here? 在这附近有一个火车站吗?
 
 a bus stop 一个公交车站
 
-Do you like to travel by car?
+Do you like to travel by car? 你喜欢开车旅行吗？
+
+- travel by 旅行
+- 
 
 ### 错题
 
@@ -453,7 +456,10 @@ They want to learn to drive. 他们想要学开车
 
 - to drive 开车
 
-I want to learn to ride a horse.
+I want to learn to ride a horse. 我想学习骑马
+
+- to learn 学习 
+- to ride a horse 骑马
 
 Do you like to play American football? 你喜欢打美式橄榄球吗？
 
@@ -547,7 +553,7 @@ how much is this ... 这件...多少钱
 
 ### Can I Have It
 
-You don't need a new video game.
+You don't need a new video game. 你不需要一个新游戏吗
 
 - video game 电子游戏
 
