@@ -471,7 +471,7 @@ He can't cook. 他不会做饭
 
 He wants to learn to cook. 他想要学做饭
 
-- 第三人称 want 加 s -> He want**s**
+- 第三人称 want 加 s -> He want**s** 
 
 He wants to learn to dance. 他想要学跳舞
 
@@ -534,7 +534,7 @@ Do you know that young man over there? 你认识在那里的那个年轻人吗�
 
 That restaurant is always busy on Wednesdays.  那个餐厅在周三总是很热闹。
 
-When is the party? 聚会是什么时候
+When is the party? 聚会是什么时候？
 
 
 ## 练习题
