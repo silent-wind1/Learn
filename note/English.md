@@ -536,6 +536,8 @@ That restaurant is always busy on Wednesdays.  那个餐厅在周三总是很热
 
 When is the party? 聚会是什么时候？
 
+I'm very busy today! 我今天非常忙
+
 
 ## 练习题
 
@@ -560,3 +562,4 @@ You don't need a new video game. 你不需要一个新游戏吗
 Now can I have it? 现在可以给我吗？
 
 You're right. 你说的对
+
