@@ -538,6 +538,8 @@ When is the party? 聚会是什么时候？
 
 I'm very busy today! 我今天非常忙
 
+I'm very tired today! 我今天很疲惫~
+
 
 ## 练习题
 
