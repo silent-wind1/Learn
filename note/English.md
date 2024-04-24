@@ -540,6 +540,16 @@ I'm very busy today! 我今天非常忙
 
 I'm very tired today! 我今天很疲惫~
 
+## 错题
+
+There is a letter for you. 有一封给你的信
+
+There are a lot of people at the party. 在聚会上有很多人
+
+At her birthday party 在她的聚会上
+
+I want to write a letter for you. 我想要给你写一封信。
+
 
 ## 练习题
 
