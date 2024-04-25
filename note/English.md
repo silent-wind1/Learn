@@ -540,6 +540,10 @@ I'm very busy today! 我今天非常忙
 
 I'm very tired today! 我今天很疲惫~
 
+These flowers are for you! 这些花是给你的
+
+Are you cleaning the kitchen right now? 你现在正在打扫厨房吗？
+
 ## 错题
 
 There is a letter for you. 有一封给你的信
