@@ -554,6 +554,50 @@ At her birthday party 在她的聚会上
 
 I want to write a letter for you. 我想要给你写一封信。
 
+Is she talking to him right now? 她现在正在跟他说话吗？
+
+
+## 第十五部分
+
+What day is it? 今天是周几
+
+It's Sunday 今天是周日
+
+It is not Tuesday, it's Thursday. 今天不是周二，是周四
+
+from two o'clock to five o'clock. 从两点钟到五点钟
+
+from two to four on Sunday. 在周日从两点到四点
+
+I can't sleep.我睡不着
+
+Anna can't sleep. anna 睡不着  
+
+Do you need a bath? 你需要泡澡吗
+
+It is cold at night. 在晚上很冷
+
+I want to take a bath. 我想要泡澡
+
+Do you want to take a bath? 你想要泡澡吗？
+
+Does he sleep too much? 他睡得太多了吗？
+
+Tom loves to clean, and his cat loves to sleep. 汤姆喜欢打扫卫生，他的猫喜欢睡觉
+
+Does he usually sleep on that bed? 他平时在那个床上睡觉吗？
+
+Does Duo usually sleep in that room? 多儿平时在那个房间里睡觉吗？
+
+She always gets up at six. 她总是6点起床
+
+## 错题
+
+I'm very busy from ten o'clock to four o'clock on Monday. 我周一从十点钟到四点钟非常忙。
+
+Yes, Lucy. The bank is open from nine o'clock to five o'clock today. 是的，Lucy。 银行今天从九点钟到五点钟开门。
+
+The dog needs a bath. 狗狗需要泡澡。
 
 ## 练习题
 
