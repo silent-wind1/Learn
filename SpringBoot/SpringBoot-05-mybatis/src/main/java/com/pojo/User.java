@@ -2,13 +2,22 @@ package com.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
+
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class User {
-    private int id;
-    private String name;
-    private String pwd;
+    private long id;
+    private String username;
+    private String nickname;
+    private String password;
+    private String email;
+    private String avatar;
+    private int type;
+    private LocalDate createTime;
+    private LocalDate updateTime;
+
 }

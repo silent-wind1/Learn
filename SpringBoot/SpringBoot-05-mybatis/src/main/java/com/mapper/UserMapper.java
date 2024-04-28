@@ -1,6 +1,7 @@
 package com.mapper;
 
 import com.pojo.User;
+import com.pojo.vo.UserVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -11,11 +12,9 @@ import java.util.List;
 public interface UserMapper {
     List<User> queryUserList();
 
-    User queryUserByID(int id);
+//    int updateUser(User user);
 
-    int addUser(User user);
+    List<UserVO> queryUser(int id);
 
-    int updateUser(User user);
 
-    int delUser(int id);
 }

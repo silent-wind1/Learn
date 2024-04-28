@@ -4,13 +4,85 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.mapper.UserMapper">
+    <resultMap id="UserResult" type="User">
+        <id property="id" column="id"/>
+        <result property="nickname" column="nickname"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="avatar" column="avatar"/>
+        <result property="type" column="type"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectT_user">
+        select id,
+               username,
+               password,
+               email,
+               avatar,
+               type,
+               create_time,
+               update_time
+        from t_user
+    </sql>
 
     <select id="queryUserList" resultType="User">
-        select * from user;
+        select *
+        from t_user;
     </select>
 
     <update id="updateUser" parameterType="User">
-        update user set name=#{name}, pwd=#{pwd} where id=5;
+        update t_user
+        set username=#{username},
+            password=#{password}
+        where id = 5;
     </update>
 
+    <select id="queryUser1" resultMap="UserResult">
+        <include refid="selectT_user"/>
+        <where>
+            <if test="id != null">id = #{id}</if>
+        </where>
+    </select>
+
+
+    <resultMap id="BlogResult" type="Blog">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="firstPicture" column="firstPicture"/>
+        <result property="flag" column="flag"/>
+        <result property="views" column="views"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="shareStatement" column="shareStatement"/>
+        <result property="commentabled" column="commentabled"/>
+        <result property="published" column="published"/>
+        <result property="recommend" column="recommend"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="typeId" column="typeId"/>
+        <result property="userId" column="userId"/>
+        <result property="description" column="description"/>
+        <result property="tagIds" column="tagIds"/>
+    </resultMap>
+
+    <select id="queryUser" parameterType="int" resultMap="queryUserByBlog">
+        select t_user.id, username,
+               password,
+               email,
+               avatar,
+               type,
+               t_user.create_time,
+               t_user.update_time,
+               title,
+               content
+        from t_user left join t_blog on t_user.id = t_blog.user_id where t_user.id = #{id};
+    </select>
+
+    <resultMap id="queryUserByBlog" type="UserVO">
+        <association property="user" resultMap="UserResult"/>
+        <collection property="blog" ofType="blog" resultMap="BlogResult"/>
+    </resultMap>
 </mapper>
