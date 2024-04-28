@@ -15,6 +15,4 @@ public interface UserMapper {
 //    int updateUser(User user);
 
     List<UserVO> queryUser(int id);
-
-
 }

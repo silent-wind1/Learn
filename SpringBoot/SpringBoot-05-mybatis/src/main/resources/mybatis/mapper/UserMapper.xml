@@ -16,6 +16,26 @@
         <result property="updateTime" column="update_time"/>
     </resultMap>
 
+    <resultMap id="BlogResult" type="Blog">
+        <id property="id" column="bid"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="firstPicture" column="firstPicture"/>
+        <result property="flag" column="flag"/>
+        <result property="views" column="views"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="shareStatement" column="shareStatement"/>
+        <result property="commentabled" column="commentabled"/>
+        <result property="published" column="published"/>
+        <result property="recommend" column="recommend"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="typeId" column="typeId"/>
+        <result property="userId" column="userId"/>
+        <result property="description" column="description"/>
+        <result property="tagIds" column="tagIds"/>
+    </resultMap>
+
     <sql id="selectT_user">
         select id,
                username,
@@ -47,42 +67,20 @@
         </where>
     </select>
 
-
-    <resultMap id="BlogResult" type="Blog">
-        <id property="id" column="id"/>
-        <result property="title" column="title"/>
-        <result property="content" column="content"/>
-        <result property="firstPicture" column="firstPicture"/>
-        <result property="flag" column="flag"/>
-        <result property="views" column="views"/>
-        <result property="appreciation" column="appreciation"/>
-        <result property="shareStatement" column="shareStatement"/>
-        <result property="commentabled" column="commentabled"/>
-        <result property="published" column="published"/>
-        <result property="recommend" column="recommend"/>
-        <result property="createTime" column="create_time"/>
-        <result property="updateTime" column="update_time"/>
-        <result property="typeId" column="typeId"/>
-        <result property="userId" column="userId"/>
-        <result property="description" column="description"/>
-        <result property="tagIds" column="tagIds"/>
-    </resultMap>
-
-    <select id="queryUser" parameterType="int" resultMap="queryUserByBlog">
-        select t_user.id, username,
-               password,
-               email,
-               avatar,
-               type,
-               t_user.create_time,
-               t_user.update_time,
-               title,
-               content
-        from t_user left join t_blog on t_user.id = t_blog.user_id where t_user.id = #{id};
+    <select id="queryUser" resultMap="queryUserByBlog">
+        select u.*, b.id as bid, b.*
+        from t_user u left join t_blog b on u.id = b.user_id
+        where u.id = #{id};
     </select>
 
     <resultMap id="queryUserByBlog" type="UserVO">
-        <association property="user" resultMap="UserResult"/>
-        <collection property="blog" ofType="blog" resultMap="BlogResult"/>
+        <id property="id" column="id"/>
+        <result property="nickname" column="nickname"/>
+        <result property="username" column="username"/>
+        <result property="email" column="email"/>
+        <result property="avatar" column="avatar"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <collection property="blogs" ofType="Blog" resultMap="BlogResult"/>
     </resultMap>
 </mapper>

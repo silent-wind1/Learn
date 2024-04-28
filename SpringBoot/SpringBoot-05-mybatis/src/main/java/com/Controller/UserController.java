@@ -32,9 +32,6 @@ public class UserController {
     @GetMapping("/queryUser/{id}")
     public List<UserVO> queryUser(@PathVariable int id) {
         List<UserVO> userList = userMapper.queryUser(id);
-        for (UserVO user : userList) {
-            System.out.println(user);
-        }
         return userList;
     }
 }
