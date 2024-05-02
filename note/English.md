@@ -591,6 +591,35 @@ Does Duo usually sleep in that room? 多儿平时在那个房间里睡觉吗？
 
 She always gets up at six. 她总是6点起床
 
+I understand a little English, but I can't speak it very well. I speak Spanish. 
+我懂一点英语，但我说得不是非常好。我说西班牙语。
+
+Does she like to travel by train? 她喜欢做火车旅行吗？
+
+Hi, can I get you a cup of tea? 嗨，我可以帮你拿一杯茶吗？
+
+Do you go to work on Sunday? 你在周末去工作吗？
+
+Are you washing your hands? 你在洗你的手吗？
+
+Lily, I'm so scared! I can't find my diary!  莉莉，我好害怕！我找不到我的日记！
+
+It's hot in the morning, but it's cold at night. 早上很热，但夜里很冷。
+
+He wants to take a bath. 他想要泡个澡
+
+My cat always sleeps on my bed. 我的猫总是睡在我的床上
+
+Beijing is too hot! I can't sleep at night. I want a cold drink.
+
+He always wears a black jacket. 他总是穿一件黑夹克。
+
+How does she usually get to the museum? 她平时怎么去博物馆？
+
+What time do you usually get up, Anna? 你平时几点起床，安娜？
+
+He takes a picture of his cat every day. 他每天都给他的猫拍一张照片。
+
 ## 错题
 
 I'm very busy from ten o'clock to four o'clock on Monday. 我周一从十点钟到四点钟非常忙。
@@ -598,6 +627,13 @@ I'm very busy from ten o'clock to four o'clock on Monday. 我周一从十点钟�
 Yes, Lucy. The bank is open from nine o'clock to five o'clock today. 是的，Lucy。 银行今天从九点钟到五点钟开门。
 
 The dog needs a bath. 狗狗需要泡澡。
+
+Does she usually sleep in that bedroom? 她平时在那个卧室睡觉吗？
+
+Can you come to the party tonight? 你可以今晚来聚会吗？
+
+An American restaurant  一个美国餐厅
+
 
 ## 练习题
 
