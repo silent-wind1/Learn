@@ -647,6 +647,17 @@ She's not tall 她不高
 
 how much is this ... 这件...多少钱
 
+
+## 第十六部分
+
+Anna is sitting next to the window.  安娜正坐在窗户旁边。
+
+Don't go outside, it's raining. 不要出去，在下雨。
+
+He can't find his basketball. 他找不到他的篮球。
+
+Are you learning to dance? 你在学跳舞吗？
+
 ## 听力模块
 
 ### Can I Have It
