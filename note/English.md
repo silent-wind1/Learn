@@ -670,3 +670,28 @@ Now can I have it? 现在可以给我吗？
 
 You're right. 你说的对
 
+
+
+# 第三阶段
+
+## 第一部分 在聚会上与人交谈
+
+Yes, you can have a party. 是的你可以举行一个聚会
+
+Hey, what's up? 嘿，最近怎么样？
+
+Grandma and Grandpa are old, but they are not boring. 奶奶和爷爷很老，但是他们不无聊。
+
+Who is younger, your mom or your dad? 谁更年轻，你妈妈还是你爸爸?
+
+My husband and I have two babies. 我的丈夫和我有两个宝宝。
+
+How many babies are at the party? 在聚会上有几个宝宝？
+
+Who is older, Mom or Dad? 谁更年长，妈妈还是爸爸？
+
+That boy is eating my ice cream! 那个男孩在吃我的冰淇淋
+
+Is your dad drinking red wine? 你爸爸在喝红酒吗?
+
+What's that? 那是什么？
