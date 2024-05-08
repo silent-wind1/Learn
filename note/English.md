@@ -699,3 +699,5 @@ What's that? 那是什么？
 Let's have a party for Mom! 咱们给妈妈举行聚会吧！
 
 I Can't sleep 我睡不着
+
+I'm bored. Interviews are a disaster 我很烦，面试面得一塌糊涂
