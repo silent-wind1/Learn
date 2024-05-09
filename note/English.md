@@ -701,3 +701,5 @@ Let's have a party for Mom! 咱们给妈妈举行聚会吧！
 I Can't sleep 我睡不着
 
 I'm bored. Interviews are a disaster 我很烦，面试面得一塌糊涂
+
+Why do you think there's no place for you in the world 你说这世界为什么会没有你的容身之处
