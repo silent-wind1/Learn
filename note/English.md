@@ -703,3 +703,17 @@ I Can't sleep 我睡不着
 I'm bored. Interviews are a disaster 我很烦，面试面得一塌糊涂
 
 Why do you think there's no place for you in the world 你说这世界为什么会没有你的容身之处
+
+
+## 第二部分
+
+Duo never takes a vacation in the winter. 多儿从不在冬天度假
+
+- takes 拿
+
+Can i take a vacation？ 我可以度假吗？
+
+I want to take a vacation. 我想要度假
+
+- want 表示想要某物
+- want to 表示想要做某事
