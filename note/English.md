@@ -717,3 +717,23 @@ I want to take a vacation. 我想要度假
 
 - want 表示想要某物
 - want to 表示想要做某事
+
+Can we talk to you? 我们能和你谈谈吗？
+
+Are you excited for our science exam? 你对我们的科学考试感到兴奋吗？
+
+I love summer holidays! 我爱暑假
+
+Anna wants to relax. 安娜想要放松。
+
+I like to relax in the evening.我喜欢在晚上放松
+
+We have many holidays in January. 我们在一月有很多假日
+
+I want to relax at home. 我想要在家放松。
+
+On holidays, we like to go shopping. 在假期，我们喜欢去购物。
+
+Is she driving a bus?她在开公交车吗？
+
+I want to go to the beach. 我想要去海滩
