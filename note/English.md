@@ -414,7 +414,6 @@ a bus stop 一个公交车站
 Do you like to travel by car? 你喜欢开车旅行吗？
 
 - travel by 旅行
-- 
 
 ### 错题
 
@@ -448,7 +447,7 @@ Which languages do you like? 你喜欢哪些语言
 
 ## 第十三部分
 
-###      
+###          
 
 This is my favorite game. 这是我最喜爱的游戏
 
@@ -458,7 +457,7 @@ They want to learn to drive. 他们想要学开车
 
 I want to learn to ride a horse. 我想学习骑马
 
-- to learn 学习 
+- to learn 学习
 - to ride a horse 骑马
 
 Do you like to play American football? 你喜欢打美式橄榄球吗？
@@ -471,7 +470,7 @@ He can't cook. 他不会做饭
 
 He wants to learn to cook. 他想要学做饭
 
-- 第三人称 want 加 s -> He want**s** 
+- 第三人称 want 加 s -> He want**s**
 
 He wants to learn to dance. 他想要学跳舞
 
@@ -532,7 +531,7 @@ When is Duo's birthday? 多儿的生日聚会是什么时候
 
 Do you know that young man over there? 你认识在那里的那个年轻人吗？
 
-That restaurant is always busy on Wednesdays.  那个餐厅在周三总是很热闹。
+That restaurant is always busy on Wednesdays. 那个餐厅在周三总是很热闹。
 
 When is the party? 聚会是什么时候？
 
@@ -556,7 +555,6 @@ I want to write a letter for you. 我想要给你写一封信。
 
 Is she talking to him right now? 她现在正在跟他说话吗？
 
-
 ## 第十五部分
 
 What day is it? 今天是周几
@@ -571,7 +569,7 @@ from two to four on Sunday. 在周日从两点到四点
 
 I can't sleep.我睡不着
 
-Anna can't sleep. anna 睡不着  
+Anna can't sleep. anna 睡不着
 
 Do you need a bath? 你需要泡澡吗
 
@@ -591,7 +589,7 @@ Does Duo usually sleep in that room? 多儿平时在那个房间里睡觉吗？
 
 She always gets up at six. 她总是6点起床
 
-I understand a little English, but I can't speak it very well. I speak Spanish. 
+I understand a little English, but I can't speak it very well. I speak Spanish.
 我懂一点英语，但我说得不是非常好。我说西班牙语。
 
 Does she like to travel by train? 她喜欢做火车旅行吗？
@@ -632,8 +630,7 @@ Does she usually sleep in that bedroom? 她平时在那个卧室睡觉吗？
 
 Can you come to the party tonight? 你可以今晚来聚会吗？
 
-An American restaurant  一个美国餐厅
-
+An American restaurant 一个美国餐厅
 
 ## 练习题
 
@@ -647,10 +644,9 @@ She's not tall 她不高
 
 how much is this ... 这件...多少钱
 
-
 ## 第十六部分
 
-Anna is sitting next to the window.  安娜正坐在窗户旁边。
+Anna is sitting next to the window. 安娜正坐在窗户旁边。
 
 Don't go outside, it's raining. 不要出去，在下雨。
 
@@ -669,8 +665,6 @@ You don't need a new video game. 你不需要一个新游戏吗
 Now can I have it? 现在可以给我吗？
 
 You're right. 你说的对
-
-
 
 # 第三阶段
 
@@ -704,7 +698,6 @@ I'm bored. Interviews are a disaster 我很烦，面试面得一塌糊涂
 
 Why do you think there's no place for you in the world 你说这世界为什么会没有你的容身之处
 
-
 ## 第二部分
 
 Duo never takes a vacation in the winter. 多儿从不在冬天度假
@@ -737,3 +730,18 @@ On holidays, we like to go shopping. 在假期，我们喜欢去购物。
 Is she driving a bus?她在开公交车吗？
 
 I want to go to the beach. 我想要去海滩
+
+Who is eating the cake? 谁在吃蛋糕？
+
+Look, Ben! Who is driving your car? Anna is on the boat, and Emma is at the beach. This isn't good!
+看，本！谁在驾驶你的车？安娜在船上，艾玛在海滩上。这不好！
+
+Are you on the boat? 你在船上吗
+
+Who are you looking for? 你找谁？
+
+- looking for 正在寻找某某
+
+Is our picnic on Sunday? 我们的野餐在周末吗？
+
+We can swim together at the beach! 我们可以一起在海滩游泳
