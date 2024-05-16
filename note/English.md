@@ -745,3 +745,15 @@ Who are you looking for? 你找谁？
 Is our picnic on Sunday? 我们的野餐在周末吗？
 
 We can swim together at the beach! 我们可以一起在海滩游泳
+
+We are taking photos in the park right now. 我们现在正在公园里拍照
+
+I want to take a vacation. 我想要度假
+
+She is taking photos of her children. 她在给她的孩子拍照
+
+I want to take a vacation with Emma. She is taking a vacation at the beach now! 我想和艾玛一起度假，她现在正在海滩度假！
+
+Where is your favorite cafe? 你最喜欢的咖啡厅在哪里？
+
+Where are they having their a picnic now? 他们现在在哪里野餐？
