@@ -447,8 +447,6 @@ Which languages do you like? 你喜欢哪些语言
 
 ## 第十三部分
 
-###          
-
 This is my favorite game. 这是我最喜爱的游戏
 
 They want to learn to drive. 他们想要学开车
@@ -757,3 +755,24 @@ I want to take a vacation with Emma. She is taking a vacation at the beach now! 
 Where is your favorite cafe? 你最喜欢的咖啡厅在哪里？
 
 Where are they having their a picnic now? 他们现在在哪里野餐？
+
+I'm making coffee. 我在做咖啡
+
+Is she having a good time in Japan? 她在日本玩的开心吗？
+
+Anna and I are having a picnic at the park. We are taking photos now. 安娜和我在公园野餐。我们现在正在拍照。
+
+We are having a good time 我们玩得很开心！
+
+Duo is eating a sandwich at a cafe now. 多儿现在在咖啡厅吃三明治。
+
+They are having a picnic. 他们在野餐
+
+I want to relax at home. 我想要在家里放松
+
+I want to go to the beach. 我想要去海滩
+
+- want to 固定搭配
+- go to the.... 固定搭配
+
+How many holidays do you have? 你有多少个节假日
