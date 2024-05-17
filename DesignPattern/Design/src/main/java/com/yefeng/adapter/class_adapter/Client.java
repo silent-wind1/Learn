@@ -4,5 +4,6 @@ public class Client {
     public static void main(String[] args) {
         Girl girl = new AdapterGirl();
         girl.Hair();
+        girl.Clothing();
     }
 }

@@ -1,14 +1,17 @@
 package com.yefeng.config;
 
 import org.redisson.Redisson;
+import org.redisson.api.RDelayedQueue;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.concurrent.Delayed;
+
 @Configuration
-public class RedisQueueConfig {
+public class RedisQueueConfig  {
 
     // 连接redis的地址
     @Value("${spring.redis.host}")
