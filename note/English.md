@@ -776,3 +776,23 @@ I want to go to the beach. 我想要去海滩
 - go to the.... 固定搭配
 
 How many holidays do you have? 你有多少个节假日
+
+Can you come to the party today? 你今天可以来聚会吗？
+
+I need to work every day in August. I want a holiday! 我在八月每天都需要工作。我想要一个假期！
+
+My sister cannot ride a bicycle. 我的妹妹不会骑自行车
+
+They always have a good time on holidays. 他们假期总是玩得很开心。
+
+Ben is riding his horse in the garden. Ben正在花园里骑他的马。
+
+Let's have a picnic 咱们去野餐吧
+
+Is she having a picnic? 她在野餐吗？
+
+Emma is having a good time at the beach. 艾玛在海滩玩得很开心
+
+Is she taking photos of her son? 她在给她的儿子拍照吗？
+
+I am driving a car right now. 我现在正在开车。
