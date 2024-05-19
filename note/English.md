@@ -796,3 +796,7 @@ Emma is having a good time at the beach. 艾玛在海滩玩得很开心
 Is she taking photos of her son? 她在给她的儿子拍照吗？
 
 I am driving a car right now. 我现在正在开车。
+
+## 第三部分
+
+this pair of shoes is more expensive
