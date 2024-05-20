@@ -825,4 +825,4 @@ What do you want to wear today? 你今天想要穿什么
 
 This skirt is more beautiful than those pants. 这条裙子比那条裤子漂亮。
 
-I want to buy three pairs of shoes.  我想要买三双鞋子
+I want to buy three pairs of shoes. 我想要买三双鞋子
