@@ -800,3 +800,29 @@ I am driving a car right now. 我现在正在开车。
 ## 第三部分
 
 this pair of shoes is more expensive
+
+Is that store more famous? 哪个商店更有名吗？
+
+This restaurant is more famous. 这家餐厅比较有名。
+
+a pair of glasses 一副眼镜
+
+I want this pair of glasses. 我想要这幅眼睛
+
+Anna's white coat is more beautiful. 安娜的白色外套更漂亮。
+
+What do you like? 你喜欢什么？
+
+What do you want to buy: a computer or a cell phone? 你想买什么：电脑还是手机？
+
+This movie ticket is cheap. 这张电影票很便宜
+
+This store has very beautiful clothes, but they're not cheap. 这个商店有非常好看的衣服，但它们不便宜。
+
+Those plane tickets are not cheap.那些飞机票不便宜
+
+What do you want to wear today? 你今天想要穿什么
+
+This skirt is more beautiful than those pants. 这条裙子比那条裤子漂亮。
+
+I want to buy three pairs of shoes.  我想要买三双鞋子
