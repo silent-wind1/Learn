@@ -826,3 +826,15 @@ What do you want to wear today? 你今天想要穿什么
 This skirt is more beautiful than those pants. 这条裙子比那条裤子漂亮。
 
 I want to buy three pairs of shoes. 我想要买三双鞋子
+
+Anna needs to get a new cell phone. 安娜需要买一个新手机
+
+- to get 买
+
+Emma wants to get a beautiful bag. 艾玛想要买一个好看的包
+
+Please pay thirty dollars for dinner. 请为晚饭付三十美元。
+
+I need to pay seven dollars for my bus ticket. 我需要为我的公交车票付七美元
+
+This pair of shoes is more expensive 这双鞋子很贵
