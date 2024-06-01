@@ -838,3 +838,14 @@ Please pay thirty dollars for dinner. 请为晚饭付三十美元。
 I need to pay seven dollars for my bus ticket. 我需要为我的公交车票付七美元
 
 This pair of shoes is more expensive 这双鞋子很贵
+
+My cat likes to wear pink dresses, not green. 我的猫喜欢穿粉色的裙子，不喜欢绿色
+
+How much do these pairs of boots cost? I like this pair of pink boots. 这双靴子要多少钱？我喜欢这双粉红色的靴子。
+
+- pairs 双
+- pair 一对
+
+I do not like the color of these boots! 我不喜欢这些靴子的颜色！
+
+Do you like the color of that coat? 你喜欢那件外套的颜色吗？
