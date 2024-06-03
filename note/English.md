@@ -849,3 +849,18 @@ How much do these pairs of boots cost? I like this pair of pink boots. 这双靴
 I do not like the color of these boots! 我不喜欢这些靴子的颜色！
 
 Do you like the color of that coat? 你喜欢那件外套的颜色吗？
+
+How much do these shoes cost? How much does that dress cost? They are beautiful! 这双鞋多少钱？那件衣服要多少钱？他们很漂亮！
+
+- 单个用does
+- 多个用do
+
+Do you like the color of that coat?  你喜欢那件外套的颜色吗？
+
+Mary is wearing a green blouse. Mary穿着一件绿色的女式衬衫
+
+- blouse 女士衬衫
+
+Anna's white coat is more beautiful. 安娜的白色外套更好看。
+
+This new jacket costs forty dollars. 这件新夹克要价四十美元。
