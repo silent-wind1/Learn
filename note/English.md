@@ -864,3 +864,5 @@ Mary is wearing a green blouse. Mary穿着一件绿色的女式衬衫
 Anna's white coat is more beautiful. 安娜的白色外套更好看。
 
 This new jacket costs forty dollars. 这件新夹克要价四十美元。
+
+## 第四部分
