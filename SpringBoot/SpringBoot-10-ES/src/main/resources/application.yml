@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  # 开发者模式
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_item?serverTimezone=UTC&userUnicode=true&charaterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  elasticsearch:
+    uris: http://localhost:9200
+

@@ -10,8 +10,9 @@
         <module>SpringBoot-05-mybatis</module>
         <module>SpringBoot-06-security</module>
         <module>springboot-07-swagger</module>
-        <module>SpringBoot-09-aop</module>
         <module>Springboot-08-test</module>
+        <module>SpringBoot-09-aop</module>
+        <module>SpringBoot-10-ES</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
