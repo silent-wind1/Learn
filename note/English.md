@@ -414,7 +414,6 @@ a bus stop 一个公交车站
 Do you like to travel by car? 你喜欢开车旅行吗？
 
 - travel by 旅行
-- 
 
 ### 错题
 
@@ -448,8 +447,6 @@ Which languages do you like? 你喜欢哪些语言
 
 ## 第十三部分
 
-###      
-
 This is my favorite game. 这是我最喜爱的游戏
 
 They want to learn to drive. 他们想要学开车
@@ -458,7 +455,7 @@ They want to learn to drive. 他们想要学开车
 
 I want to learn to ride a horse. 我想学习骑马
 
-- to learn 学习 
+- to learn 学习
 - to ride a horse 骑马
 
 Do you like to play American football? 你喜欢打美式橄榄球吗？
@@ -471,7 +468,7 @@ He can't cook. 他不会做饭
 
 He wants to learn to cook. 他想要学做饭
 
-- 第三人称 want 加 s -> He want**s** 
+- 第三人称 want 加 s -> He want**s**
 
 He wants to learn to dance. 他想要学跳舞
 
@@ -532,7 +529,7 @@ When is Duo's birthday? 多儿的生日聚会是什么时候
 
 Do you know that young man over there? 你认识在那里的那个年轻人吗？
 
-That restaurant is always busy on Wednesdays.  那个餐厅在周三总是很热闹。
+That restaurant is always busy on Wednesdays. 那个餐厅在周三总是很热闹。
 
 When is the party? 聚会是什么时候？
 
@@ -556,7 +553,6 @@ I want to write a letter for you. 我想要给你写一封信。
 
 Is she talking to him right now? 她现在正在跟他说话吗？
 
-
 ## 第十五部分
 
 What day is it? 今天是周几
@@ -571,7 +567,7 @@ from two to four on Sunday. 在周日从两点到四点
 
 I can't sleep.我睡不着
 
-Anna can't sleep. anna 睡不着  
+Anna can't sleep. anna 睡不着
 
 Do you need a bath? 你需要泡澡吗
 
@@ -591,6 +587,35 @@ Does Duo usually sleep in that room? 多儿平时在那个房间里睡觉吗？
 
 She always gets up at six. 她总是6点起床
 
+I understand a little English, but I can't speak it very well. I speak Spanish.
+我懂一点英语，但我说得不是非常好。我说西班牙语。
+
+Does she like to travel by train? 她喜欢做火车旅行吗？
+
+Hi, can I get you a cup of tea? 嗨，我可以帮你拿一杯茶吗？
+
+Do you go to work on Sunday? 你在周末去工作吗？
+
+Are you washing your hands? 你在洗你的手吗？
+
+Lily, I'm so scared! I can't find my diary!  莉莉，我好害怕！我找不到我的日记！
+
+It's hot in the morning, but it's cold at night. 早上很热，但夜里很冷。
+
+He wants to take a bath. 他想要泡个澡
+
+My cat always sleeps on my bed. 我的猫总是睡在我的床上
+
+Beijing is too hot! I can't sleep at night. I want a cold drink.
+
+He always wears a black jacket. 他总是穿一件黑夹克。
+
+How does she usually get to the museum? 她平时怎么去博物馆？
+
+What time do you usually get up, Anna? 你平时几点起床，安娜？
+
+He takes a picture of his cat every day. 他每天都给他的猫拍一张照片。
+
 ## 错题
 
 I'm very busy from ten o'clock to four o'clock on Monday. 我周一从十点钟到四点钟非常忙。
@@ -598,6 +623,12 @@ I'm very busy from ten o'clock to four o'clock on Monday. 我周一从十点钟�
 Yes, Lucy. The bank is open from nine o'clock to five o'clock today. 是的，Lucy。 银行今天从九点钟到五点钟开门。
 
 The dog needs a bath. 狗狗需要泡澡。
+
+Does she usually sleep in that bedroom? 她平时在那个卧室睡觉吗？
+
+Can you come to the party tonight? 你可以今晚来聚会吗？
+
+An American restaurant 一个美国餐厅
 
 ## 练习题
 
@@ -611,6 +642,16 @@ She's not tall 她不高
 
 how much is this ... 这件...多少钱
 
+## 第十六部分
+
+Anna is sitting next to the window. 安娜正坐在窗户旁边。
+
+Don't go outside, it's raining. 不要出去，在下雨。
+
+He can't find his basketball. 他找不到他的篮球。
+
+Are you learning to dance? 你在学跳舞吗？
+
 ## 听力模块
 
 ### Can I Have It
@@ -623,3 +664,205 @@ Now can I have it? 现在可以给我吗？
 
 You're right. 你说的对
 
+# 第三阶段
+
+## 第一部分 在聚会上与人交谈
+
+Yes, you can have a party. 是的你可以举行一个聚会
+
+Hey, what's up? 嘿，最近怎么样？
+
+Grandma and Grandpa are old, but they are not boring. 奶奶和爷爷很老，但是他们不无聊。
+
+Who is younger, your mom or your dad? 谁更年轻，你妈妈还是你爸爸?
+
+My husband and I have two babies. 我的丈夫和我有两个宝宝。
+
+How many babies are at the party? 在聚会上有几个宝宝？
+
+Who is older, Mom or Dad? 谁更年长，妈妈还是爸爸？
+
+That boy is eating my ice cream! 那个男孩在吃我的冰淇淋
+
+Is your dad drinking red wine? 你爸爸在喝红酒吗?
+
+What's that? 那是什么？
+
+Let's have a party for Mom! 咱们给妈妈举行聚会吧！
+
+I Can't sleep 我睡不着
+
+I'm bored. Interviews are a disaster 我很烦，面试面得一塌糊涂
+
+Why do you think there's no place for you in the world 你说这世界为什么会没有你的容身之处
+
+## 第二部分
+
+Duo never takes a vacation in the winter. 多儿从不在冬天度假
+
+- takes 拿
+
+Can i take a vacation？ 我可以度假吗？
+
+I want to take a vacation. 我想要度假
+
+- want 表示想要某物
+- want to 表示想要做某事
+
+Can we talk to you? 我们能和你谈谈吗？
+
+Are you excited for our science exam? 你对我们的科学考试感到兴奋吗？
+
+I love summer holidays! 我爱暑假
+
+Anna wants to relax. 安娜想要放松。
+
+I like to relax in the evening.我喜欢在晚上放松
+
+We have many holidays in January. 我们在一月有很多假日
+
+I want to relax at home. 我想要在家放松。
+
+On holidays, we like to go shopping. 在假期，我们喜欢去购物。
+
+Is she driving a bus?她在开公交车吗？
+
+I want to go to the beach. 我想要去海滩
+
+Who is eating the cake? 谁在吃蛋糕？
+
+Look, Ben! Who is driving your car? Anna is on the boat, and Emma is at the beach. This isn't good!
+看，本！谁在驾驶你的车？安娜在船上，艾玛在海滩上。这不好！
+
+Are you on the boat? 你在船上吗
+
+Who are you looking for? 你找谁？
+
+- looking for 正在寻找某某
+
+Is our picnic on Sunday? 我们的野餐在周末吗？
+
+We can swim together at the beach! 我们可以一起在海滩游泳
+
+We are taking photos in the park right now. 我们现在正在公园里拍照
+
+I want to take a vacation. 我想要度假
+
+She is taking photos of her children. 她在给她的孩子拍照
+
+I want to take a vacation with Emma. She is taking a vacation at the beach now! 我想和艾玛一起度假，她现在正在海滩度假！
+
+Where is your favorite cafe? 你最喜欢的咖啡厅在哪里？
+
+Where are they having their a picnic now? 他们现在在哪里野餐？
+
+I'm making coffee. 我在做咖啡
+
+Is she having a good time in Japan? 她在日本玩的开心吗？
+
+Anna and I are having a picnic at the park. We are taking photos now. 安娜和我在公园野餐。我们现在正在拍照。
+
+We are having a good time 我们玩得很开心！
+
+Duo is eating a sandwich at a cafe now. 多儿现在在咖啡厅吃三明治。
+
+They are having a picnic. 他们在野餐
+
+I want to relax at home. 我想要在家里放松
+
+I want to go to the beach. 我想要去海滩
+
+- want to 固定搭配
+- go to the.... 固定搭配
+
+How many holidays do you have? 你有多少个节假日
+
+Can you come to the party today? 你今天可以来聚会吗？
+
+I need to work every day in August. I want a holiday! 我在八月每天都需要工作。我想要一个假期！
+
+My sister cannot ride a bicycle. 我的妹妹不会骑自行车
+
+They always have a good time on holidays. 他们假期总是玩得很开心。
+
+Ben is riding his horse in the garden. Ben正在花园里骑他的马。
+
+Let's have a picnic 咱们去野餐吧
+
+Is she having a picnic? 她在野餐吗？
+
+Emma is having a good time at the beach. 艾玛在海滩玩得很开心
+
+Is she taking photos of her son? 她在给她的儿子拍照吗？
+
+I am driving a car right now. 我现在正在开车。
+
+## 第三部分
+
+this pair of shoes is more expensive
+
+Is that store more famous? 哪个商店更有名吗？
+
+This restaurant is more famous. 这家餐厅比较有名。
+
+a pair of glasses 一副眼镜
+
+I want this pair of glasses. 我想要这幅眼睛
+
+Anna's white coat is more beautiful. 安娜的白色外套更漂亮。
+
+What do you like? 你喜欢什么？
+
+What do you want to buy: a computer or a cell phone? 你想买什么：电脑还是手机？
+
+This movie ticket is cheap. 这张电影票很便宜
+
+This store has very beautiful clothes, but they're not cheap. 这个商店有非常好看的衣服，但它们不便宜。
+
+Those plane tickets are not cheap.那些飞机票不便宜
+
+What do you want to wear today? 你今天想要穿什么
+
+This skirt is more beautiful than those pants. 这条裙子比那条裤子漂亮。
+
+I want to buy three pairs of shoes. 我想要买三双鞋子
+
+Anna needs to get a new cell phone. 安娜需要买一个新手机
+
+- to get 买
+
+Emma wants to get a beautiful bag. 艾玛想要买一个好看的包
+
+Please pay thirty dollars for dinner. 请为晚饭付三十美元。
+
+I need to pay seven dollars for my bus ticket. 我需要为我的公交车票付七美元
+
+This pair of shoes is more expensive 这双鞋子很贵
+
+My cat likes to wear pink dresses, not green. 我的猫喜欢穿粉色的裙子，不喜欢绿色
+
+How much do these pairs of boots cost? I like this pair of pink boots. 这双靴子要多少钱？我喜欢这双粉红色的靴子。
+
+- pairs 双
+- pair 一对
+
+I do not like the color of these boots! 我不喜欢这些靴子的颜色！
+
+Do you like the color of that coat? 你喜欢那件外套的颜色吗？
+
+How much do these shoes cost? How much does that dress cost? They are beautiful! 这双鞋多少钱？那件衣服要多少钱？他们很漂亮！
+
+- 单个用does
+- 多个用do
+
+Do you like the color of that coat?  你喜欢那件外套的颜色吗？
+
+Mary is wearing a green blouse. Mary穿着一件绿色的女式衬衫
+
+- blouse 女士衬衫
+
+Anna's white coat is more beautiful. 安娜的白色外套更好看。
+
+This new jacket costs forty dollars. 这件新夹克要价四十美元。
+
+## 第四部分
