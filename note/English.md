@@ -866,3 +866,9 @@ Anna's white coat is more beautiful. 安娜的白色外套更好看。
 This new jacket costs forty dollars. 这件新夹克要价四十美元。
 
 ## 第四部分
+
+Do you need to take a test today? 你今天需要参加测试吗？
+
+Yes, the students need to take a test today. 是的，学生今天需要参加测试。
+
+This test is more difficult. 这个测试更难。
