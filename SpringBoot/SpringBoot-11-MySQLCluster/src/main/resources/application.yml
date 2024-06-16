@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  # 开发者模式
+  profiles:
+    active: dev
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/yefeng?useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/yefeng?useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+
+logging:
+  level:
+    com.yefeng.mapper: debug
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
