@@ -872,3 +872,5 @@ Do you need to take a test today? 你今天需要参加测试吗？
 Yes, the students need to take a test today. 是的，学生今天需要参加测试。
 
 This test is more difficult. 这个测试更难。
+
+My classroom is next to your classroom 我的教室在你的教室旁边
