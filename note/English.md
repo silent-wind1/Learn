@@ -855,7 +855,7 @@ How much do these shoes cost? How much does that dress cost? They are beautiful!
 - 单个用does
 - 多个用do
 
-Do you like the color of that coat?  你喜欢那件外套的颜色吗？
+Do you like the color of that coat? 你喜欢那件外套的颜色吗？
 
 Mary is wearing a green blouse. Mary穿着一件绿色的女式衬衫
 
@@ -874,3 +874,27 @@ Yes, the students need to take a test today. 是的，学生今天需要参加�
 This test is more difficult. 这个测试更难。
 
 My classroom is next to your classroom 我的教室在你的教室旁边
+
+## 第五部分
+
+What are we going to do tomorrow? 我们明天打算干什么？
+
+Let's meet at a cafe tomorrow.咱们明天咖啡厅见吧
+
+What time do you want to meet? 你想要几点见？
+
+Can we meet at 11am? 我们可以上午11点见面吗？
+
+Please call me tonight.请今晚给我打电话。
+
+### 语法点
+
+**未来**
+
+要用英语说我打算学习或者你会学习的话，就说
+
+I’m going to study 或 You’re going to study 。
+
+I - am going to cook dinner
+
+You / We / They - are going to go home
