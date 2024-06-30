@@ -887,6 +887,8 @@ Can we meet at 11am? 我们可以上午11点见面吗？
 
 Please call me tonight.请今晚给我打电话。
 
+Sometimes a partner isn't that important
+
 ### 语法点
 
 **未来**
@@ -898,3 +900,4 @@ I’m going to study 或 You’re going to study 。
 I - am going to cook dinner
 
 You / We / They - are going to go home
+
