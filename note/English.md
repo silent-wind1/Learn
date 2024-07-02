@@ -887,7 +887,7 @@ Can we meet at 11am? 我们可以上午11点见面吗？
 
 Please call me tonight.请今晚给我打电话。
 
-Sometimes a partner isn't that important
+Sometimes a partner isn't that important。 有时伙伴并没有那么重要
 
 ### 语法点
 
