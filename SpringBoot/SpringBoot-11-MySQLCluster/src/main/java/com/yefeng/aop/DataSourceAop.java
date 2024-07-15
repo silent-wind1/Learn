@@ -48,19 +48,19 @@ public class DataSourceAop {
         DBContext.slave();
     }
 
-    @After("readPointcut()")
-    public Object read1(ProceedingJoinPoint joinPoint) throws Throwable {
-        log.info("read1.getArgs() = {}", joinPoint.getArgs());
-        Object[] args = joinPoint.getArgs();
-        log.info("read1.getTarget() = {}", joinPoint.getTarget());
-        log.info("read1.getArgs() = {}", joinPoint.proceed());
-        if (args == null) {
-            log.info("No data");
-            return null;
-        }
-        for (Object arg : args) {
-            log.info("arg = {}", arg);
-        }
-        return null;
-    }
+//    @After("readPointcut()")
+//    public Object read1(ProceedingJoinPoint joinPoint) throws Throwable {
+//        log.info("read1.getArgs() = {}", joinPoint.getArgs());
+//        Object[] args = joinPoint.getArgs();
+//        log.info("read1.getTarget() = {}", joinPoint.getTarget());
+//        log.info("read1.getArgs() = {}", joinPoint.proceed());
+//        if (args == null) {
+//            log.info("No data");
+//            return null;
+//        }
+//        for (Object arg : args) {
+//            log.info("arg = {}", arg);
+//        }
+//        return null;
+//    }
 }

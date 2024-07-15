@@ -3,17 +3,20 @@ server:
 
 spring:
   # 开发者模式
-  profiles:
-    active: dev
   datasource:
     master:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:3306/yefeng?useSSL=false&serverTimezone=UTC
+      jdbc-url: jdbc:mysql://192.168.1.1:3306/yefeng?useSSL=false&serverTimezone=UTC&autoReconnect=true&amp&failOverReadOnly=false
       username: root
       password: 123456
-    slave:
+    slave1:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:3306/yefeng?useSSL=false&serverTimezone=UTC
+      jdbc-url: jdbc:mysql://192.168.1.2:3306/yefeng?useSSL=false&serverTimezone=UTC&autoReconnect=true&amp&failOverReadOnly=false
+      username: root
+      password: 123456
+    slave2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://192.168.1.3:3306/yefeng?useSSL=false&serverTimezone=UTC&autoReconnect=true&amp&failOverReadOnly=false
       username: root
       password: 123456
 
