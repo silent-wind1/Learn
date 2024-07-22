@@ -891,6 +891,8 @@ Sometimes a partner isn't that important。 有时伙伴并没有那么重要
 
 Can you practice English with me? 你可以跟我一起练习英语吗？
 
+I'm going to study Java; 我打算学习Java
+
 ### 语法点
 
 **未来**
