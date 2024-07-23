@@ -893,6 +893,10 @@ Can you practice English with me? 你可以跟我一起练习英语吗？
 
 I'm going to study Java; 我打算学习Java
 
+She practices guitar every Tuesday. 她每周二都练习吉他
+ 
+When are you going to meet your friends? 你打算什么时候见你的朋友？
+
 ### 语法点
 
 **未来**
