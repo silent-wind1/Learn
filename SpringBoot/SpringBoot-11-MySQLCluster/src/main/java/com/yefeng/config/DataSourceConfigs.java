@@ -46,7 +46,7 @@ public class DataSourceConfigs {
         targetDataSources.put(DBTypeEnum.SLAVE1, slave1DataSource);
         targetDataSources.put(DBTypeEnum.SLAVE2, slave2DataSource);
         RoutingDataSource routingDataSource = new RoutingDataSource();
-        routingDataSource.setDefaultTargetDataSource(masterDataSource);
+        routingDataSource.setDefaultTargetDataSource(masterDataSource); // 设置默认数据源
         routingDataSource.setTargetDataSources(targetDataSources);
         return routingDataSource;
     }
