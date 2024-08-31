@@ -915,4 +915,27 @@ You / We / They - are going to go home
 
 ### 语法点
 
+a good baseball player 一个很好的棒球运动员
+
+Basketball is not the most difficult sport. 篮球不是最困难的运动
+
+Is basketball the most difficult sport? 篮球是最困难的运动吗？
+
+the most important game this summer 这个夏天最重要的比赛
+
+Is Paris the most famous city in France?  巴黎是法国最著名的城市吗？
+
+the most famous basketball player 这个夏天最重要的篮球运动员
+
+Is Duo on your basketball team? duo你是你的篮球队的一员吗？
+
+the tallest player on that basketball team 那个篮球队伍最高的球员
+
+Is she the most famous tennis player? 她是网球界最著名的球员吗？
+
+She is the most important player on her team. 她是她队伍最重要的球员。
+
+Is Ben the most famous basketball player? Ben是篮球界最著名的球员吗？
+
+Anna is the tallest player on her team. 安娜是在她的队里最高的运动员。
 
