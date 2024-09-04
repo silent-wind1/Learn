@@ -958,3 +958,13 @@ There are many people in the world. 世界上有很多的人。
 Who is the most famous person in the world? 世界上最有名的人是谁？
 
 Who is the best football player in the world? 谁是世界上最好的足球运动员？ 
+
+the most interesting movie 最有趣的影片
+
+These are the most expensive tickets! 这些是最贵的门票！
+
+That is the most expensive store in New York. 那是纽约最贵的商店。
+
+That is the most expensive picture in this museum. 那是在这个博物馆最贵的图片。
+
+Let's take a trip in the summer! 让我们夏天去旅行吧
