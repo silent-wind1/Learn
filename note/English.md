@@ -944,3 +944,17 @@ What is the most exciting part of the game? 比赛中最令人兴奋的部分是
 the most exciting part of that game 那个比赛中最令人兴奋的部分
 
 Is this the most expensive restaurant in the UK? 这是英国最贵的餐厅吗？
+
+a group of friends 一群朋友
+
+Anna is watching a movie with a group of her students. 安娜正在和她的学生一起看电影。
+
+a ticket to a baseball game 一张棒球比赛的门票
+
+Anna has a ticket to a basketball game. 安娜有一张篮球比赛的门票。
+
+There are many people in the world. 世界上有很多的人。
+
+Who is the most famous person in the world? 世界上最有名的人是谁？
+
+Who is the best football player in the world? 谁是世界上最好的足球运动员？ 
