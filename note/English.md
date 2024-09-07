@@ -968,3 +968,17 @@ That is the most expensive store in New York. 那是纽约最贵的商店。
 That is the most expensive picture in this museum. 那是在这个博物馆最贵的图片。
 
 Let's take a trip in the summer! 让我们夏天去旅行吧
+
+Anna is not going to study tonight. She wants to go to sleep. Anna今晚不想学习，她想去睡觉。
+
+I'm busy right now. Let's go to the river after work. 我现在很忙。下班后我们去河边吧。
+
+the time of our meeting. 我们的会议的时间. 
+
+I need to practice Spanish tonight. 我今晚需要练习西班牙语. 
+
+Are you learning to dance? 你正在学跳舞吗？
+
+When are you going to meet your friends? 你打算什么时候见你的朋友？
+
+I want to visit my aunt. 我想去拜访我的阿姨。
