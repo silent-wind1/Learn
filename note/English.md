@@ -982,3 +982,23 @@ Are you learning to dance? 你正在学跳舞吗？
 When are you going to meet your friends? 你打算什么时候见你的朋友？
 
 I want to visit my aunt. 我想去拜访我的阿姨。
+
+Have a nice trip! 祝旅途愉快！
+
+Have a nice trip, goodbye! 祝旅途愉快，再见！
+
+Have a nice trip, Aunt Emma! 祝旅途愉快，艾玛阿姨！
+
+England is a part of the UK. 英格兰是英国的一部分。
+
+the coldest day in January 今年一月份最冷的天气
+
+the most expensive restaurant in Korea 韩国最贵的餐厅
+
+艾玛穿着一条黄色的裙子。 Emma is wearing a yellow skirt.
+
+Is this the most expensive restaurant in the UK? 这是英国最贵的餐厅吗？
+
+Is London the coldest city in the UK? 伦敦是英国最冷的吗？
+
+Which is the coldest city in the US? 哪个是美国最冷的？
