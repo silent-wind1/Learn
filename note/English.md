@@ -1002,3 +1002,5 @@ Is this the most expensive restaurant in the UK? 这是英国最贵的餐厅吗�
 Is London the coldest city in the UK? 伦敦是英国最冷的吗？
 
 Which is the coldest city in the US? 哪个是美国最冷的？
+
+I am still learning, come on soon the New Year! 我还在学，新年快到了！
