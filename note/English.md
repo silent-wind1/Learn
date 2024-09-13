@@ -1006,3 +1006,7 @@ Which is the coldest city in the US? 哪个是美国最冷的？
 I am still learning, come on soon the New Year! 我还在学，新年快到了！
 
 Good Night! 晚安！
+
+Which is the most boring museum? 哪个是最无聊的博物馆
+
+That is the most boring part of the game.  那是比赛最无聊的部分
