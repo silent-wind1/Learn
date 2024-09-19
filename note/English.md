@@ -1012,3 +1012,5 @@ Which is the most boring museum? 哪个是最无聊的博物馆
 That is the most boring part of the game.  那是比赛最无聊的部分
 
 Happy Mid-Autumn Festival   中秋节快乐
+
+Be happy you got $6,000 for a full-stack engineer like me. 
