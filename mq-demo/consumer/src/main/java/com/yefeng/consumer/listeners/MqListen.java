@@ -54,4 +54,13 @@ public class MqListen {
     public void listenLazyQueue(String msg){
         log.info("接收到 lazy.queue的消息：{}", msg);
     }
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "mom", durable = "true"),
+            exchange = @Exchange(name = "yefeng.headers", type = ExchangeTypes.HEADERS)
+    ))
+    public void listeningMessageByHeaders(String msg) {
+        System.out.println(msg);
+    }
+
 }
