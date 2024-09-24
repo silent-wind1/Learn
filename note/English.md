@@ -1014,3 +1014,34 @@ That is the most boring part of the game.  那是比赛最无聊的部分
 Happy Mid-Autumn Festival   中秋节快乐
 
 Be happy you got $6,000 for a full-stack engineer like me. 
+
+Autumn's Wind 秋天的风
+
+Basketball is not the most difficult sport. 篮球不是最难的运动
+
+Is Ben the most famous basketball player? 本是最有名的篮球运动员吗？
+
+Is Dou on your basketball team? 多儿在你的篮球队里吗？
+
+Is basketball the most difficult sport? 篮球是最难的运动吗？
+
+What is the most exciting part of the game? 比赛最令人兴奋的部分是什么？
+
+Which sport is the most difficult? 哪种运动是最难的？
+
+There is a group of people at the restaurant. 在餐厅有一群人。
+
+
+## 第七部分 用序数词表达顺序
+
+Can we talk about it later?  我们可以晚一点谈论它吗？
+
+Is this your second job? 这是你的第二份工作吗？
+
+Her second company is more famous. 她的第二个公司更有名
+
+This is our second meeting. 这是我们的第二次会议
+
+Please check your email. 请查看你的电子邮件
+
+I check my email every day. 我每天都查看我的电子邮件
