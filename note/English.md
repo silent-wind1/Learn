@@ -1045,3 +1045,5 @@ This is our second meeting. 这是我们的第二次会议
 Please check your email. 请查看你的电子邮件
 
 I check my email every day. 我每天都查看我的电子邮件
+
+They are having a meeting at a cafe now. 他们现在在咖啡厅开会
