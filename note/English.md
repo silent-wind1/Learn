@@ -1047,3 +1047,13 @@ Please check your email. 请查看你的电子邮件
 I check my email every day. 我每天都查看我的电子邮件
 
 They are having a meeting at a cafe now. 他们现在在咖啡厅开会
+
+I want to change my job. 我想要换我的工作
+
+Does Emma want to change her job? 艾玛想要换她的工作吗
+
+Is Duo going to work in Beijing next year? 多儿明年打算在北京工作吗？
+
+Do you usually work from home? 你平时在家工作吗？
+
+Anna can use her computer to work from home. 安娜能用她的电脑在家工作。
