@@ -1057,3 +1057,7 @@ Is Duo going to work in Beijing next year? 多儿明年打算在北京工作吗�
 Do you usually work from home? 你平时在家工作吗？
 
 Anna can use her computer to work from home. 安娜能用她的电脑在家工作。
+
+She gets up early every day. 她每天提前起床
+
+Why is Ben going to work for that company? 本为什么打算去那家公司工作
