@@ -1,0 +1,21 @@
+spring:
+  # 数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      # 主库数据源
+      url: jdbc:mysql://localhost:3306/yefeng_api?useUnicode=true&useSSL=false&allowMultiQueries=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&useAffectedRows=true&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+      username: root
+      password: 123456
+
+#文件上传配置
+file-upload:
+  config:
+    # 文件上传目录
+    #uploadFolder: /mnt/sdb/apps/101-zzt/upload 本地地址：D:/upload
+    uploadFolder: D:/upload
+    #静态资源对外暴露的访问路径
+    staticAccessPath:  storage
+    # 后端域名端口
+    domain: http://localhost:8810

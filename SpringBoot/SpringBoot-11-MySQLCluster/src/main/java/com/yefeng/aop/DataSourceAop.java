@@ -2,9 +2,8 @@ package com.yefeng.aop;
 
 import com.yefeng.database.DBContext;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 /**
@@ -31,7 +30,8 @@ public class DataSourceAop {
 
     @Pointcut("!@annotation(com.yefeng.annotation.Master) " +
             "&& (execution(* com.yefeng.service..*.select*(..)) " +
-            "|| execution(* com.yefeng.service..*.get*(..)))")
+            "|| execution(* com.yefeng.service..*.get*(..)))" +
+            "|| execution(* com.yefeng.service..*.query*(..)))")
     public void readPointcut() {
 
     }
@@ -47,4 +47,20 @@ public class DataSourceAop {
         log.info("切换到slave进行读取");
         DBContext.slave();
     }
+
+//    @After("readPointcut()")
+//    public Object read1(ProceedingJoinPoint joinPoint) throws Throwable {
+//        log.info("read1.getArgs() = {}", joinPoint.getArgs());
+//        Object[] args = joinPoint.getArgs();
+//        log.info("read1.getTarget() = {}", joinPoint.getTarget());
+//        log.info("read1.getArgs() = {}", joinPoint.proceed());
+//        if (args == null) {
+//            log.info("No data");
+//            return null;
+//        }
+//        for (Object arg : args) {
+//            log.info("arg = {}", arg);
+//        }
+//        return null;
+//    }
 }

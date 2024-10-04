@@ -21,7 +21,7 @@ public class TestThreadMethod {
             public void run() {
                 System.out.println(Thread.currentThread().getName());
             }
-        }, "yefeng");
+        }, "ye fen");
         thread1.start();
 
         // 创建一个线程组实例

@@ -1,0 +1,127 @@
+    @Override
+    public Page<Map<String, Object>> list(PagePojo pagePojo, TechnicianStatusDto technicianStatusDto) {
+
+        LambdaQueryWrapper<UserTechnician> queryWrapper = new LambdaQueryWrapper<>();
+
+        //serviceType == 10 ,代表从统计端的技师状态过来的,不表示管理端的技师状态查询条件
+        Integer auditStatus = technicianStatusDto.getAuditStatus();
+        if (auditStatus != null && auditStatus == 10) {
+            Long userId = SecurityUtils.getUserId();
+            LambdaQueryWrapper<RRegionUser> wrapper = new LambdaQueryWrapper<>();
+            wrapper.eq(RRegionUser::getUserId, userId);
+            List<RRegionUser> list = regionUserMapper.selectList(wrapper);
+            List<Long> collect = list.stream().map(RRegionUser::getRegionId).collect(Collectors.toList());
+            queryWrapper.in(UserTechnician::getServiceRegionId, collect);
+        } else if (auditStatus != null) {
+            queryWrapper.eq(UserTechnician::getAuditStatus, auditStatus);
+        }
+
+        Integer upStatus = technicianStatusDto.getUpStatus();
+        if (upStatus != null && upStatus == 11) {
+            //这里不做任何处理，表示从统计端过来的
+
+        } else if (upStatus != null) {
+            queryWrapper.eq(UserTechnician::getUpStatus, upStatus);
+        }
+
+        if (!SecurityUtils.isAdmin()) {
+            List<ServiceRegion> serviceRegionList = serviceRegionMapper.queryListByUserId(SecurityUtils.getUserId());
+            List<Long> zoneIds = serviceRegionList.stream().map(ServiceRegion::getZoneId).collect(Collectors.toList());
+            if (zoneIds.isEmpty()) {
+                throw new RuntimeException("用户没有有效的区域设置!");
+            }
+            queryWrapper.in(UserTechnician::getServiceZoneId, zoneIds);
+        }
+
+        if (technicianStatusDto.getServiceZoneId() != null) {
+            queryWrapper.eq(UserTechnician::getServiceZoneId, technicianStatusDto.getServiceZoneId());
+        }
+
+        //2023.6.21 新增通过名字搜索
+        if (StrUtil.isNotEmpty(technicianStatusDto.getFullName())) {
+            queryWrapper.and(wq -> wq.like(UserTechnician::getFullName, technicianStatusDto.getFullName())
+                    .or()
+                    .like(UserTechnician::getXxNickname, technicianStatusDto.getFullName()));
+        }
+
+        queryWrapper.orderByAsc(UserTechnician::getAuditStatus);
+
+        Long total = userTechnicianMapper.selectCount(queryWrapper);
+        queryWrapper.orderByDesc(UserTechnician::getCreateTime);
+        Page<UserTechnician> userTechnicianPage = userTechnicianMapper.selectPage(Page.of(pagePojo.getPageNum(), pagePojo.getPageSize()), queryWrapper);
+
+        //对象转map
+        List<Map<String, Object>> mapList = toMap(userTechnicianPage.getRecords());
+        List<CompletableFuture<Void>> futures = new ArrayList<>();
+        for (Map<String, Object> map : mapList) {
+            CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
+                //将昵称显示
+                SysUser sysUser = userMapper.selectUserById(Long.parseLong(map.get("userId").toString()));
+                map.put("nickName", sysUser.getNickName());
+                //取出技师一张照片
+                String photos = (String) map.get("photos");
+                String photo = "";
+                if (StrUtil.isNotEmpty(photos)) {
+                    if (photos.contains(",")) {
+                        photo = photos.substring(0, photos.indexOf(","));
+                    } else {
+                        photo = photos;
+                    }
+                }
+                map.put("photo", photo);
+                map.put("avatar", sysUser.getAvatar());
+
+                //放入服务区域
+                serviceRegions(map);
+
+                //放入在线时长
+                onlineTime(map, technicianStatusDto.getType(), technicianStatusDto.getStartTime(), technicianStatusDto.getEndTime());
+
+                //技师占用订单
+                long userId = ((Integer) map.get("userId")).longValue();
+                String occupyOrderSns = occupyOrders(userId);
+                map.put("occupyOrderSns", occupyOrderSns);
+
+                // 统计上一级技师以及邀请人数
+                TechnicianDistributionVo technicianVo = userTechnicianMapper.queryTechnicianDistribution(userId);
+                log.info("technicianVo = {}", technicianVo);
+                // 获取下单收益和推广收益
+                OrderDetailsVo orderDetailsVo = new OrderDetailsVo();
+
+                //根据时间类型获取对应的开始和结束时间
+                Map<String, Object> timeMap = startTimeAndEndTime(technicianStatusDto.getType());
+
+                // 下单收益
+                String downOrderCode = Optional.ofNullable(map.get("downOrderCode"))
+                        .map(Object::toString)
+                        .orElse(null);
+                if (downOrderCode == null || downOrderCode.isEmpty()) {
+                    orderDetailsVo.setOrderCodeMoney(new BigDecimal(0));
+                } else {
+                    orderDetailsVo.setOrderCodeMoney(orderDetailsMapper.selectOrderCodeMoney(downOrderCode, timeMap.get("startTime").toString(), timeMap.get("endTime").toString()));
+                }
+
+                // 推广收益
+                String invitationCode = Optional.ofNullable(map.get("invitationCode"))
+                        .map(Object::toString)
+                        .orElse(null);
+                if (invitationCode == null || invitationCode.isEmpty()) {
+                    orderDetailsVo.setInvitationCodeMoney(new BigDecimal(0));
+                } else {
+                    orderDetailsVo.setInvitationCodeMoney(orderDetailsMapper.selectInvitationCode(invitationCode, timeMap.get("startTime").toString(), timeMap.get("endTime").toString()));
+                }
+
+//            OrderDetailsVo orderDetailsVo = orderDetailsMapper.queryOrderDetailsByUserId(userId, technicianStatusDto.getStartTime(), technicianStatusDto.getEndTime());
+                if (technicianVo != null) {
+                    technicianVo.setOrderCodeMoney(orderDetailsVo.getOrderCodeMoney());
+                    technicianVo.setInvitationCodeMoney(orderDetailsVo.getInvitationCodeMoney());
+                }
+                map.put("TechnicianDistributionVo", technicianVo);
+            });
+            futures.add(future);
+        }
+        // 等待所有任务完成
+        CompletableFuture<Void> allOf = CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]));
+        allOf.join(); // 阻塞直到所有任务完成
+        return toPage(pagePojo.getPageNum(), pagePojo.getPageSize(), mapList, total);
+    }

@@ -24,8 +24,9 @@ public class UserController {
     public List<User> index() {
         return userService.selectList();
     }
-    @RequestMapping("/list1")
+
     @Master
+    @RequestMapping("/list1")
     public List<User> index1() {
         return userService.selectList();
     }

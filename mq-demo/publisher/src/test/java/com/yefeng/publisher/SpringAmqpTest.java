@@ -10,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.yefeng.publisher.config.CorrelationDataConfig.*;
@@ -96,6 +98,26 @@ public class SpringAmqpTest {
         // 发送消息
         for (int i = 0; i < 1000000; i++) {
             rabbitTemplate.convertAndSend(queueName, message);
+        }
+    }
+    @Test
+    void send() {
+        String msg = "123&&123&&1&&";
+        String delimiter = "&&";
+        List<String> result = new ArrayList<>();
+        int startIndex = 0;
+        int endIndex = msg.indexOf(delimiter);
+
+        while (endIndex != -1) {
+            result.add(msg.substring(startIndex, endIndex));
+            startIndex = endIndex + delimiter.length();
+            endIndex = msg.indexOf(delimiter, startIndex);
+        }
+
+        result.add(msg.substring(startIndex)); // 添加最后一个部分
+
+        for (String s : result) {
+            System.out.println(s);
         }
     }
 

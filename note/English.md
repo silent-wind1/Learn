@@ -855,7 +855,7 @@ How much do these shoes cost? How much does that dress cost? They are beautiful!
 - 单个用does
 - 多个用do
 
-Do you like the color of that coat?  你喜欢那件外套的颜色吗？
+Do you like the color of that coat? 你喜欢那件外套的颜色吗？
 
 Mary is wearing a green blouse. Mary穿着一件绿色的女式衬衫
 
@@ -874,3 +874,190 @@ Yes, the students need to take a test today. 是的，学生今天需要参加�
 This test is more difficult. 这个测试更难。
 
 My classroom is next to your classroom 我的教室在你的教室旁边
+
+## 第五部分
+
+What are we going to do tomorrow? 我们明天打算干什么？
+
+Let's meet at a cafe tomorrow.咱们明天咖啡厅见吧
+
+What time do you want to meet? 你想要几点见？
+
+Can we meet at 11am? 我们可以上午11点见面吗？
+
+Please call me tonight.请今晚给我打电话。
+
+Sometimes a partner isn't that important。 有时伙伴并没有那么重要
+
+Can you practice English with me? 你可以跟我一起练习英语吗？
+
+I'm going to study Java; 我打算学习Java
+
+She practices guitar every Tuesday. 她每周二都练习吉他
+ 
+When are you going to meet your friends? 你打算什么时候见你的朋友？
+
+### 语法点
+
+**未来**
+
+要用英语说我打算学习或者你会学习的话，就说
+
+I’m going to study 或 You’re going to study 。
+
+I - am going to cook dinner
+
+You / We / They - are going to go home
+
+
+
+## 第六部分
+
+### 语法点
+
+a good baseball player 一个很好的棒球运动员
+
+Basketball is not the most difficult sport. 篮球不是最困难的运动
+
+Is basketball the most difficult sport? 篮球是最困难的运动吗？
+
+the most important game this summer 这个夏天最重要的比赛
+
+Is Paris the most famous city in France?  巴黎是法国最著名的城市吗？
+
+the most famous basketball player 这个夏天最重要的篮球运动员
+
+Is Duo on your basketball team? duo你是你的篮球队的一员吗？
+
+the tallest player on that basketball team 那个篮球队伍最高的球员
+
+Is she the most famous tennis player? 她是网球界最著名的球员吗？
+
+She is the most important player on her team. 她是她队伍最重要的球员。
+
+Is Ben the most famous basketball player? Ben是篮球界最著名的球员吗？
+
+Anna is the tallest player on her team. 安娜是在她的队里最高的运动员。
+
+What is the most exciting part of the game? 比赛中最令人兴奋的部分是什么？
+
+the most exciting part of that game 那个比赛中最令人兴奋的部分
+
+Is this the most expensive restaurant in the UK? 这是英国最贵的餐厅吗？
+
+a group of friends 一群朋友
+
+Anna is watching a movie with a group of her students. 安娜正在和她的学生一起看电影。
+
+a ticket to a baseball game 一张棒球比赛的门票
+
+Anna has a ticket to a basketball game. 安娜有一张篮球比赛的门票。
+
+There are many people in the world. 世界上有很多的人。
+
+Who is the most famous person in the world? 世界上最有名的人是谁？
+
+Who is the best football player in the world? 谁是世界上最好的足球运动员？ 
+
+the most interesting movie 最有趣的影片
+
+These are the most expensive tickets! 这些是最贵的门票！
+
+That is the most expensive store in New York. 那是纽约最贵的商店。
+
+That is the most expensive picture in this museum. 那是在这个博物馆最贵的图片。
+
+Let's take a trip in the summer! 让我们夏天去旅行吧
+
+Anna is not going to study tonight. She wants to go to sleep. Anna今晚不想学习，她想去睡觉。
+
+I'm busy right now. Let's go to the river after work. 我现在很忙。下班后我们去河边吧。
+
+the time of our meeting. 我们的会议的时间. 
+
+I need to practice Spanish tonight. 我今晚需要练习西班牙语. 
+
+Are you learning to dance? 你正在学跳舞吗？
+
+When are you going to meet your friends? 你打算什么时候见你的朋友？
+
+I want to visit my aunt. 我想去拜访我的阿姨。
+
+Have a nice trip! 祝旅途愉快！
+
+Have a nice trip, goodbye! 祝旅途愉快，再见！
+
+Have a nice trip, Aunt Emma! 祝旅途愉快，艾玛阿姨！
+
+England is a part of the UK. 英格兰是英国的一部分。
+
+the coldest day in January 今年一月份最冷的天气
+
+the most expensive restaurant in Korea 韩国最贵的餐厅
+
+艾玛穿着一条黄色的裙子。 Emma is wearing a yellow skirt.
+
+Is this the most expensive restaurant in the UK? 这是英国最贵的餐厅吗？
+
+Is London the coldest city in the UK? 伦敦是英国最冷的吗？
+
+Which is the coldest city in the US? 哪个是美国最冷的？
+
+I am still learning, come on soon the New Year! 我还在学，新年快到了！
+
+Good Night! 晚安！
+
+Which is the most boring museum? 哪个是最无聊的博物馆
+
+That is the most boring part of the game.  那是比赛最无聊的部分
+
+Happy Mid-Autumn Festival   中秋节快乐
+
+Be happy you got $6,000 for a full-stack engineer like me. 
+
+Autumn's Wind 秋天的风
+
+Basketball is not the most difficult sport. 篮球不是最难的运动
+
+Is Ben the most famous basketball player? 本是最有名的篮球运动员吗？
+
+Is Dou on your basketball team? 多儿在你的篮球队里吗？
+
+Is basketball the most difficult sport? 篮球是最难的运动吗？
+
+What is the most exciting part of the game? 比赛最令人兴奋的部分是什么？
+
+Which sport is the most difficult? 哪种运动是最难的？
+
+There is a group of people at the restaurant. 在餐厅有一群人。
+
+
+## 第七部分 用序数词表达顺序
+
+Can we talk about it later?  我们可以晚一点谈论它吗？
+
+Is this your second job? 这是你的第二份工作吗？
+
+Her second company is more famous. 她的第二个公司更有名
+
+This is our second meeting. 这是我们的第二次会议
+
+Please check your email. 请查看你的电子邮件
+
+I check my email every day. 我每天都查看我的电子邮件
+
+They are having a meeting at a cafe now. 他们现在在咖啡厅开会
+
+I want to change my job. 我想要换我的工作
+
+Does Emma want to change her job? 艾玛想要换她的工作吗
+
+Is Duo going to work in Beijing next year? 多儿明年打算在北京工作吗？
+
+Do you usually work from home? 你平时在家工作吗？
+
+Anna can use her computer to work from home. 安娜能用她的电脑在家工作。
+
+She gets up early every day. 她每天提前起床
+
+Why is Ben going to work for that company? 本为什么打算去那家公司工作

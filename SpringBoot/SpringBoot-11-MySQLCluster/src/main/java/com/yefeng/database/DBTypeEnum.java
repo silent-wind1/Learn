@@ -7,5 +7,5 @@ package com.yefeng.database;
  * @Description: 数据库枚举类
  */
 public enum DBTypeEnum {
-    MASTER, SLAVE
+    MASTER, SLAVE1, SLAVE2
 }

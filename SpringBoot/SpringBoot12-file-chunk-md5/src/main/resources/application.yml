@@ -1,0 +1,44 @@
+# 开发环境配置
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 8810
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 700
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+  servlet:
+    session:
+      cookie:
+        name: console
+
+# Spring配置
+spring:
+  profiles:
+    active: dev
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+  # 文件上传
+  servlet:
+    multipart:
+      # 单个文件大小
+      max-file-size: 3024MB
+      # 设置总上传的文件大小
+      max-request-size: 3024MB
+
+mybatis-plus:
+  # 搜索指定包别名
+  typeAliasesPackage: com.example.**.domain
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapperLocations: classpath*:mapper/**/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 关闭sql打印
+    #log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+

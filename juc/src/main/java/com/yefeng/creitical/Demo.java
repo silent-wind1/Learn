@@ -5,12 +5,14 @@ public class Demo {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 5000; i++) {
-                counter++;
+//                counter++;
+                incrementCounter();
             }
         }, "t1");
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < 5000; i++) {
-                counter--;
+//                counter--;
+                decrementCounter();
             }
         }, "t2");
         t1.start();
@@ -20,4 +22,15 @@ public class Demo {
         System.out.println(counter);
     }
 
+    private static void incrementCounter() {
+        synchronized (Demo.class) {
+            counter++;
+        }
+    }
+
+    private static void decrementCounter() {
+        synchronized (Demo.class) {
+            counter--;
+        }
+    }
 }

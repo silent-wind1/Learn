@@ -2,18 +2,15 @@ package com.yefeng.guardian;
 
 public class TestNotGuardianThread {
     public static void main(String[] args) {
-        Thread t1 = new Thread(new Runnable() {
+        Thread t1 = new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(1000);
 
-            public void run() {
-                while (true) {
-                    try {
-                        Thread.sleep(1000);
-
-                    } catch (Exception e) {
-                        // TODO: handle exception
-                    }
-                    System.out.println("我是子线程(用户线程)");
+                } catch (Exception e) {
+                    // TODO: handle exception
                 }
+                System.out.println("我是子线程(用户线程)");
             }
         });
         //启动线程
