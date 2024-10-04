@@ -50,7 +50,7 @@ public class DocumentTest {
     @BeforeEach
     void setUp() {
         this.client = new RestHighLevelClient(RestClient.builder(
-                HttpHost.create("http://localhost:9200")
+                HttpHost.create("http://47.115.50.104:9200")
         ));
     }
 

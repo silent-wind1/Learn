@@ -10,7 +10,6 @@ import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import javax.annotation.Resource;
 
 /**
  * @Author: 叶枫
@@ -24,17 +23,14 @@ public class ItemController {
 
     private final ItemService itemService;
 
-    @Resource
-    private ElasticsearchRestTemplate elasticsearchRestTemplate;
+    private final ElasticsearchRestTemplate elasticsearchRestTemplate;
 
     @GetMapping("/es")
-    public String queryItemByEs() {
+    public itemDoc queryItemByEs() {
         Item item = itemService.getById(561178L);
         itemDoc itemDoc = new itemDoc();
         BeanUtils.copyProperties(item, itemDoc);
         System.out.println(itemDoc);
-        elasticsearchRestTemplate.indexOps(itemDoc.class);
-        elasticsearchRestTemplate.save(itemDoc);
-        return "ok";
+        return itemDoc;
     }
 }
