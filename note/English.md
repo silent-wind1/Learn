@@ -1061,3 +1061,5 @@ Anna can use her computer to work from home. 安娜能用她的电脑在家工�
 She gets up early every day. 她每天提前起床
 
 Why is Ben going to work for that company? 本为什么打算去那家公司工作
+
+You can't use the old methods and expect good results. 你不能使用着旧方法，还期盼有好的结果
