@@ -13,6 +13,7 @@
         <module>Springboot-08-test</module>
         <module>SpringBoot-09-aop</module>
         <module>SpringBoot-10-ES</module>
+        <module>SpringBoot-13-IdCardVerification</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
