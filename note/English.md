@@ -1065,3 +1065,5 @@ Why is Ben going to work for that company? 本为什么打算去那家公司工�
 You can't use the old methods and expect good results. 你不能使用着旧方法，还期盼有好的结果
 
 You were a teenager once. 你曾经也是少年
+
+Cry for you. 为你哭泣
