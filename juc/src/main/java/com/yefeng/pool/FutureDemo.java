@@ -34,5 +34,14 @@ public class FutureDemo {
         }
         executor.shutdown();
 
+        // 创建异步执行任务:
+        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {
+            System.out.println("task started...");
+            return "执行成功";
+        });
+        // 如果执行成功:
+        cf.thenAccept((result) -> {
+            System.out.println("price: " + result);
+        });
     }
 }
