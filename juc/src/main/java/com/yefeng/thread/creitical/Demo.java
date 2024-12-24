@@ -1,4 +1,4 @@
-package com.yefeng.creitical;
+package com.yefeng.thread.creitical;
 
 public class Demo {
     static int counter = 0;
