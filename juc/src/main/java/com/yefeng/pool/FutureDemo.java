@@ -16,6 +16,21 @@ public class FutureDemo {
                 10L,
                 TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue<>(10));
+        // 创建异步执行任务:
+        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("task started...");
+            return "执行成功";
+        });
+        // 如果执行成功:
+        cf.thenAccept((result) -> {
+            System.out.println("price: " + result);
+        });
+
         Future<String> future = executor.submit(() -> {
           for (int i = 0; i < 10; i++) {
               System.out.println("i = " + i);
@@ -33,15 +48,5 @@ public class FutureDemo {
             throw new RuntimeException(e);
         }
         executor.shutdown();
-
-        // 创建异步执行任务:
-        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {
-            System.out.println("task started...");
-            return "执行成功";
-        });
-        // 如果执行成功:
-        cf.thenAccept((result) -> {
-            System.out.println("price: " + result);
-        });
     }
 }
