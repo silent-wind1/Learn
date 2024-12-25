@@ -1067,3 +1067,13 @@ You can't use the old methods and expect good results. 你不能使用着旧方�
 You were a teenager once. 你曾经也是少年
 
 Cry for you. 为你哭泣
+
+I don't know her schedule. 我不知道她的时间表
+
+I want to leave early, but I need to stay late! 我想早点离开，但我需要待晚一点！
+
+Where are we going to meet tomorrow? 我们明天在哪里见面？
+
+你为什么打算换你的工作？ Why are you going to change your job?
+
+Please look at your schedule. 请查看你的时间表
