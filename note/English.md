@@ -1077,3 +1077,9 @@ Where are we going to meet tomorrow? 我们明天在哪里见面？
 你为什么打算换你的工作？ Why are you going to change your job?
 
 Please look at your schedule. 请查看你的时间表
+
+six Chinese companies 六家中国公司
+
+I want an easy job because I don't want to work hard! 我想找一份轻松的工作，因为我不想努力工作！
+
+在这个城市里有很多家日本公司。 There are many Japanese companies in this city.
