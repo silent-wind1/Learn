@@ -12,6 +12,6 @@ public class initClassDemo {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(initClassDemo.value);
     }
 }
