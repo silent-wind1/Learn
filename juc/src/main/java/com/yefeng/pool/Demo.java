@@ -1,5 +1,7 @@
 package com.yefeng.pool;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.CompletableFuture;
 
 /**
@@ -17,5 +19,14 @@ public class Demo {
         }).thenRunAsync(()->{
             System.out.println("米饭做好了，可以吃了");
         });
+
+        // 获取当前日期
+        LocalDate currentDate = LocalDate.now();
+        // 格式化日期为 "YYYY-MM" 格式
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+        String formattedDate = currentDate.format(formatter);
+
+        // 输出结果
+        System.out.println("当前日期: " + formattedDate);
     }
 }
