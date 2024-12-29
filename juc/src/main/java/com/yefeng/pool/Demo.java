@@ -2,7 +2,10 @@ package com.yefeng.pool;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.Callable;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
 
 /**
  * @Author: 叶枫
@@ -10,13 +13,13 @@ import java.util.concurrent.CompletableFuture;
  * @Description:
  */
 public class Demo {
-    public static void main(String[] args) {
-        CompletableFuture future = CompletableFuture.supplyAsync(()->{
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        CompletableFuture future = CompletableFuture.supplyAsync(() -> {
             System.out.println("投放和清洗制作米饭的材料");
             return "干净的没有新冠病毒的大米";
-        }).thenAcceptAsync(result->{
+        }).thenAcceptAsync(result -> {
             System.out.println("通电，设定模式，开始煮米饭");
-        }).thenRunAsync(()->{
+        }).thenRunAsync(() -> {
             System.out.println("米饭做好了，可以吃了");
         });
 
@@ -28,5 +31,20 @@ public class Demo {
 
         // 输出结果
         System.out.println("当前日期: " + formattedDate);
+
+        FutureTask<String> futureTask = new FutureTask<String>(new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                System.out.println("Hello world  = " + System.currentTimeMillis());
+                Thread.sleep(1000);
+                System.out.println("休眠结束");
+                return "执行完成";
+            }
+        });
+        System.out.println("thread start");
+        new Thread(futureTask).start();
+        System.out.println("finished");
+        System.out.println(futureTask.get());
+        System.out.println("等待线程结束");
     }
 }
