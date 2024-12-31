@@ -1083,3 +1083,5 @@ six Chinese companies 六家中国公司
 I want an easy job because I don't want to work hard! 我想找一份轻松的工作，因为我不想努力工作！
 
 在这个城市里有很多家日本公司。 There are many Japanese companies in this city.
+
+Next year, learn microservices and memorize the eight-paragraph essay! 明年学习微服务，背好八股文吧 ！ 
