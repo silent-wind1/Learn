@@ -34,8 +34,6 @@ public class StringSplitDemo {
         lines.add("4");
         System.out.println(lines.get(lines.size() - 2));
 
-
         System.out.println("bye 2024");
-
     }
 }
