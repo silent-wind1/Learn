@@ -9,7 +9,7 @@ import java.util.concurrent.FutureTask;
 public class TestCallableAndFuture implements Callable<String> {
 
     @Override
-    public String call() throws Exception {
+    public String call() {
         for (int i = 0; i < 10; i++) {
             System.out.println(Thread.currentThread().getName() + "running");
         }
@@ -20,8 +20,10 @@ public class TestCallableAndFuture implements Callable<String> {
         Callable<String> callable = new TestCallableAndFuture();
         FutureTask<String> ft = new FutureTask<>(callable);
         FutureTask<String> lt = new FutureTask<>(callable);
+        FutureTask<String> now = new FutureTask<>(callable);
         new Thread(ft, "未来").start();
         new Thread(lt, "过去").start();
+        new Thread(now, "现在").start();
         // 使用 JDK 8 的 Lambda 创建线程
         new Thread(()-> System.out.println(Thread.currentThread().getName() + "在运行！")).start();
     }
