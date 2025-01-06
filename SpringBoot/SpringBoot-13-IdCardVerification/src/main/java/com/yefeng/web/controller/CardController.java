@@ -1,5 +1,6 @@
 package com.yefeng.web.controller;
 
+import com.yefeng.web.config.AliyunApiConfig;
 import org.apache.http.HttpResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
