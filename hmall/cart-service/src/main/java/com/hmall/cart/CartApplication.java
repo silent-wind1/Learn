@@ -5,7 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableFeignClients
+// 指定所在包
+@EnableFeignClients(basePackages = "com.heima.api.client")
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
 public class CartApplication {
