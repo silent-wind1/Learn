@@ -57,11 +57,15 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
             return response.setComplete();
         }
 
-        // TODO 5.如果有效，传递用户信息
+        // 5.如果有效，传递用户信息
         log.info("com.hmall.gateway.filters.AuthGlobalFilter userId = {}", userId);
+        String userInfo = userId.toString();
+        ServerWebExchange ex = exchange.mutate()
+                .request(item -> item.header("user-info", userInfo))
+                .build();
 
         // 6.放行
-        return chain.filter(exchange);
+        return chain.filter(ex);
     }
 
     private boolean isExclude(String antPath) {
