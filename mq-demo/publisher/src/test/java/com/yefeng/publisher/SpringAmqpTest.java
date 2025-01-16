@@ -26,7 +26,7 @@ public class SpringAmqpTest {
     @Test
     public void testSimpleQueue() {
         // 队列名称
-        String queueName = "yefeng";
+        String queueName = "simple.queue";
         // 消息
         String message = "今天下午3点开会";
         // 发送消息
@@ -34,15 +34,15 @@ public class SpringAmqpTest {
     }
 
 
-    @Test
-    public void testSendsQueue() {
-        // 队列名称
-        String queueName = "yefeng.fanout";
-        // 消息
-        String message = "今天下午3点开会";
-        // 发送消息
-        rabbitTemplate.convertAndSend(queueName, "", message);
-    }
+//    @Test
+//    public void testSendsQueue() {
+//        // 队列名称
+//        String queueName = "yefeng.fanout";
+//        // 消息
+//        String message = "今天下午3点开会";
+//        // 发送消息
+//        rabbitTemplate.convertAndSend(queueName, "", message);
+//    }
 
 
     @Test
