@@ -1,15 +1,10 @@
 package com.yefeng.consumer.listeners;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.amqp.core.ExchangeTypes;
-import org.springframework.amqp.rabbit.annotation.*;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
 
 @Slf4j
 @Component
@@ -36,13 +31,23 @@ public class MqListen {
     }
     // Fanout交换机类似于广播
     @RabbitListener(queues = "fanout.queue2")
-    public void listenFanoutQueueMessage2(String msg) throws InterruptedException {
+    public void listenFanoutQueueMessage2(String msg)  {
         System.out.println("yefeng.queue2：【" + msg + "】");
     }
 
     @RabbitListener(queues = "fanout.queue1")
-    public void listenFanoutQueueMessage1(String msg) throws InterruptedException {
+    public void listenFanoutQueueMessage1(String msg) {
         System.out.println("yefeng.queue2：【" + msg + "】");
+    }
+
+    @RabbitListener(queues = "direct.queue1")
+    public void listenDirectQueue1(String msg) {
+        log.info("消费者1接收到direct.queue1的消息 messages = {}", msg);
+    }
+
+    @RabbitListener(queues = "direct.queue2")
+    public void listenDirectQueue2(String msg) {
+        log.info("消费者1接收到direct.queue2的消息 messages = {}", msg);
     }
 //
 //    @RabbitListener(bindings = @QueueBinding(

@@ -53,6 +53,16 @@ public class SpringAmqpTest {
         rabbitTemplate.convertAndSend(exchangeName, "yesterday", message);
     }
 
+    @Test
+    public void testSendDirectExchange() {
+        // 交换机名称
+        String exchangeName = "yefeng.direct";
+        // 消息
+        String message = "又过去一年了，23年的我知道吗？估计在25年我与你相遇，24年的你辛苦了";
+        // 发送消息
+        rabbitTemplate.convertAndSend(exchangeName, "red", message);
+    }
+
 
     @Test
     public void testSendsQueueTipple() {
