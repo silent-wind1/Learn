@@ -5,6 +5,7 @@ import org.springframework.amqp.core.ExchangeTypes;
 import org.springframework.amqp.rabbit.annotation.*;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,11 +22,18 @@ public class MqListen {
         log.info("接收到 simple.queue的消息：{}", msg);
     }
 
-//    @RabbitListener(queues = "yefeng.queue1")
-//    public void listenYefengQueueMessage1(String msg) throws InterruptedException {
-//        System.out.println("yefeng.queue1：【" + msg + "】");
-//    }
-//
+    @RabbitListener(queues = "work.queue")
+    public void listenWorkQueue1(String msg) throws InterruptedException {
+        System.out.println("消费者1接收到消息：【" + msg + "】" + LocalTime.now());
+        log.info("消费者1接收到消息 = {}, 时间 = {}", msg,  LocalTime.now());
+        Thread.sleep(20);
+    }
+
+    @RabbitListener(queues = "work.queue")
+    public void listenWorkQueue2(String msg) throws InterruptedException {
+        log.info("消费者2接收到消息 = {}, 时间 = {}", msg,  LocalTime.now());
+        Thread.sleep(200);
+    }
 //    @RabbitListener(queues = "yefeng.queue2")
 //    public void listenYefengQueueMessage2(String msg) throws InterruptedException {
 //        System.out.println("yefeng.queue2：【" + msg + "】");
