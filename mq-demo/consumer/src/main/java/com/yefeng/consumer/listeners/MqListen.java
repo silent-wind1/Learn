@@ -34,10 +34,16 @@ public class MqListen {
         log.info("消费者2接收到消息 = {}, 时间 = {}", msg,  LocalTime.now());
         Thread.sleep(200);
     }
-//    @RabbitListener(queues = "yefeng.queue2")
-//    public void listenYefengQueueMessage2(String msg) throws InterruptedException {
-//        System.out.println("yefeng.queue2：【" + msg + "】");
-//    }
+    // Fanout交换机类似于广播
+    @RabbitListener(queues = "fanout.queue2")
+    public void listenFanoutQueueMessage2(String msg) throws InterruptedException {
+        System.out.println("yefeng.queue2：【" + msg + "】");
+    }
+
+    @RabbitListener(queues = "fanout.queue1")
+    public void listenFanoutQueueMessage1(String msg) throws InterruptedException {
+        System.out.println("yefeng.queue2：【" + msg + "】");
+    }
 //
 //    @RabbitListener(bindings = @QueueBinding(
 //            value = @Queue(name = "yesterday", durable = "true"),
