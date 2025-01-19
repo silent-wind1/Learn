@@ -101,7 +101,7 @@ public class SpringAmqpTest {
     @Test
     void testPublisherConfirm() throws InterruptedException {
         // 3.发送消息
-        rabbitTemplate.convertAndSend("hmall.direct", "q", "hello", initCD());
+        rabbitTemplate.convertAndSend("yefeng.direct", "q", "hello", initCD());
 
         Thread.sleep(30000);
     }
