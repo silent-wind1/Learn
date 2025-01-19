@@ -74,6 +74,16 @@ public class SpringAmqpTest {
         rabbitTemplate.convertAndSend(queueName, "china.food", message);
     }
 
+    @Test
+    public void testSendTopicExchange() {
+        // 交换机名称
+        String exchangeName = "yefeng.topic";
+        // 消息
+        String message = "太好啦，已经是25年了~";
+        // 发送消息
+        rabbitTemplate.convertAndSend(exchangeName, "china.news", message);
+    }
+
 
     @Test
     public void testSendsQueueMap() {

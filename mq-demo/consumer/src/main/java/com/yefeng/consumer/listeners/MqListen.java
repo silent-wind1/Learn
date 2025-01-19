@@ -49,6 +49,16 @@ public class MqListen {
     public void listenDirectQueue2(String msg) {
         log.info("消费者1接收到direct.queue2的消息 messages = {}", msg);
     }
+
+    @RabbitListener(queues = "topic.queue1")
+    public void listenTopicQueue1(String msg){
+        log.info("消费者1接收到topic.queue1的消息 messages = {}", msg);
+    }
+
+    @RabbitListener(queues = "topic.queue2")
+    public void listenTopicQueue2(String msg){
+        log.info("消费者2接收到topic.queue2的消息 messages = {}", msg);
+    }
 //
 //    @RabbitListener(bindings = @QueueBinding(
 //            value = @Queue(name = "yesterday", durable = "true"),
