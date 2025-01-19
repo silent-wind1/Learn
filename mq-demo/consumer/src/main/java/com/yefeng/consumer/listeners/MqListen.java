@@ -1,6 +1,10 @@
 package com.yefeng.consumer.listeners;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.core.ExchangeTypes;
+import org.springframework.amqp.rabbit.annotation.Exchange;
+import org.springframework.amqp.rabbit.annotation.Queue;
+import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
@@ -59,15 +63,24 @@ public class MqListen {
     public void listenTopicQueue2(String msg){
         log.info("消费者2接收到topic.queue2的消息 messages = {}", msg);
     }
-//
-//    @RabbitListener(bindings = @QueueBinding(
-//            value = @Queue(name = "yesterday", durable = "true"),
-//            exchange = @Exchange(name = "yefeng.fanout", type = ExchangeTypes.FANOUT)
-//    ))
-//    public void listeningMessageByFanout(String msg) {
-//        System.out.println(msg);
-//    }
-//
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "yesterday", durable = "true"),
+            exchange = @Exchange(name = "yefeng.fanout", type = ExchangeTypes.FANOUT)
+    ))
+    public void listeningMessageByFanout(String msg) {
+        System.out.println(msg);
+    }
+
+    @RabbitListener(
+            bindings = @QueueBinding(
+                    value = @Queue(name = "direct.queue."),
+                    exchange = @Exchange(name = "yefeng.direct", type = ExchangeTypes.DIRECT)
+            ))
+    public void listeningMessageAnnotated(String msg) {
+        log.info("接收到消息：{}", msg);
+    }
+
 //    @RabbitListener(bindings = @QueueBinding(
 //            value = @Queue(name = "topic.queue"),
 //            exchange = @Exchange(name = "yefeng.topic", type = ExchangeTypes.TOPIC),
