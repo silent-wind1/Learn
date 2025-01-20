@@ -88,13 +88,14 @@ public class SpringAmqpTest {
     @Test
     public void testSendsQueueMap() {
         // 队列名称
-        String queueName = "yefeng.topic";
+        String exchangeName = "yefeng.object";
         // 消息
         String message = "好吃不贵价格实惠";
         Map<String, Object> map = new HashMap<>();
         map.put("food", "面条");
+        map.put("message", message);
         // 发送消息
-        rabbitTemplate.convertAndSend(queueName, "china.food", map);
+        rabbitTemplate.convertAndSend(exchangeName, "wind.yefeng",  map);
     }
 
 

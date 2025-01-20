@@ -2,13 +2,11 @@ package com.yefeng.consumer.listeners;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.ExchangeTypes;
-import org.springframework.amqp.rabbit.annotation.Exchange;
-import org.springframework.amqp.rabbit.annotation.Queue;
-import org.springframework.amqp.rabbit.annotation.QueueBinding;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
+import java.util.Map;
 
 @Slf4j
 @Component
@@ -81,25 +79,23 @@ public class MqListen {
         log.info("接收到消息：{}", msg);
     }
 
-//    @RabbitListener(bindings = @QueueBinding(
-//            value = @Queue(name = "topic.queue"),
-//            exchange = @Exchange(name = "yefeng.topic", type = ExchangeTypes.TOPIC),
-//            key = "china.#"
-//    ))
-//    public void listeningMessageByPrintout(Map msg) {
-//        System.out.println("spring listener1：【"+ msg.toString() + "】");
-//    }
-//
-//
-//    @RabbitListener(queuesToDeclare = @Queue(
-//            name = "lazy.queue",
-//            durable = "true",
-//            arguments = @Argument(name = "x-queue-mode", value = "lazy")
-//    ))
-//    public void listenLazyQueue(String msg){
-//        log.info("接收到 lazy.queue的消息：{}", msg);
-//    }
-//
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "object.queue"),
+            exchange = @Exchange(name = "yefeng.object", type = ExchangeTypes.TOPIC),
+            key = "#.yefeng"
+    ))
+    public void listeningMessageByPrintout(Map<String, Object> msg) {
+        log.info("map key food = {}", msg.get("food").toString());
+    }
+
+    @RabbitListener(bindings = @QueueBinding(
+                    value = @Queue(name = "direct.queue"),
+                    exchange = @Exchange(name = "object.direct", type = ExchangeTypes.DIRECT)
+    ))
+    public void listenLazyQueue(String msg){
+        log.info("接收到 lazy.queue的消息：{}", msg);
+    }
+
 //    /**
 //     * 字符串拆分成数组，例如”ab&&2”通过”&&”做分隔符，分割得到字符串数组[“ab”,”2”]
 //     * 实现字符串组合，例如[“ab”,”2”]通过”&&”分隔符，组合成字符串”ab&&2”
