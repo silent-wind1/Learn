@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cart-service # 服务名称
+    name: pay-service # 服务名称
   profiles:
     active: local
   cloud:
@@ -12,4 +12,4 @@ spring:
           - dataId: shared-jdbc.yaml # 共享mybatis配置
           - dataId: shared-log.yaml # 共享日志配置
           - dataId: shared-swagger.yaml # 共享日志配置
-          - dataId: shared-mq.yaml # mq配置
+          - dataId: shared-mq.yaml # 共享日志配置
