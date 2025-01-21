@@ -2,7 +2,10 @@ package com.yefeng.consumer.listeners;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.ExchangeTypes;
-import org.springframework.amqp.rabbit.annotation.*;
+import org.springframework.amqp.rabbit.annotation.Exchange;
+import org.springframework.amqp.rabbit.annotation.Queue;
+import org.springframework.amqp.rabbit.annotation.QueueBinding;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
@@ -70,11 +73,10 @@ public class MqListen {
         System.out.println(msg);
     }
 
-    @RabbitListener(
-            bindings = @QueueBinding(
-                    value = @Queue(name = "direct.queue."),
-                    exchange = @Exchange(name = "yefeng.direct", type = ExchangeTypes.DIRECT)
-            ))
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "direct.queue"),
+            exchange = @Exchange(name = "yefeng.direct")
+    ))
     public void listeningMessageAnnotated(String msg) {
         log.info("接收到消息：{}", msg);
     }
