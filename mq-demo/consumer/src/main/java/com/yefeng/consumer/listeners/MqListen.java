@@ -9,6 +9,9 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -98,29 +101,29 @@ public class MqListen {
         log.info("接收到 lazy.queue的消息：{}", msg);
     }
 
-//    /**
-//     * 字符串拆分成数组，例如”ab&&2”通过”&&”做分隔符，分割得到字符串数组[“ab”,”2”]
-//     * 实现字符串组合，例如[“ab”,”2”]通过”&&”分隔符，组合成字符串”ab&&2”
-//     */
-//    @RabbitListener(bindings = @QueueBinding(
-//            value = @Queue(name = "mom", durable = "true"),
-//            exchange = @Exchange(name = "yefeng.headers", type = ExchangeTypes.HEADERS)
-//    ))
-//    public void listeningMessageByHeaders(String msg) {
-//        String delimiter = "&&";
-//        List<String> result = new ArrayList<>();
-//        int startIndex = 0;
-//        int endIndex = msg.indexOf(delimiter);
-//
-//        while (endIndex != -1) {
-//            result.add(msg.substring(startIndex, endIndex));
-//            startIndex = endIndex + delimiter.length();
-//            endIndex = msg.indexOf(delimiter, startIndex);
-//        }
-//
-//        result.add(msg.substring(startIndex)); // 添加最后一个部分
-//
-//        System.out.println(result.toArray(new String[0]));
-//    }
+    /**
+     * 字符串拆分成数组，例如”ab&&2”通过”&&”做分隔符，分割得到字符串数组[“ab”,”2”]
+     * 实现字符串组合，例如[“ab”,”2”]通过”&&”分隔符，组合成字符串”ab&&2”
+     */
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "mom", durable = "true"),
+            exchange = @Exchange(name = "yefeng.headers", type = ExchangeTypes.HEADERS)
+    ))
+    public void listeningMessageByHeaders(String msg) {
+        String delimiter = "&&";
+        List<String> result = new ArrayList<>();
+        int startIndex = 0;
+        int endIndex = msg.indexOf(delimiter);
+
+        while (endIndex != -1) {
+            result.add(msg.substring(startIndex, endIndex));
+            startIndex = endIndex + delimiter.length();
+            endIndex = msg.indexOf(delimiter, startIndex);
+        }
+
+        result.add(msg.substring(startIndex)); // 添加最后一个部分
+
+        System.out.println(Arrays.toString(result.toArray(new String[0])));
+    }
 
 }
