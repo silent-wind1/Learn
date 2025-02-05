@@ -11,10 +11,10 @@ import java.util.List;
  */
 public class StringSplit {
     public static void main(String[] args) {
-        listeningMessageByHeaders("1&&2&&3&&4&&5&&&3s");
+        splitString("1&&2&&3&&4&&5&&&3s");
     }
 
-    public static void listeningMessageByHeaders(String msg) {
+    public static void splitString(String msg) {
         String delimiter = "&&";
         List<String> result = new ArrayList<>();
         int startIndex = 0;
