@@ -3,6 +3,7 @@ package com.yefeng.str;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Author: 叶枫
@@ -40,4 +41,9 @@ public class StringSplit {
         result.append(array[array.length - 1]);
         System.out.println(result);
     }
+
+    public static void joinString2(String[] array) {
+        System.out.println(Arrays.stream(array).collect(Collectors.joining("&&")));
+    }
+
 }
