@@ -65,7 +65,7 @@ public class AESUtil {
             String decryptedData = decrypt(encryptedData, secretKey);
             System.out.println("解密后: " + decryptedData);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("加密解密失败");
         }
     }
 }
