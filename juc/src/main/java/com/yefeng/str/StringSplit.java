@@ -46,4 +46,7 @@ public class StringSplit {
         System.out.println(Arrays.stream(array).collect(Collectors.joining("&&")));
     }
 
+    public static void joinString3(String[] array) {
+        System.out.println(String.join("&&", array));
+    }
 }
