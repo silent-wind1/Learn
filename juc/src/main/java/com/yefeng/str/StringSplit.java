@@ -14,7 +14,7 @@ public class StringSplit {
     public static void main(String[] args) {
         splitString("1&&2&&3&&4&&5&&&3s");
     }
-    
+
     public static void splitString(String msg) {
         String delimiter = "&&";
         List<String> result = new ArrayList<>();
@@ -40,9 +40,6 @@ public class StringSplit {
         }
         result.append(array[array.length - 1]);
         System.out.println(result);
-
-
-//        21211231312312313
     }
 
     public static void joinString2(String[] array) {
