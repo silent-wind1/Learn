@@ -32,14 +32,11 @@ public class Demo {
         // 输出结果
         System.out.println("当前日期: " + formattedDate);
 
-        FutureTask<String> futureTask = new FutureTask<String>(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                System.out.println("Hello world  = " + System.currentTimeMillis());
-                Thread.sleep(1000);
-                System.out.println("休眠结束");
-                return "执行完成";
-            }
+        FutureTask<String> futureTask = new FutureTask<>(() -> {
+            System.out.println("Hello world  = " + System.currentTimeMillis());
+            Thread.sleep(1000);
+            System.out.println("休眠结束");
+            return "执行完成";
         });
         System.out.println("thread start");
         new Thread(futureTask).start();
