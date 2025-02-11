@@ -1,7 +1,8 @@
 package main.java.algorithm.array;
 
-import java.util.Arrays;
-
+/**
+ * 合并两个有序数组
+ */
 public class mergeArray {
     public static void main(String[] args) {
         merge(new int[]{1, 2, 3, 0, 0, 0}, 3, new int[]{2, 5, 6}, 3);
