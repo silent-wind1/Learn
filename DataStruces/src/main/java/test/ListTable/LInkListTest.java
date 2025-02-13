@@ -9,7 +9,10 @@ public class LInkListTest {
         list.insert("欧阳志飞");
         list.insert("杨圣波");
         list.insert(0, "思凯");
-        System.out.println("被删除的人是:" + list.remove(1));
+        list.insert("慧娟");
+        System.out.println("链表是否为空链表：" + list.isEmpty());
+        System.out.println("链表长度为：" + list.length());
+        System.out.println("被删除的人是:" + list.remove(2));
         for (String s : list) {
             System.out.println(s);
         }
