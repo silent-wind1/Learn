@@ -1,6 +1,7 @@
 package com.yefeng.demo;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 
 public class DateExample {
@@ -28,5 +29,15 @@ public class DateExample {
 
         System.out.println("Current Year: " + year1);
         System.out.println("Current Month: " + month1);
+
+
+        // 使用Java日期API进行解析和计算
+        String taxYear = "2024";
+        String taxMonth = "12";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+        LocalDate lastMonth = LocalDate.of(Integer.parseInt(taxYear), Integer.parseInt(taxMonth), 1);
+        LocalDate currentMonth = lastMonth.plusMonths(1);
+        String datetime = currentMonth.format(formatter);
+        System.out.println(datetime);
     }
 }
