@@ -33,11 +33,14 @@ public class DateExample {
 
         // 使用Java日期API进行解析和计算
         String taxYear = "2024";
-        String taxMonth = "12";
+        String taxMonth = "03";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
         LocalDate lastMonth = LocalDate.of(Integer.parseInt(taxYear), Integer.parseInt(taxMonth), 1);
         LocalDate currentMonth = lastMonth.plusMonths(1);
         String datetime = currentMonth.format(formatter);
         System.out.println(datetime);
+
+
+
     }
 }
