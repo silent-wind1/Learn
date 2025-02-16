@@ -1,6 +1,7 @@
 package com.yefeng.demo;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 
@@ -30,17 +31,29 @@ public class DateExample {
         System.out.println("Current Year: " + year1);
         System.out.println("Current Month: " + month1);
 
-
         // 使用Java日期API进行解析和计算
+//        String taxYear = "2024";
+//        String taxMonth = "12";
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM HH:mm:ss");
+//        LocalDate lastMonth = LocalDate.of(Integer.parseInt(taxYear), Integer.parseInt(taxMonth), 1);
+//        LocalDate currentMonth = lastMonth.plusMonths(1);
+//        String datetime = currentMonth.format(formatter);
+//        System.out.println(datetime);
+
+
+        // 定义年份和月份
         String taxYear = "2024";
-        String taxMonth = "03";
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
-        LocalDate lastMonth = LocalDate.of(Integer.parseInt(taxYear), Integer.parseInt(taxMonth), 1);
-        LocalDate currentMonth = lastMonth.plusMonths(1);
-        String datetime = currentMonth.format(formatter);
-        System.out.println(datetime);
+        String taxMonth = "12";
 
+        // 创建 LocalDateTime（默认时间设为 00:00:00）
+        LocalDateTime currentMonth = LocalDateTime.of(
+                Integer.parseInt(taxYear),
+                Integer.parseInt(taxMonth),
+                1, 0, 0, 0
+        ).plusMonths(1);
 
-
+        // 格式化输出
+        String datetime = currentMonth.format(DateTimeFormatter.ofPattern("yyyy-MM HH:mm:ss"));
+        System.out.println(datetime);  // 输出 "2025-01 00:00:00"
     }
 }
