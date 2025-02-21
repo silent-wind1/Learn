@@ -67,10 +67,8 @@ public class DouniuCalculator {
         return -1; // 如果没有牛
     }
 
-    // 获取所有可能的三张牌的组合
-    public static List<int[]> getCombinations(int[] cards) {
+    public static List<int[]> getCombinations1(int[] cards) {
         List<int[]> combinations = new ArrayList<>();
-
         // 使用简单的组合方法生成所有三张牌的组合
         for (int i = 0; i < cards.length; i++) {
             for (int j = i + 1; j < cards.length; j++) {
@@ -80,5 +78,31 @@ public class DouniuCalculator {
             }
         }
         return combinations;
+    }
+
+    // 获取所有可能的三张牌的组合
+    public static List<int[]> getCombinations(int[] cards) {
+        List<int[]> combinations = new ArrayList<>();
+        if (cards == null || cards.length < 3) {
+            return combinations;
+        }
+        backtrack(cards, 0, new int[3], 0, combinations);
+        return combinations;
+    }
+
+    // 回溯算法，用于生成所有可能的组合
+    private static void backtrack(int[] cards, int start, int[] current, int depth, List<int[]> result) {
+        // 如果当前组合的深度为3，则将其加入结果列表中
+        if (depth == 3) {
+            result.add(current.clone());
+            return;
+        }
+        // 遍历所有可能的组合
+        for (int i = start; i < cards.length; i++) {
+            // 将当前元素加入组合中
+            current[depth] = cards[i];
+            // 递归调用回溯算法，生成下一个组合
+            backtrack(cards, i + 1, current, depth + 1, result);
+        }
     }
 }
