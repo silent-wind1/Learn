@@ -8,7 +8,7 @@ public class DouniuCalculator {
         Scanner scanner = new Scanner(System.in);
 
         // 提示用户输入五张牌
-        System.out.println("请输入五张牌（A=1，2-10, J=11, Q=12, K=13）：");
+        System.out.println("请输入五张牌（A=1，2-10, J=10, Q=10, K=10）：");
         int[] cards = new int[5];
         for (int i = 0; i < 5; i++) {
             System.out.print("输入第" + (i + 1) + "张牌：");
@@ -31,11 +31,9 @@ public class DouniuCalculator {
             case "A":
                 return 1;
             case "J":
-                return 11;
             case "Q":
-                return 12;
             case "K":
-                return 13;
+                return 10;
             default:
                 return Integer.parseInt(card);
         }
