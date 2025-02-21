@@ -18,6 +18,7 @@ public class TestSleep2 {
             }
         }
     }
+
     // 模拟倒计时
     public static void tenDown() throws InterruptedException {
         int num = 10;

@@ -15,7 +15,7 @@ public class AESUtil {
 
     // **密钥长度**
     private static final int AES_KEY_SIZE = 256; // 128、192 或 256
-    
+
     /**
      * **生成 AES 密钥**
      */
@@ -52,7 +52,7 @@ public class AESUtil {
     public static void main(String[] args) {
         try {
             String data = "Hello, AES!";
-            
+
             // **生成密钥**
             String secretKey = generateKey();
             System.out.println("AES 密钥: " + secretKey);

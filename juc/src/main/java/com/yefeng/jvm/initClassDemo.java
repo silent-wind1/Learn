@@ -7,6 +7,7 @@ package com.yefeng.jvm;
  */
 public class initClassDemo {
     public static int value = 24;
+
     static {
         value = 25;
     }

@@ -33,7 +33,7 @@ public class StringSplit {
         joinString(array);
     }
 
-    public static void joinString(String[] array){
+    public static void joinString(String[] array) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < array.length - 1; i++) {
             result.append(array[i]).append("&&");

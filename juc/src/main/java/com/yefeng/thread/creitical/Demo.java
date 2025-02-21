@@ -2,6 +2,7 @@ package com.yefeng.thread.creitical;
 
 public class Demo {
     static int counter = 0;
+
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
             for (int i = 0; i < 5000; i++) {

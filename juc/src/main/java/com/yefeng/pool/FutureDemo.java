@@ -32,10 +32,10 @@ public class FutureDemo {
         });
 
         Future<String> future = executor.submit(() -> {
-          for (int i = 0; i < 10; i++) {
-              System.out.println("i = " + i);
-          }
-          return "执行成功";
+            for (int i = 0; i < 10; i++) {
+                System.out.println("i = " + i);
+            }
+            return "执行成功";
         });
         try {
 

@@ -2,7 +2,6 @@ package com.yefeng.thread.method;
 
 import com.yefeng.thread.method.entity.ThreadA;
 import com.yefeng.thread.method.entity.ThreadB;
-import lombok.extern.slf4j.Slf4j;
 
 public class ThreadTest {
 
