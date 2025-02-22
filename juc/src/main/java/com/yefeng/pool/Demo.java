@@ -13,7 +13,7 @@ import java.util.concurrent.FutureTask;
  */
 public class Demo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        CompletableFuture future = CompletableFuture.supplyAsync(() -> {
+        CompletableFuture.supplyAsync(() -> {
             System.out.println("投放和清洗制作米饭的材料");
             return "干净的没有新冠病毒的大米";
         }).thenAcceptAsync(result -> {
