@@ -39,7 +39,7 @@ public class reflectObject {
      * @param sourceObject 源对象
      * @param targetObject 目标对象
      * @param fieldMapping 字段映射表（key: 源对象的字段名, value: 目标对象的字段名）
-     * @return Map<String, List < Object>> 记录不同的字段及它们的值
+     * @return 记录不同字段及其值的 Map
      */
     private static Map<String, List<Object>> compareFields(Object sourceObject, Object targetObject, Map<String, String> fieldMapping) {
         Map<String, List<Object>> differences = new HashMap<>();
