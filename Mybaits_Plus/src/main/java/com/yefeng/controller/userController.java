@@ -23,6 +23,7 @@ public class userController {
 
     @GetMapping("/list")
     public List<User> getUsers() {
+        log.info("getUsers");
         return userService.list();
     }
 }
