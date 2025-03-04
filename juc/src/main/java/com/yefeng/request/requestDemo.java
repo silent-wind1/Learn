@@ -19,9 +19,5 @@ public class requestDemo {
             System.out.println("请求失败");
         }
         System.out.println(response);
-
-
-
-
     }
 }
