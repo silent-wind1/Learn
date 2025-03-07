@@ -9,17 +9,29 @@ public class JDK17Demo {
     public static void main(String[] args) {
         String name = "JDK17Demo";
         formater(name);
-        switchFormater(name);
+//        switchFormater(name);
+
+        String json = """
+                {
+                    "name": "Java",
+                    "version": 17,
+                    "features": [
+                        "Sealed Classes",
+                        "Pattern Matching"
+                    ]
+                }
+                """;
+        System.out.println(json);
     }
 
-    private static void switchFormater(Object obj) {
-        String result = switch (obj) {
-            case Integer i -> "整数: " + i;
-            case String s  -> "字符串: " + s;
-            default        -> "未知类型";
-        };
-        System.out.println(result);
-    }
+//    private static void switchFormater(Object obj) {
+//        String result = switch (obj) {
+//            case Integer i -> "整数: " + i;
+//            case String s -> "字符串: " + s;
+//            default -> "未知类型";
+//        };
+//        System.out.println(result);
+//    }
 
     private static void formater(Object name) {
         String message = "Hello";
