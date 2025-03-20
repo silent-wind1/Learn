@@ -1,7 +1,5 @@
 package com.yefeng.jdk17.enums;
 
-import static java.lang.System.exit;
-
 public class MainDemo {
     public static void main(String[] args) {
         String fileType = "businessLocationProof";

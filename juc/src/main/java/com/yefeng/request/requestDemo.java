@@ -10,7 +10,7 @@ public class requestDemo {
         String response = HttpUtil.get(url);
 //        response = null;
         JSONObject jsonObject = JSONUtil.parseObj(response);
-        if(jsonObject.isEmpty()) {
+        if (jsonObject.isEmpty()) {
             System.out.println("json 为空");
         } else {
             System.out.println(jsonObject.get("code"));

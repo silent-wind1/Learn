@@ -26,7 +26,7 @@ public class ArrayToJsonDemo {
         list.add("1894678794367328256");
 
         for (String tinvoiceFile : list) {
-            if(!olds.contains(tinvoiceFile)) {
+            if (!olds.contains(tinvoiceFile)) {
                 System.out.println("进行删除操作");
             }
         }

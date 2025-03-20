@@ -11,6 +11,6 @@ public class BigDecimalDemo {
 
         int startPage = Math.max(-3, 1);  // 起始页默认为1
         int pageSize = Math.max(0, 10);  // 每页大小默认为10
-        System.out.println(startPage + "\n" +  pageSize);
+        System.out.println(startPage + "\n" + pageSize);
     }
 }
