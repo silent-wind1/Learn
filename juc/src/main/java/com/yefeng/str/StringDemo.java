@@ -5,7 +5,7 @@ import cn.hutool.core.util.StrUtil;
 /**
  * @Author: 叶枫
  * @Date: 2025/03/24/21:03
- * @Description:
+ * @Description: 增加字符串演示以检查营业执照和信用代码
  */
 public class StringDemo {
     public static void main(String[] args) {
