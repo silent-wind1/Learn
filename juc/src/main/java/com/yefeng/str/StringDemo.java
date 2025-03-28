@@ -27,6 +27,8 @@ public class StringDemo {
             System.out.println("审核通过");
         } else if (countApproved == 2 && statuses.contains("1")) {
             System.out.println("审核中");
+        } else if (countApproved == 1) {
+            System.out.println("待审核");
         }
     }
 }
