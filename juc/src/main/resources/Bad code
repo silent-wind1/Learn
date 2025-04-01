@@ -1,0 +1,106 @@
+// 让我们记住这一段垃圾代码是wang gong写的    
+    @Override
+    @Transactional
+    public AjaxResult updatePartnerById(PartnerUpdateRequest partnerUpdateRequest) {
+        // 如果有营业执照名称和统一社会信用代码，则添加公司信息
+        String businessLicenseName = partnerUpdateRequest.getBusinessLicenseName();
+        String creditCode = partnerUpdateRequest.getCreditCode();
+        // 校验营业执照和信用代码
+        if (StringUtils.isEmpty(partnerUpdateRequest.getBusinessLicenseName()) != StringUtils.isEmpty(partnerUpdateRequest.getCreditCode())) {
+            return AjaxResult.error("营业执照名称和统一社会信用代码必须同时有值或者为空");
+        }
+
+        // 合伙人公司id
+        String companyId = partnerUpdateRequest.getCompanyId();
+        LdsCompany company = null;
+        SysDept rootDept = null;
+        // 如果公司id为空创建一个新公司，负责修改
+        if (StringUtils.isEmpty(companyId) && StringUtils.isNotEmpty(businessLicenseName) && StringUtils.isNotEmpty(creditCode)) {
+            company = new LdsCompany();
+            company.setBusinessLicenseName(businessLicenseName);
+            company.setCreditCode(creditCode);
+            company.setStatus("0");
+            ldsCompanyService.save(company);
+            // 创建根部门
+            rootDept = sysDeptSupportService.createCompanyRootDept(company);
+        } else {
+            company = ldsCompanyService.getById(companyId);
+            company.setBusinessLicenseName(businessLicenseName);
+            company.setCreditCode(creditCode);
+            company.setStatus("0");
+            ldsCompanyService.updateById(company);
+            // 检查是否存在根部门，不存在就创建，存在就修改
+            rootDept = sysDeptSupportService.queryCompanyRootDept(companyId);
+            if (null == rootDept) {
+                rootDept = sysDeptSupportService.createCompanyRootDept(company);
+            } else {
+                rootDept.setDeptName(businessLicenseName);
+                sysDeptSupportService.updateById(rootDept);
+            }
+        }
+        // 修改用户信息
+        SysUser sysUser = sysUserSupportService.getById(partnerUpdateRequest.getPartnerId());
+        sysUser.setUserName(partnerUpdateRequest.getPhoneNumber());
+        sysUser.setNickName(partnerUpdateRequest.getRealName());
+        sysUser.setRealName(partnerUpdateRequest.getRealName());
+        sysUser.setPhonenumber(partnerUpdateRequest.getPhoneNumber());
+        sysUser.setIdCard(partnerUpdateRequest.getIdCard());
+        sysUser.setEmail(partnerUpdateRequest.getEmail());
+        sysUser.setSex(partnerUpdateRequest.getSex());
+        sysUser.setCompanyId(company.getId());
+        if (null != rootDept) {
+            sysUser.setDeptId(rootDept.getDeptId());
+        }
+        int userResult = iSysUserSupportService.updateUser(sysUser);
+        if (userResult == 0) {
+            log.error("更新用户信息失败 sysUser :{}", sysUser);
+            return AjaxResult.error("更新用户信息失败");
+        }
+        // 修改绑定状态
+        BindingPartner bindingPartner = new BindingPartner();
+        BeanUtils.copyBeanProp(bindingPartner, partnerUpdateRequest);
+//        LdsCompany currentCompany = ldsCompanyService.queryLoginCompany();
+//        String type;
+//        if (currentCompany != null) {
+//            type = currentCompany.getType();
+//        } else {
+//            LoginUser loginUser = SecurityUtils.getLoginUser();
+//            if (loginUser == null) {
+//                throw new RuntimeException("用户不存在");
+//            }
+//            type = loginUser.getUserType();
+//        }
+//        switch (type) {
+//            case "1":
+//                bindingPartner.setInitiation("1");
+//                bindingPartner.setLdsApproveStatus("2");
+//                bindingPartner.setOperApproveStatus("1");
+//                bindingPartner.setPartnerApproveStatus("1");
+//                break;
+//            case "2":
+//                bindingPartner.setInitiation("3");
+//                bindingPartner.setOperApproveStatus("2");
+//                bindingPartner.setLdsApproveStatus("1");
+//                bindingPartner.setPartnerApproveStatus("1");
+//                break;
+//            case "04":
+//                bindingPartner.setInitiation("2");
+//                bindingPartner.setPartnerApproveStatus("2");
+//                bindingPartner.setLdsApproveStatus("1");
+//                bindingPartner.setOperApproveStatus("1");
+//                break;
+//            default:
+//                // 可以添加日志或异常处理，以应对意外情况
+//                log.warn("未知的企业类型: {}", type);
+//                return AjaxResult.error("未知的企业类型");
+//        }
+//        bindingPartner.setApproveStatus("1");
+        boolean result = this.updateById(bindingPartner);
+        if (!result) {
+            log.error("更新合伙人信息失败 bindingPartner :{}", bindingPartner);
+            return AjaxResult.error("更新合伙人信息失败");
+        }
+        // 查询合伙人，服务商，运营商是否都通过审核，如果都通过，则更新通过状态
+        getBindingPartnerApproveStatus(bindingPartner);
+        return AjaxResult.success();
+    }
