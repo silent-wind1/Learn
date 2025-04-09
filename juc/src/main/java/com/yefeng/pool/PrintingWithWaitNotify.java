@@ -16,7 +16,11 @@ public class PrintingWithWaitNotify {
 
         oddThread.start();
         evenThread.start();
+
+        new Thread(new OddPrinter()).start();
+        new Thread(new EventPrinter()).start();
     }
+
     static class OddPrinter implements Runnable {
         @Override
         public void run() {
