@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * @Author: 叶枫
  * @Date: 2025/02/24/22:14
- * @Description:
+ * @Description: 基于反射比较两个对象的字段值（支持字段名映射）
  */
 public class reflectObject {
     public static void main(String[] args) {
