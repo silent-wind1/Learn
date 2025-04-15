@@ -24,11 +24,15 @@ public class StringDemo1 {
         map.put("2", "2");
         map.put("3", "3");
         map.put("4", "4");
-        map.forEach((key, value) -> {
-            if(key.equals("2")) {
-                map.remove(key);
-            }
-        });
-        System.out.println(map.size());
+        map.put(null, "4");
+        System.out.println(map.get("5"));
+        System.out.println(map.get(null));
+        // 不能这样循环遍历hashmap，因为循环过程中，map在变化，会报错
+//        map.forEach((key, value) -> {
+//            if(key.equals("2")) {
+//                map.remove(key);
+//            }
+//        });
+//        System.out.println(map.size());
     }
 }
