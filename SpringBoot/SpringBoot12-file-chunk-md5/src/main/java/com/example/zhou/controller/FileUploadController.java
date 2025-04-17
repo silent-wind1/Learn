@@ -35,44 +35,15 @@ public class FileUploadController {
      * 大文件分片上传
      *
      * @param multipartFile    文件二进制数据
-     * @param id               文件ID
-     * @param name             文件名称
-     * @param type             文件类型
-     * @param lastModifiedDate 最后修改日期
-     * @param fileMd5          文件MD5
-     * @param zoneTotalMd5     总分片MD5
-     * @param zoneMd5          当前分片MD5
-     * @param zoneTotalCount   总分片数量
-     * @param zoneNowIndex     当前分片序号
-     * @param zoneTotalSize    文件总大小
-     * @param zoneStartSize    文件开始位置
-     * @param zoneEndSize      文件结束位置
      * @param request          HttpServletRequest 对象
      * @return 返回上传结果
      */
     @PostMapping("/zoneUpload")
     public Result zoneUpload(
             @RequestParam("file") @NotNull(message = "文件不能为空") MultipartFile multipartFile,
-            @RequestParam("id") String id,
-            @RequestParam("name") String name,
-            @RequestParam("type") String type,
-            @RequestParam("lastModifiedDate") Date lastModifiedDate,
-            @RequestParam("fileMd5") String fileMd5,
-            @RequestParam("zoneTotalMd5") String zoneTotalMd5,
-            @RequestParam("zoneMd5") String zoneMd5,
-            @RequestParam("zoneTotalCount") int zoneTotalCount,
-            @RequestParam("zoneNowIndex") int zoneNowIndex,
-            @RequestParam("zoneTotalSize") long zoneTotalSize,
-            @RequestParam("zoneStartSize") long zoneStartSize,
-            @RequestParam("zoneEndSize") long zoneEndSize,
+            @RequestBody  ArchiveZoneRecord archiveZoneRecord,
             HttpServletRequest request) {
         long startTime = System.currentTimeMillis();
-
-        // 使用构造函数初始化 ArchiveZoneRecord 对象
-        ArchiveZoneRecord archiveZoneRecord = new ArchiveZoneRecord(
-                id, name, type, lastModifiedDate, fileMd5, zoneTotalMd5, zoneMd5,
-                zoneTotalCount, zoneNowIndex, zoneTotalSize, zoneStartSize, zoneEndSize
-        );
 
         // 调用服务方法进行上传
         ZoneUploadResultBO resultBo = iFileZoneRecordService.zoneUpload(request, archiveZoneRecord, multipartFile);
