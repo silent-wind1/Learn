@@ -205,7 +205,7 @@ public class FileZoneRecordServiceImpl extends ServiceImpl<ArchiveRecordMapper, 
     @Override
     public FileUploadResultBO mergeZoneFile(String totalMd5, HttpServletRequest request) {
         FileUploadResultBO resultBO = new FileUploadResultBO();
-        if (totalMd5 == null || totalMd5.trim().length() == 0) {
+        if (totalMd5 == null || totalMd5.trim().isEmpty()) {
             throw new RuntimeException("总MD5值不能为空");
         }
 
