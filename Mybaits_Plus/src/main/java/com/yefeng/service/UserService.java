@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserService extends IService<User> {
     User findList();
+
+    List<User> getUsersByPage();
 }

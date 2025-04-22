@@ -26,4 +26,9 @@ public class userController {
         log.info("getUsers");
         return userService.list();
     }
+
+    @GetMapping("/page")
+    public List<User> getUsersByPage() {
+        return userService.getUsersByPage();
+    }
 }

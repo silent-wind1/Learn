@@ -8,4 +8,15 @@
         select * from user where id = #{id}
     </select>
 
+    <select id="selectById" resultType="com.yefeng.entity.User">
+        select *
+        from user
+        where id = #{id}
+    </select>
+
+    <select id="getUsersByPage" resultType="com.yefeng.entity.User">
+        select *
+        from user
+    </select>
+
 </mapper>
