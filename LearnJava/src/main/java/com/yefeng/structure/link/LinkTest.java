@@ -18,5 +18,11 @@ public class LinkTest {
         for (Integer data : merge) {
             System.out.print(data + "\t");
         }
+
+        System.out.println("\n 反转之后的数组");
+        merge.reverse();
+        for (Integer item : merge) {
+            System.out.print(item + "\t");
+        }
     }
 }

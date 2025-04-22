@@ -9,7 +9,7 @@ import java.util.Iterator;
  */
 public class LinkList<T extends Comparable<T>> implements Iterable<T> {
     // 头节点
-    private final Node head;
+    private Node head;
     // 链表数量
     private int N;
 
@@ -121,6 +121,23 @@ public class LinkList<T extends Comparable<T>> implements Iterable<T> {
 
         return result;
     }
+
+    public void reverse() {
+        // 判断当前链表是否为空链表
+        if (isEmpty()) {
+            return;
+        }
+        Node current = head.next, prev = null;
+        while(current != null) {
+            Node next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        // 更新头结点指向新的头部
+        this.head.next = prev;
+    }
+
 
     public Iterator<T> iterator() {
         return new Iterator<T>() {
