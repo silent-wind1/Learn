@@ -9,7 +9,7 @@ import java.util.Iterator;
  */
 public class LinkList<T extends Comparable<T>> implements Iterable<T> {
     // 头节点
-    private Node head;
+    private final Node head;
     // 链表数量
     private int N;
 
@@ -119,6 +119,67 @@ public class LinkList<T extends Comparable<T>> implements Iterable<T> {
         result.head.next = dummy.next;
         result.N = other.N + this.N;
         return result;
+    }
+
+    /**
+     * 对链表进行归并排序
+     */
+    public void mergeSortCore() {
+        head.next = mergeSortCore(head.next);
+    }
+
+    /**
+     * 递归地对链表进行归并排序
+     * @param head 当前子链表的头节点
+     * @return 排序后的链表头节点
+     */
+    private Node mergeSortCore(Node head) {
+        // 递归终止条件：空链表或单个节点，天然有序
+        if(head == null || head.next == null) {
+            return head;
+        }
+        // 快慢指针，找链表中间点
+        Node slow = head;
+        Node fast = head.next;
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        // 断开链表，分成左右两部分
+        Node mid = slow.next;
+        slow.next = null;
+        // 对左右部分分别归并排序
+        Node left = mergeSortCore(head);
+        Node right = mergeSortCore(mid);
+        // 合并两个已排序链表
+        return mergeTwoSortedLists(left, right);
+    }
+
+    /**
+     *
+     * 合并两个有序链表
+     * @param l1 第一个有序链表头节点
+     * @param l2 第二个有序链表头节点
+     * @return 合并后的有序链表头节点
+     */
+    private Node mergeTwoSortedLists(Node l1, Node l2) {
+        // 哨兵节点，便于处理头指针
+        Node dummy = new Node(null, null);
+        Node curr = dummy;
+        // 遍历两个链表，按顺序依次连接
+        while(l1 != null && l2 != null) {
+            if(l1.data.compareTo(l2.data) <= 0) {
+                curr.next = l1;
+                l1 = l1.next;
+            } else {
+                curr.next = l2;
+                l2 = l2.next;
+            }
+            curr = curr.next;
+        }
+        // 剩余未合并部分直接拼接
+        curr.next = l1 == null ? l2 : l1;
+        return dummy.next;
     }
 
     public void reverse() {
