@@ -85,40 +85,39 @@ public class LinkList<T extends Comparable<T>> implements Iterable<T> {
             return other;
         }
         LinkList<T> result = new LinkList<>();
+        Node dummy = new Node(null, null); // dummy 节点用于简化操作
+        Node tail = dummy;
         Node p1 = this.head.next;
         Node p2 = other.head.next;
-        // 保存要返回的链表头节点
-        Node p3 = result.head;
         // 如果p1和p2链表都不为空
         while (p1 != null && p2 != null) {
             // 比较p1.data和p2.data谁打谁小
             if(p1.data.compareTo(p2.data) <= 0) {
                 // 如果成立p3指向p1.data
-                p3.next = new Node(p1.data, null);
+                tail.next = new Node(p1.data, null);
                 p1 = p1.next;
             } else {
-                p3.next = new Node(p2.data, null);
+                tail.next = new Node(p2.data, null);
                 p2 = p2.next;
             }
-            p3 = p3.next;
-            result.N++;
+            tail = tail.next;
         }
         // 可能存在p1没有循环完
         while(p1 != null) {
-            p3.next = new Node(p1.data, null);
+            tail.next = new Node(p1.data, null);
             p1 = p1.next;
-            p3 = p3.next;
-            result.N++;
+            tail = tail.next;
         }
 
         // 可能存在p2没有循环完
         while(p2 != null) {
-            p3.next = new Node(p2.data, null);
+            tail.next = new Node(p2.data, null);
             p2 = p2.next;
-            p3 = p3.next;
-            result.N++;
+            tail = tail.next;
         }
 
+        result.head.next = dummy.next;
+        result.N = other.N + this.N;
         return result;
     }
 
