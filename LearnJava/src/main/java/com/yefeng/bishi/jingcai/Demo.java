@@ -1,4 +1,4 @@
-package com.yefeng.jingcai;
+package com.yefeng.bishi.jingcai;
 
 /**
  * 深圳彩京笔试题

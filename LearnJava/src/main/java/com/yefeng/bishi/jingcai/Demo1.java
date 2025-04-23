@@ -1,4 +1,4 @@
-package com.yefeng.jingcai;
+package com.yefeng.bishi.jingcai;
 
 /**
  * @Author: 叶枫

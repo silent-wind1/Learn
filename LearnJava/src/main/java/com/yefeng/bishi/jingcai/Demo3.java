@@ -1,4 +1,4 @@
-package com.yefeng.jingcai;
+package com.yefeng.bishi.jingcai;
 
 import java.util.ArrayList;
 import java.util.HashSet;
