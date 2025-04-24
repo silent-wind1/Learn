@@ -15,6 +15,8 @@ public class LinkTest {
         linkList2.add(6);
         linkList2.add(4);
 
+        linkList2.add(2, 5);
+
         LinkList<Integer> merge = linkList1.merge(linkList2);
         for (Integer data : merge) {
             System.out.print(data + "\t");

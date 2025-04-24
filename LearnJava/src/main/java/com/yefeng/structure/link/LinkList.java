@@ -73,6 +73,22 @@ public class LinkList<T extends Comparable<T>> implements Iterable<T> {
     }
 
     /**
+     * 添加指定元素
+     * @param index 下标
+     * @param data 元素
+     */
+    public void add(int index, T data) {
+        Node node = head;
+        while(index > 0) {
+            node = node.next;
+            index--;
+        }
+        node.next = new Node(data, node.next);
+        this.N++;
+    }
+
+
+    /**
      * 合并两个有序链表，前提是两个链表里面的值都是有序的
      * @param other 第二个链表
      * @return 合并完的有序链表
@@ -182,6 +198,9 @@ public class LinkList<T extends Comparable<T>> implements Iterable<T> {
         return dummy.next;
     }
 
+    /**
+     * 反转链表
+     */
     public void reverse() {
         // 判断当前链表是否为空链表
         if (isEmpty()) {
