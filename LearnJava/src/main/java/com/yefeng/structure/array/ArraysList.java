@@ -58,6 +58,10 @@ public class ArraysList<T> implements Iterable<T>{
         }
     }
 
+    /**
+     * 插入一个元素
+     * @param t 元素
+     */
     public void insert(T t) {
         if (this.size == this.maxSize) {
             this.resize(this.size * 2);
@@ -66,6 +70,11 @@ public class ArraysList<T> implements Iterable<T>{
         this.size++;
     }
 
+    /**
+     * 指定下标插入元素
+     * @param index 下标
+     * @param t 元素
+     */
     public void insert(int index, T t) {
         if (index < 0 || index > this.size) {
             throw new IndexOutOfBoundsException();
@@ -81,6 +90,10 @@ public class ArraysList<T> implements Iterable<T>{
     }
 
 
+    /**
+     * 通过下标删除元素
+     * @param index 下标
+     */
     public void delete(int index) {
         if (index < 0 || index >= this.size) {
             throw new IndexOutOfBoundsException();
