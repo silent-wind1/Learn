@@ -16,5 +16,8 @@ public class ArraysListTest {
         for (Integer data : list) {
             System.out.println(data);
         }
+
+        int index = list.indexOf(3);
+        System.out.println("index: " + index);
     }
 }
