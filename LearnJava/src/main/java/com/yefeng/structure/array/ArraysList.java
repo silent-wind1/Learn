@@ -91,6 +91,21 @@ public class ArraysList<T> implements Iterable<T>{
 
 
     /**
+     * 查找元素t是否在线性表中，如果在则返回下标
+     * @param t 元素
+     * @return 存在返回元素下标，不存在则返回-1
+     */
+    public int indexOf(T t) {
+        for (int i = 0; i < size; i++) {
+            if (value[i].equals(t)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+    /**
      * 通过下标删除元素
      * @param index 下标
      */
