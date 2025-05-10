@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 /**
  * @Author: 叶枫
  * @Date: 2025/05/11/1:50
- * @Description:
+ * @Description: 商品列表请求
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
