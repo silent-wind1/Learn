@@ -26,7 +26,7 @@ public class StudentData extends AbstractData{
     }
 
     public void abstractShow() {
-
+        super.abstractShow(); // 调用父类的抽象方法
         System.out.println("StudentData  abstractShow --> 抽象方法");
     }
 }

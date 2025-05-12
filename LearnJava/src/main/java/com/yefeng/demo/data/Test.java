@@ -7,7 +7,7 @@ package com.yefeng.demo.data;
  */
 public class Test {
     public static void main(String[] args) {
-        AbstractData studentData = new StudentData();
+        AbstractData studentData = new StudentData(); // 向上转型
         studentData.abstractShow();
     }
 }
