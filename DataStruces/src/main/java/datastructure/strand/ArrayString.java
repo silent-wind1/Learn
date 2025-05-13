@@ -3,7 +3,7 @@ package main.java.datastructure.strand;
 public class ArrayString {
     private char[] string;
     private int N;
-    private int maxSize = 10;
+    private final int maxSize = 10;
 
     public ArrayString() {
         N = 0;
