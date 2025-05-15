@@ -54,5 +54,12 @@ public class RedisController {
         return "添加成功";
     }
 
+    @GetMapping("/hash/get/{name}/{field}")
+    public String getHashRedis(@PathVariable("name") String name, @PathVariable("field") String field) {
+        String key = "yefeng:" + name;
+        log.info("获取redis hash 键值对，key：{}", key);
+        return (String) stringRedisTemplate.opsForHash().get(key, field);
+    }
+
 
 }
