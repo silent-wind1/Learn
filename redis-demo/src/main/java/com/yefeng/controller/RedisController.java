@@ -71,4 +71,12 @@ public class RedisController {
     }
 
 
+    @GetMapping("/hash/getAll/{name}")
+    public String getAllHashRedis(@PathVariable("name") String name) {
+        String key = "yefeng:" + name;
+        log.info("获取redis hash all 键值对，key：{}", key);
+        return (String) stringRedisTemplate.opsForHash().get(key, name);
+    }
+
+
 }
