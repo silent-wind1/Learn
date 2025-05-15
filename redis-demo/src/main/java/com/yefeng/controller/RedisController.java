@@ -78,5 +78,4 @@ public class RedisController {
         return (String) stringRedisTemplate.opsForHash().get(key, name);
     }
 
-
 }
