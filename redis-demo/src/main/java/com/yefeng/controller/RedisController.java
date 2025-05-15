@@ -62,4 +62,13 @@ public class RedisController {
     }
 
 
+    @GetMapping("/hash/del/{name}/{field}")
+    public String delHashRedis(@PathVariable("name") String name, @PathVariable("field") String field) {
+        String key = "yefeng:" + name;
+        log.info("删除redis hash 键值对，key：{}", key);
+        stringRedisTemplate.opsForHash().delete(key, field);
+        return "删除成功";
+    }
+
+
 }
