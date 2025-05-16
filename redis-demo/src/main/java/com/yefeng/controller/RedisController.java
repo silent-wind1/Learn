@@ -78,4 +78,12 @@ public class RedisController {
         return (String) stringRedisTemplate.opsForHash().get(key, name);
     }
 
+    @GetMapping("/hash/add/{key}/{index}/{value}")
+    public String addListRedis(@PathVariable("key") String key, @PathVariable("index") Long index,  @PathVariable("value") String value){
+        String keys = "yefeng:" + key;
+        log.info("获取redis list 键值对，key：{}", keys);
+        stringRedisTemplate.opsForList().set(keys, index, value);
+        return "添加成功";
+    }
+
 }
