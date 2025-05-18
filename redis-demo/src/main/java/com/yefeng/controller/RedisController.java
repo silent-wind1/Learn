@@ -1,7 +1,6 @@
 package com.yefeng.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -78,12 +77,35 @@ public class RedisController {
         return (String) stringRedisTemplate.opsForHash().get(key, name);
     }
 
-    @GetMapping("/hash/add/{key}/{index}/{value}")
-    public String addListRedis(@PathVariable("key") String key, @PathVariable("index") Long index,  @PathVariable("value") String value){
+    @GetMapping("/list/add/left/{key}/{value}")
+    public String addListLeftRedis(@PathVariable("key") String key,  @PathVariable("value") String value){
         String keys = "yefeng:" + key;
-        log.info("获取redis list 键值对，key：{}", keys);
+        log.info("添加redis list left 键值对，key：{}", keys);
+        stringRedisTemplate.opsForList().leftPush(keys, value);
+        return "添加成功";
+    }
+
+    @GetMapping("/list/add/right/{key}/{value}")
+    public String addListRightRedis(@PathVariable("key") String key,  @PathVariable("value") String value){
+        String keys = "yefeng:" + key;
+        log.info("添加redis list right 键值对，key：{}", keys);
+        stringRedisTemplate.opsForList().rightPush(keys, value);
+        return "添加成功";
+    }
+
+    @GetMapping("/list/set/{key}/{index}/{value}")
+    public String addListSetRedis(@PathVariable("key") String key,  @PathVariable("index") Long index, @PathVariable("value") String value){
+        String keys = "yefeng:" + key;
+        log.info("修改redis list index 键值对，key：{}", keys);
         stringRedisTemplate.opsForList().set(keys, index, value);
         return "添加成功";
+    }
+
+    @GetMapping("/list/get/{key}/{start}/{end}")
+    public String getListRedis(@PathVariable("key") String key,  @PathVariable("start") Long start, @PathVariable("end") Long end){
+        String keys = "yefeng:" + key;
+        log.info("获取redis list index 键值对，key：{}", keys);
+        return stringRedisTemplate.opsForList().range(keys, start, end).toString();
     }
 
 }
