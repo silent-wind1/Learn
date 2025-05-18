@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.Objects;
 
 /**
  * @Author: 叶枫
@@ -105,7 +106,7 @@ public class RedisController {
     public String getListRedis(@PathVariable("key") String key,  @PathVariable("start") Long start, @PathVariable("end") Long end){
         String keys = "yefeng:" + key;
         log.info("获取redis list index 键值对，key：{}", keys);
-        return stringRedisTemplate.opsForList().range(keys, start, end).toString();
+        return Objects.requireNonNull(stringRedisTemplate.opsForList().range(keys, start, end)).toString();
     }
 
 }
