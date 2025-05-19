@@ -109,4 +109,13 @@ public class RedisController {
         return Objects.requireNonNull(stringRedisTemplate.opsForList().range(keys, start, end)).toString();
     }
 
+
+    @GetMapping("/list/del/left/{key}/")
+    public String delListLeftRedis(@PathVariable("key") String key){
+        String keys = "yefeng:" + key;
+        log.info("删除redis list left 键值对，key：{}", keys);
+        stringRedisTemplate.opsForList().leftPop(keys);
+        return "添加成功";
+    }
+
 }
