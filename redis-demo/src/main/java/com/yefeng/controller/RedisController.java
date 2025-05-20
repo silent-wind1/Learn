@@ -115,7 +115,9 @@ public class RedisController {
         String keys = "yefeng:" + key;
         log.info("删除redis list left 键值对，key：{}", keys);
         stringRedisTemplate.opsForList().leftPop(keys);
-        return "添加成功";
+
+        stringRedisTemplate.opsForList().rightPop(keys);
+        return "删除成功";
     }
 
 }
