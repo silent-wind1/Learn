@@ -27,6 +27,8 @@ import java.util.Map;
 public class Persist <E, S>{
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
+    @Resource
+    private RedisConnectionFactory redisConnectionFactory;
     /**
      * 持久化到内存map中
      *
@@ -35,7 +37,7 @@ public class Persist <E, S>{
     @Bean(name = "stateMachineMemPersister")
     public static StateMachinePersister getPersister() {
         return new DefaultStateMachinePersister(new StateMachinePersist() {
-
+            private Map map = new HashMap();
             @Override
             public void write(StateMachineContext context, Object contextObj) throws Exception {
                 log.info("持久化状态机,context:{},contextObj:{}",  objectMapper.writeValueAsString(context), objectMapper.writeValueAsString(contextObj));
@@ -49,12 +51,10 @@ public class Persist <E, S>{
                 log.info("获取状态机结果,stateMachineContext:{}", objectMapper.writeValueAsString(stateMachineContext));
                 return stateMachineContext;
             }
-            private Map map = new HashMap();
+
         });
     }
 
-    @Resource
-    private RedisConnectionFactory redisConnectionFactory;
     /**
      * 持久化到redis中，在分布式系统中使用
      *
