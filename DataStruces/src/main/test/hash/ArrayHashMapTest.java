@@ -16,8 +16,14 @@ public class ArrayHashMapTest {
         map.put(1, "张三");
         map.put(2, "李四");
         map.put(3, "王五");
-        System.out.println(map.get(3));
+        // 删除键为3的键值对
         map.remove(3);
-        System.out.println(map.get(3));
+        // 打印键值对
+        map.print();
+        System.out.println("-----分隔符-----");
+        List<Integer> keySet = map.getKeySet();
+        for (Integer key : keySet) {
+            System.out.println(key + ":" + map.get(key));
+        }
     }
 }

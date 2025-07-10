@@ -62,4 +62,58 @@ public class ArrayHashMap {
         int hash = hash(key);
         buckets.set(hash, null);
     }
+
+    /**
+     * 获取所有的键
+     *
+     * @return 所有的Key集合
+     */
+    public List<Integer> getKeySet() {
+        List<Integer> keySet = new ArrayList<>();
+        for (Pair pair : buckets) {
+            if (pair != null) {
+                keySet.add(pair.getKey());
+            }
+        }
+        return keySet;
+    }
+
+    /**
+     * 获取所有的值
+     *
+     * @return 所有的值集合
+     */
+    public List<String> getValueSet() {
+        List<String> valueSet = new ArrayList<>();
+        for (Pair pair : buckets) {
+            if (pair != null) {
+                valueSet.add(pair.getValue());
+            }
+        }
+        return valueSet;
+    }
+
+    /**
+     * 获取所有的键值对
+     *
+     * @return 键值对集合
+     */
+    public List<Pair> pairSet() {
+        List<Pair> list = new ArrayList<>();
+        for (Pair pair : buckets) {
+            if(pair != null) {
+                list.add(pair);
+            }
+        }
+        return list;
+    }
+
+    /**
+     * 打印哈希表
+     */
+    public void print() {
+        for (Pair kv : pairSet()) {
+            System.out.println(kv.getKey() + ":" + kv.getValue());
+        }
+    }
 }
