@@ -10,8 +10,8 @@ public class MidIndex {
 //        System.out.println(i);
 
 
-        int[] nums = {1, 2, 3, 4, 5, 6};
-        int item = 2;
+        int[] nums = {1, 5, 8, 12, 15, 36};
+        int item = 15;
         System.out.println(binary_search(nums, item));
     }
 
@@ -45,8 +45,8 @@ public class MidIndex {
         while(low <= high) {
             int mid = (low + high) / 2;
             if(nums[mid] == item) {
-                return item;
-            }else if (nums[mid] > item) {
+                return mid;
+            }else if (nums[mid] < item) {
                 low = mid + 1;
             }else {
                 high = mid - 1;
