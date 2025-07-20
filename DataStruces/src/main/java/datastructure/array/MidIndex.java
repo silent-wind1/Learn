@@ -12,7 +12,7 @@ public class MidIndex {
 
         int[] nums = {1, 2, 3, 4, 5, 6};
         int item = 2;
-        binary_search(nums, item);
+        System.out.println(binary_search(nums, item));
     }
 
 
@@ -31,9 +31,17 @@ public class MidIndex {
         return -1;
     }
 
+    /**
+     * 二分查找
+     * @param nums 数组
+     * @param item 查找的值
+     * @return 查找到返回数组下标，否则返回 -1
+     */
     public static int binary_search(int[] nums, int item) {
-
-        int low = 0, high = nums.length;
+        if(nums.length == 0) {
+            return -1;
+        }
+        int low = 0, high = nums.length - 1;
         while(low <= high) {
             int mid = (low + high) / 2;
             if(nums[mid] == item) {
@@ -44,6 +52,6 @@ public class MidIndex {
                 high = mid - 1;
             }
         }
-        return 0;
+        return -1;
     }
 }
