@@ -6,10 +6,14 @@ public class Solution {
         System.out.println(helloWorld);
         String helloWorld2 = reverseWords("Welcome to shenzhen");
         System.out.println(helloWorld2);
+        String s = stringToUppercase(helloWorld2);
+        System.out.println(s);
+        System.out.println(stringToLowercase(s));
     }
 
     /**
      * 双指针实现翻转字符串里的单词
+     *
      * @param s 字符串
      * @return 翻转后的字符串
      */
@@ -18,15 +22,15 @@ public class Solution {
         s = s.trim();
         int j = s.length() - 1, i = j;
         StringBuilder sb = new StringBuilder();
-        while(i >= 0) {
+        while (i >= 0) {
             // 找到第一个空格
-            while(i >= 0 && s.charAt(i) != ' ') {
+            while (i >= 0 && s.charAt(i) != ' ') {
                 i--;
             }
             // 添加单词
             sb.append(s, i + 1, j + 1).append(" ");
             // 跳过空格, 找到下一个单词的末尾
-            while(i >= 0 && s.charAt(i) == ' ') {
+            while (i >= 0 && s.charAt(i) == ' ') {
                 i--;
             }
             // j 指向下个单词的空格
@@ -38,6 +42,7 @@ public class Solution {
 
     /**
      * 分隔 + 倒序实现翻转字符串里的单词
+     *
      * @param s 字符串
      * @return 翻转后的字符串
      */
@@ -55,5 +60,42 @@ public class Solution {
             }
         }
         return sb.toString();
+    }
+
+    /**
+     * 将字符串中的小写字母转换为大写字母
+     *
+     * @param s 字符串
+     * @return 转换后的字符串
+     */
+    public static String stringToUppercase(String s) {
+        if (s == null || s.isEmpty()) {
+            return s;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z') {
+                s = s.replace(s.charAt(i), (char) (s.charAt(i) - 32));
+            }
+        }
+        return s;
+    }
+
+    /**
+     * 将字符串中的大写字母转换为小写字母
+     *
+     * @param s 字符串
+     * @return 转换后的字符串
+     */
+    public static String stringToLowercase(String s) {
+        if (s == null || s.isEmpty()) {
+            return s;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+                s = s.replace(s.charAt(i), (char) (s.charAt(i) + 32));
+            }
+        }
+        return s;
     }
 }
