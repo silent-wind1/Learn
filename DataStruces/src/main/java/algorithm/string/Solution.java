@@ -12,7 +12,7 @@ public class Solution {
         String s = stringToUppercase(helloWorld2);
         System.out.println(s);
         System.out.println(stringToLowercase(s));
-        List<String> string = splitString("hello world", ' ');
+        List<String> string = splitString("hello    world", ' ');
         for (String stringBuilder : string) {
             System.out.println(stringBuilder);
         }
@@ -124,11 +124,15 @@ public class Solution {
             if (charAt != regex) {
                 stringBuilder.append(charAt);
             } else {
-                list.add(stringBuilder.toString());
-                stringBuilder = new StringBuilder();
+                // 防止出现多个空字符串导致分割错误
+                if (stringBuilder.length() > 0){
+                    list.add(stringBuilder.toString());
+                    stringBuilder = new StringBuilder();
+                }
             }
             i++;
         }
+        // 防止循环结束，最后一个字符串没有添加到
         if (stringBuilder.length() > 0) {
             list.add(stringBuilder.toString());
         }
