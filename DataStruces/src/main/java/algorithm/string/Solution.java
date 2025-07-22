@@ -1,5 +1,8 @@
 package main.java.algorithm.string;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
     public static void main(String[] args) {
         String helloWorld = splitReverseWords("hello  world ");
@@ -9,6 +12,10 @@ public class Solution {
         String s = stringToUppercase(helloWorld2);
         System.out.println(s);
         System.out.println(stringToLowercase(s));
+        List<String> string = splitString("hello world", ' ');
+        for (String stringBuilder : string) {
+            System.out.println(stringBuilder);
+        }
     }
 
     /**
@@ -97,5 +104,34 @@ public class Solution {
             }
         }
         return s;
+    }
+
+    /**
+     * 将字符串按照给定的正则表达式进行分割
+     *
+     * @param str 字符串
+     * @return 分割后的字符串数组
+     */
+    public static List<String> splitString(String str, char regex) {
+        if (str == null || str.isEmpty()) {
+            return null;
+        }
+        List<String> list = new ArrayList<>();
+        int i = 0;
+        StringBuilder stringBuilder = new StringBuilder();
+        while (i < str.length()) {
+            char charAt = str.charAt(i);
+            if (charAt != regex) {
+                stringBuilder.append(charAt);
+            } else {
+                list.add(stringBuilder.toString());
+                stringBuilder = new StringBuilder();
+            }
+            i++;
+        }
+        if (stringBuilder.length() > 0) {
+            list.add(stringBuilder.toString());
+        }
+        return list;
     }
 }
