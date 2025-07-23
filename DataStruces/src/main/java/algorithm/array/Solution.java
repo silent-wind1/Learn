@@ -1,6 +1,9 @@
 package main.java.algorithm.array;
 
-import java.util.*;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 public class Solution {
     public static void main(String[] args) {
@@ -85,6 +88,23 @@ public class Solution {
             ++fast;
         }
         return slow;
+    }
+
+    /**
+     * 删除重复元素
+     *
+     * @param nums 数组
+     * @return 数组长度
+     */
+    public int removeDuplicates1(int[] nums) {
+        int j = 2;
+        for (int i = 2; i < nums.length; i++) {
+            if (nums[j - 2] != nums[i]) {
+                nums[j] = nums[i];
+                ++j;
+            }
+        }
+        return j;
     }
 
 
