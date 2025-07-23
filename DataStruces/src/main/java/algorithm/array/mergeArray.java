@@ -2,6 +2,7 @@ package main.java.algorithm.array;
 
 /**
  * 合并两个有序数组
+ * @author yefeng
  */
 public class mergeArray {
     public static void main(String[] args) {
