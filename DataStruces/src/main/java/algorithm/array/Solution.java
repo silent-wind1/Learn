@@ -107,7 +107,11 @@ public class Solution {
         return j;
     }
 
-
+    /**
+     * 判断括号是否有效
+     * @param s 字符串
+     * @return
+     */
     public boolean isValid(String s) {
         int n = s.length();
         if (n % 2 == 1) {
