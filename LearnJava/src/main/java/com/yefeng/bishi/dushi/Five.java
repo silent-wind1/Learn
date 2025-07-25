@@ -10,9 +10,34 @@ public class Five {
         int x = 10;
         tripleValue(x);
         System.out.println(x);
+
+        int[] y ={10};
+        tripleValue(y);
+        System.out.println(y[0]);
+
+        Person person = new Person();
+        tripleValue(person);
+        System.out.println(person.age);
     }
 
     static void tripleValue(int x) {
         x = x * 3; // 修改x的值
+    }
+
+    static void tripleValue(int[] x) {
+        x[0] = x[0] * 3; // 修改x的值
+    }
+
+    /**
+     *
+     * @param x
+     */
+    static void tripleValue(Person x) {
+        x = new Person();
+       x.age = x.age * 3;
+    }
+
+    static class Person {
+        private int age = 20;
     }
 }
