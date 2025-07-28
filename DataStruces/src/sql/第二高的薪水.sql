@@ -21,3 +21,11 @@ where salary < (select max(salary) from employee);
 
 -- 通过limit获取第二高的薪水
 select ifNull((select distinct salary from employee order by Salary Desc limit 1,1), null) as SecondHighestSalary;
+
+
+-- 查询超过自己经理的工资的员工
+select tb1.name as employee
+from employee as tb1
+         left join employee as tb2
+                   on tb1.managerId = tb2.Id
+where tb1.salary > tb2.salary;
