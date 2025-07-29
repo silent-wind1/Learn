@@ -24,7 +24,8 @@ public class ReverseLink {
      * @param t 元素
      */
     public void insert(int t) {
-        ListNode n = head;  // 把头节点复制给一个新元素
+        // 把头节点复制给一个新元素
+        ListNode n = head;
         while (n.next != null) {
             n = n.next;
         }
@@ -61,7 +62,8 @@ public class ReverseLink {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         // write code here
         ListNode pre = new ListNode(0);
-        pre.next = head;  // 指向头节点
+        // 指向头节点
+        pre.next = head;
         ListNode preStart = pre;
         ListNode start = head;
         for (int i = 1; i < m; i++) {
@@ -107,7 +109,8 @@ public class ReverseLink {
      */
     public ListNode reverseKGroup (ListNode head, int k) {
         ListNode end = head;
-        for (int i = 0; i < k; i++) {//找到翻转部分尾节点的下一个节点
+        //找到翻转部分尾节点的下一个节点
+        for (int i = 0; i < k; i++) {
             if (end == null) {
                 return head;
             }
@@ -120,7 +123,8 @@ public class ReverseLink {
             pre = cur;
             cur = tmp;
         }
-        head.next = reverseKGroup(end, k);//尾节点指向下一个翻转的头节点
+        //尾节点指向下一个翻转的头节点
+        head.next = reverseKGroup(end, k);
         return pre;
     }
 }

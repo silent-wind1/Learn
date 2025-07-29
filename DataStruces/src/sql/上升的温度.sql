@@ -18,14 +18,14 @@ values (1, '2025-07-01', 10),
        (9, '2025-07-29', 35);
 
 select a.id
-from Weather as a,
-     Weather as b
+from weather as a,
+     weather as b
 where datediff(a.record_date, b.record_date) = 1
   and a.temperature > b.temperature;
 
 -- datediff() 函数 计算两个日期之间的天数差
 select a.id, a.temperature, a.record_date
-from Weather as a
-         inner join Weather as b
+from weather as a
+         inner join weather as b
 where datediff(a.record_date, b.record_date) = 1
   and a.temperature > b.temperature;
