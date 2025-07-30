@@ -37,6 +37,7 @@ public class Solution {
 
     /**
      * 交换矩阵元素
+     *
      * @param matrix 矩阵
      * @param i1
      * @param j1
@@ -53,7 +54,7 @@ public class Solution {
      * 移除元素
      *
      * @param nums 数组
-     * @param val 删除的值
+     * @param val  删除的值
      * @return 删除后的数组长度
      */
     public static int removeElement(int[] nums, int val) {
@@ -69,18 +70,19 @@ public class Solution {
 
     /**
      * 删除排序数组中的重复项
+     *
      * @param nums 数组
      * @return 数组长度
      */
     public static int removeDuplicates(int[] nums) {
         int n = nums.length;
-        if(n == 0) {
+        if (n == 0) {
             return 0;
         }
         int slow = 1, fast = 1;
-        while(fast < n) {
+        while (fast < n) {
             // 判断当前值是否和前一个值相等
-            if(nums[fast] != nums[fast - 1]) {
+            if (nums[fast] != nums[fast - 1]) {
                 // 不相等则赋给slow
                 nums[slow++] = nums[fast];
             }
@@ -109,6 +111,7 @@ public class Solution {
 
     /**
      * 判断括号是否有效
+     *
      * @param s 字符串
      * @return
      */
@@ -136,6 +139,26 @@ public class Solution {
             }
         }
         return stack.isEmpty();
+    }
+
+    /**
+     * 回文数
+     * @param x 数字
+     * @return boolean
+     */
+    public boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int target = x;
+        int res = 0;
+        while (x != 0) {
+            int tmp = x % 10;
+            res = res * 10 + tmp;
+            x /= 10;
+
+        }
+        return res == target;
     }
 
 }
