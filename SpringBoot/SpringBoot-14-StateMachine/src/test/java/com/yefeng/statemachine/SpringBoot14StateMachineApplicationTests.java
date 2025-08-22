@@ -1,31 +1,41 @@
 package com.yefeng.statemachine;
 
-import com.yefeng.statemachine.model.enums.OrderEvent;
-import com.yefeng.statemachine.model.enums.OrderStatus;
+import cn.hutool.json.JSONUtil;
 import com.yefeng.statemachine.service.OrderService;
 import jakarta.annotation.Resource;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.statemachine.StateMachine;
+
+import java.util.concurrent.CountDownLatch;
 
 @SpringBootTest
 class SpringBoot14StateMachineApplicationTests {
-    @Resource
-    private StateMachine<OrderStatus, OrderEvent> stateMachine;
 
     @Resource
     private OrderService orderService;
 
-    @BeforeEach
-    public void setUp() {
-        stateMachine.start();
-    }
-
     @Test
-    void contextLoads() {
-        orderService.pay("1");
+    void contextLoads() throws InterruptedException {
+        CountDownLatch countDownLatch = new CountDownLatch(2);
+        new Thread(() -> {
+            orderService.create();
+            orderService.pay(1L);
+            orderService.deliver(1L);
+            orderService.receive(1L);
+            countDownLatch.countDown();
+        }).start();
+
+
+        new Thread(() -> {
+            orderService.create();
+            orderService.pay(2L);
+            orderService.deliver(2L);
+            orderService.receive(2L);
+            countDownLatch.countDown();
+        }).start();
+        countDownLatch.await();
+
+        System.out.println("订单处理完成:" + JSONUtil.toJsonStr(orderService.getOrders()));
     }
 
 }
