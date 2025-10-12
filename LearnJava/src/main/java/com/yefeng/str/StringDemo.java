@@ -31,27 +31,4 @@ public class StringDemo {
             System.out.println("待审核");
         }
     }
-
-    /**
-     * 获取当前登录用户的类型
-     */
-//    public String getCurrentUserType() {
-//        LoginUser loginUser = SecurityUtils.getLoginUser();
-//        if (loginUser == null) {
-//            throw new RuntimeException("用户未登录");
-//        }
-//
-//        String userType = loginUser.getUserType();
-//
-//        if ("01".equals(userType)) {
-//            String company = ldsCompanyService.queryLoginCompany();
-//            if (company == null || company.getType() == null) {
-//                throw new RuntimeException("用工企业未关联有效公司信息");
-//            }
-//            return company.getType();
-//        } else if ("04".equals(userType)) {
-//            return userType;
-//        }
-//        throw new RuntimeException("未知用户类型: " + userType);
-//    }
 }
