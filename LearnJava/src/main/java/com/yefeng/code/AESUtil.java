@@ -11,10 +11,11 @@ public class AESUtil {
 
     // 指定 AES 算法
     private static final String AES = "AES";
-    private static final String AES_ALGORITHM = "AES/ECB/PKCS5Padding"; // ECB 模式 + PKCS5 填充
+    // ECB 模式 + PKCS5 填充
+    private static final String AES_ALGORITHM = "AES/ECB/PKCS5Padding";
 
-    // **密钥长度**
-    private static final int AES_KEY_SIZE = 256; // 128、192 或 256
+    // 密钥长度  128、192 或 256
+    private static final int AES_KEY_SIZE = 256;
 
     /**
      * **生成 AES 密钥**
@@ -27,7 +28,7 @@ public class AESUtil {
     }
 
     /**
-     * **AES 加密**
+     * AES 加密
      */
     public static String encrypt(String data, String secretKey) throws Exception {
         SecretKeySpec keySpec = new SecretKeySpec(Base64.getDecoder().decode(secretKey), AES);

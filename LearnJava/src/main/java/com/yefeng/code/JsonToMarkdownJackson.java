@@ -6,6 +6,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileWriter;
 
+/**
+ * 使用Jackson库将JSON数据转换为Markdown文件
+ */
 public class JsonToMarkdownJackson {
     public static void main(String[] args) {
         try {
