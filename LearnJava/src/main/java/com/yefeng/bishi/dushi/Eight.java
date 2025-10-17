@@ -54,10 +54,15 @@ public class Eight {
         printTree(addresses.get("0"), 0);
     }
 
-    // 递归打印树形结构的方法
+    /**
+     * 递归打印树形结构的方法
+     *
+     * @param address
+     * @param level
+     */
     private static void printTree(Address address, int level) {
         // 仅打印有名称的节点
-        if(address.getName() != null) {
+        if (address.getName() != null) {
             // 根据层级生成缩进（每层一个制表符）
             for (int i = 1; i < level; i++) {
                 System.out.print("\t");
