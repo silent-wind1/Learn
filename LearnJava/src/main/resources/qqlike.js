@@ -11,12 +11,12 @@
 (function () {
     'use strict';
 
-    var x = 5, y = 10; // 滚动增量
-    var isRunning = false; // 标记是否正在执行点赞
+    let x = 5, y = 10; // 滚动增量
+    let isRunning = false; // 标记是否正在执行点赞
 
     // 创建一个按钮
     function createButton() {
-        var btn = document.createElement('button');
+        let btn = document.createElement('button');
         btn.innerText = '开始自动点赞';
         btn.style.position = 'fixed';
         btn.style.top = '50px';
