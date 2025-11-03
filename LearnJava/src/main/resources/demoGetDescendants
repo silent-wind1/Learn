@@ -1,0 +1,52 @@
+/**
+     * 获取指定用户的所有下级用户（无限级，过滤status=1），迭代实现
+     */
+    @Override
+    public List<User> getAllActiveDescendants(Integer rootUserId, Integer maxDepth) {
+        if (ObjectUtil.isNull(rootUserId) || rootUserId <= 0) {
+            return Collections.emptyList();
+        }
+        if (ObjectUtil.isNull(maxDepth) || maxDepth <= 0) {
+            maxDepth = 64;
+        }
+
+        // 结果集与去重集
+        Map<Integer, User> collectedUserMap = new LinkedHashMap<>();
+        // 当前层前沿（用户ID集合）
+        Set<Integer> frontier = new LinkedHashSet<>();
+
+        // 初始化：直接下级（status=1）
+        {
+            LambdaQueryWrapper<User> initWrapper = Wrappers.lambdaQuery();
+            initWrapper.eq(User::getSpreadUid, rootUserId);
+            initWrapper.eq(User::getStatus, 1);
+            List<User> firstLevel = dao.selectList(initWrapper);
+            for (User u : firstLevel) {
+                collectedUserMap.put(u.getId(), u);
+                frontier.add(u.getId());
+            }
+        }
+
+        int depth = 1;
+        while (!frontier.isEmpty() && depth < maxDepth) {
+            // 查询当前前沿的所有子用户（status=1）
+            LambdaQueryWrapper<User> wrapper = Wrappers.lambdaQuery();
+            wrapper.in(User::getSpreadUid, frontier);
+            wrapper.eq(User::getStatus, 1);
+            List<User> children = dao.selectList(wrapper);
+
+            // 生成下一层前沿
+            Set<Integer> nextFrontier = new LinkedHashSet<>();
+            for (User child : children) {
+                if (!collectedUserMap.containsKey(child.getId())) {
+                    collectedUserMap.put(child.getId(), child);
+                    nextFrontier.add(child.getId());
+                }
+            }
+
+            frontier = nextFrontier;
+            depth++;
+        }
+
+        return new ArrayList<>(collectedUserMap.values());
+    }
