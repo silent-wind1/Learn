@@ -35,23 +35,16 @@ public class JsonConversionExample {
         // 使用您的工具类进行转换
         AwardRule awardRule = JsonUtils.fromJson(json, AwardRule.class);
         
-        // 输出转换结果
-        System.out.println("转换结果:");
-        System.out.println(awardRule);
-        
-        // 访问具体字段
-        System.out.println("\n详细字段:");
-        System.out.println("最低星级要求: " + awardRule.getConditions().getMinStarRating());
-        System.out.println("业绩阈值: " + awardRule.getConditions().getPerformanceThreshold());
-        
         System.out.println("\n奖励阶梯:");
+        long total = 50001;
         for (RewardTier tier : awardRule.getRewardTiers()) {
-            System.out.println("销量≥" + tier.getMinQuantity() + "盒，单价:" + tier.getUnitPrice() + "元");
+            if(total >= tier.getMinQuantity()){
+                System.out.println("最低数量: " + tier.getMinQuantity() + ", 单价: " + tier.getUnitPrice());
+            } else {
+                System.out.println("退出循环了");
+                break;
+            }
         }
-        
-        // 反向转换测试
-        String backToJson = JsonUtils.toJson(awardRule);
-        System.out.println("\n反向转换JSON:");
-        System.out.println(backToJson);
+
     }
 }
