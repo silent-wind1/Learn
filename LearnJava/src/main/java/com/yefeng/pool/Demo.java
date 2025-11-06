@@ -28,6 +28,10 @@ public class Demo {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
         String formattedDate = currentDate.format(formatter);
 
+        // 获取28天前的日期
+        System.out.println("28天前是：" + currentDate.minusDays(28));
+        // 获取28天后的日期
+        System.out.println("28天后是:" + currentDate.plusDays(28));
         // 输出结果
         System.out.println("当前日期: " + formattedDate);
 
