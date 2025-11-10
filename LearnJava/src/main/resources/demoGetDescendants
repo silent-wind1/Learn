@@ -50,3 +50,19 @@
 
         return new ArrayList<>(collectedUserMap.values());
     }
+
+
+
+    // 获取下级用户id
+    public List<Integer> findChild(List<User> all, int orgId) {
+            List<Integer> children = all.stream()
+                    .filter(item -> item.getSpreadUid() != null && item.getSpreadUid() == orgId)
+                    .map(User::getId)
+                    .collect(Collectors.toList());
+            List<Integer> subChildren = children.stream()
+                    .map(childId -> findChild(all, childId))
+                    .flatMap(List::stream)
+                    .collect(Collectors.toList());
+            children.addAll(subChildren);
+            return children;
+        }
