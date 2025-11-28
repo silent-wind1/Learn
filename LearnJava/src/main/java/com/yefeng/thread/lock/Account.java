@@ -6,8 +6,8 @@ public class Account {
     private int balance;
     private final ReentrantLock lock = new ReentrantLock();
 
-    public Account(int balace) {
-        this.balance = balace;
+    public Account(int balance) {
+        this.balance = balance;
     }
 
     /**
