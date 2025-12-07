@@ -21,14 +21,12 @@ public class ExcelDemo {
         String templateFileName = "./模板.xlsx";
 
         // 使用模板文件写入，会保留模板的前3行，从第4行开始追加数据
-        ExcelWriter excelWriter = EasyExcel.write(name, DataDemo.class).withTemplate(templateFileName).build();
-        WriteSheet writeSheet = EasyExcel.writerSheet().needHead(false).build();
-
-        // 写入数据，会从模板文件的下一行开始（第4行）
-        excelWriter.write(cachedDataList, writeSheet);
-
-        // 关闭流
-        excelWriter.finish();
-
+        try (ExcelWriter excelWriter = EasyExcel.write(name, DataDemo.class).withTemplate(templateFileName).build()) {
+            WriteSheet writeSheet = EasyExcel.writerSheet().needHead(false).build();
+            // 写入数据，会从模板文件的下一行开始（第4行）
+            excelWriter.write(cachedDataList, writeSheet);
+            // 关闭流
+            excelWriter.finish();
+        }
     }
 }
