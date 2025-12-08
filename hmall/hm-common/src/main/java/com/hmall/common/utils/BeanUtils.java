@@ -51,7 +51,7 @@ public class BeanUtils extends BeanUtil {
     }
 
     public static <R, T> List<T> copyList(List<R> list, Class<T> clazz, Convert<R, T> convert) {
-        if (list == null || list.size() == 0) {
+        if (list == null || list.isEmpty()) {
             return CollUtils.emptyList();
         }
         return list.stream().map(r -> copyBean(r, clazz, convert)).collect(Collectors.toList());
