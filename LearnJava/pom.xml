@@ -45,6 +45,12 @@
             <artifactId>easyexcel</artifactId>
             <version>4.0.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.11.0</version>
+        </dependency>
     
     </dependencies>
     <build>
