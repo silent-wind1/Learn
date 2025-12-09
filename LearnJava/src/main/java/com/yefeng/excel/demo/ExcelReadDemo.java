@@ -11,6 +11,7 @@ import com.yefeng.excel.demo.entity.Roster;
 import com.yefeng.excel.demo.entity.WriteExcelData;
 import com.yefeng.excel.demo.listener.EmployeeSocialSecurityPlusDataListener;
 import com.yefeng.excel.demo.listener.RosterDataListener;
+import org.apache.poi.ss.formula.functions.T;
 
 
 import java.io.File;
@@ -66,9 +67,11 @@ public class ExcelReadDemo {
                         .doRead();
             }
         }
-
-        mergedExcel();
-
+        // 合并数据
+        String socialPath = "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-社保缴费明细.xlsx";
+        String housingPath = "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-公积金缴费明细.xlsx";
+        mergedExcel(socialPath, housingPath);
+        // 写入到Excel
         writeExcel();
     }
 
@@ -80,7 +83,10 @@ public class ExcelReadDemo {
      */
     private static boolean isExcelFile(File file) {
         String fileName = file.getName().toLowerCase();
-        return fileName.endsWith(".xls") || fileName.endsWith(".xlsx") || fileName.endsWith(".xlsm") || fileName.endsWith(".xltx") || fileName.endsWith(".xlt");
+        return fileName.endsWith(".xls") || 
+                fileName.endsWith(".xlsx") || 
+                fileName.endsWith(".xlsm") ||
+                fileName.endsWith(".xlt");
     }
 
 
@@ -148,10 +154,10 @@ public class ExcelReadDemo {
     /**
      * 合并Excel数据
      */
-    private static void mergedExcel() {
+    private static void mergedExcel(String socialPath, String housingPath) {
         // 读取社保数据
         List<EmployeeSocialSecurityPlus> socialList = EasyExcel.read(
-                "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-社保缴费明细.xlsx",
+                        socialPath,
                         EmployeeSocialSecurityPlus.class,
                         null
                 )
@@ -161,7 +167,7 @@ public class ExcelReadDemo {
 
         // 读取公积金数据
         List<EmployeeSocialSecurityPlus> housingList = EasyExcel.read(
-                "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-公积金缴费明细.xlsx",
+                        housingPath,
                         EmployeeSocialSecurityPlus.class,
                         null
                 )
@@ -183,19 +189,25 @@ public class ExcelReadDemo {
                     social.setHousingFundCompany(housing.getHousingFundCompany());
                     social.setHousingFundPersonal(housing.getHousingFundPersonal());
                     social.setHousingFundTotal(housing.getHousingFundTotal());
-                    WriteExcelData writeExcelData = new WriteExcelData();
-                    BeanUtil.copyProperties(social, writeExcelData);
-                    String rosterKey = writeExcelData.getName() + "-" + writeExcelData.getDepartment();
-                    Roster roster = ROSTERMap.get(rosterKey);
-                    if (roster != null) {
-                        writeExcelData.setSerialNumber(INDEX.getAndIncrement());
-                        writeExcelData.setCostCompany(roster.getCostCompany());
-                        writeExcelData.setCostDepartment(roster.getCostDepartment());
-                        writeExcelData.setActualDepartment(roster.getActualDepartment());
-                        writeExcelData.setPosition(roster.getPosition());
-                        writeExcelData.setEmployeeId(roster.getEmployeeId());
-                    }
-                    DATA.add(writeExcelData);
+
+                    copyWriteExcelData(social);
                 });
+    }
+
+    public static <T> void copyWriteExcelData (T social) {
+        WriteExcelData writeExcelData = new WriteExcelData();
+        BeanUtil.copyProperties(social, writeExcelData);
+        String rosterKey = writeExcelData.getName() + "-" + writeExcelData.getDepartment();
+        Roster roster = ROSTERMap.get(rosterKey);
+        if (roster != null) {
+            writeExcelData.setSerialNumber(INDEX.getAndIncrement());
+            writeExcelData.setCostCompany(roster.getCostCompany());
+            writeExcelData.setCostDepartment(roster.getCostDepartment());
+            writeExcelData.setActualDepartment(roster.getActualDepartment());
+            writeExcelData.setPosition(roster.getPosition());
+            writeExcelData.setEmployeeId(roster.getEmployeeId());
+        }
+
+        DATA.add(writeExcelData);
     }
 }
