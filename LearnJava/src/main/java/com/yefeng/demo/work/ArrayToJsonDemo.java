@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ArrayToJsonDemo {
     public static void main(String[] args) {
-        String invoiceIds = "[\"F_1894687464601227264\",\"F_1894678794367328256\",\"F_1894681772188475392\",\"F_1894687464345374720\",\"F_1894687464475398144\"]";
+        String invoiceIds = "[\"F_1894687464601227264\",\"F_1894678794367328256\",\"F_1894681772188475392\",\"F_1894687464345374720\",\"F_1894687464475398144\", \"123\"]";
         JSONArray objects = JSONUtil.parseArray(invoiceIds);
         List<String> news = new ArrayList<>();
         List<String> olds = new ArrayList<>();

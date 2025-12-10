@@ -2,6 +2,7 @@ package com.yefeng.demo.work;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 
@@ -30,6 +31,10 @@ public class DateExample {
 
         System.out.println("Current Year: " + year1);
         System.out.println("Current Month: " + month1);
+
+
+        YearMonth now = YearMonth.now();
+        System.out.println(now.format(DateTimeFormatter.ofPattern("yyyyMM")));
 
         // 使用Java日期API进行解析和计算
 //        String taxYear = "2024";

@@ -1,13 +1,9 @@
 package com.yefeng.excel.demo.listener;
 
-import cn.hutool.core.bean.BeanUtil;
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.read.listener.ReadListener;
-import com.yefeng.excel.demo.entity.EmployeeSocialSecurityPlus;
-import com.yefeng.excel.demo.entity.Roster;
-import com.yefeng.excel.demo.entity.WriteExcelData;
 
-import static com.yefeng.excel.demo.ExcelReadDemo.*;
+import static com.yefeng.excel.demo.ExcelReadDemo.copyWriteExcelData;
 
 
 public class EmployeeSocialSecurityPlusDataListener<T> implements ReadListener<T> {

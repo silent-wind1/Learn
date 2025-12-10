@@ -11,11 +11,10 @@ import com.yefeng.excel.demo.entity.Roster;
 import com.yefeng.excel.demo.entity.WriteExcelData;
 import com.yefeng.excel.demo.listener.EmployeeSocialSecurityPlusDataListener;
 import com.yefeng.excel.demo.listener.RosterDataListener;
-import org.apache.poi.ss.formula.functions.T;
-
 
 import java.io.File;
-import java.time.LocalDate;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -29,12 +28,12 @@ import java.util.stream.Collectors;
 public class ExcelReadDemo {
     public static final AtomicInteger INDEX = new AtomicInteger(1);
     public static final List<WriteExcelData> DATA = new ArrayList<>();
-    public static final List<WriteExcelData> Special = new ArrayList<>();
     public static final Map<String, Roster> ROSTERMap = new HashMap<>(680);
 
     public static void main(String[] args) {
         List<String> SPECIAL_REGIONS = List.of("陕西", "惠州", "深圳", "西安", "韶关");
         List<String> SPECIAL_EXCEL = List.of("深圳-深圳市同仁科技实业有限公司-社保缴费明细.xlsx", "深圳-深圳市同仁科技实业有限公司-公积金缴费明细.xlsx");
+        String date = YearMonth.now().format(DateTimeFormatter.ofPattern("yyyyMM"));
         String directoryPath = "D:/各地区社保公积金数据表/202512/附件";
         List<String> excelFiles = findExcelFile(directoryPath);
 
@@ -54,24 +53,16 @@ public class ExcelReadDemo {
                 continue;
             }
             if (SPECIAL_REGIONS.stream().anyMatch(filePath::contains)) {
-                EasyExcel.read(filePath, EmployeeSocialSecurityPlus.class,
-                                new EmployeeSocialSecurityPlusDataListener<EmployeeSocialSecurityPlus>())
-                        .headRowNumber(4)
-                        .sheet(0)
-                        .doRead();
+                EasyExcel.read(filePath, EmployeeSocialSecurityPlus.class, new EmployeeSocialSecurityPlusDataListener<EmployeeSocialSecurityPlus>()).headRowNumber(4).sheet(0).doRead();
             } else {
-                EasyExcel.read(filePath, EmployeeSocialSecurity.class,
-                                new EmployeeSocialSecurityPlusDataListener<EmployeeSocialSecurity>())
-                        .headRowNumber(4)
-                        .sheet(0)
-                        .doRead();
+                EasyExcel.read(filePath, EmployeeSocialSecurity.class, new EmployeeSocialSecurityPlusDataListener<EmployeeSocialSecurity>()).headRowNumber(4).sheet(0).doRead();
             }
         }
         // 合并数据
-        String socialPath = "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-社保缴费明细.xlsx";
-        String housingPath = "D:/各地区社保公积金数据表/202512/附件/深圳-深圳市同仁科技实业有限公司-公积金缴费明细.xlsx";
+        String socialPath = String.format("D:/各地区社保公积金数据表/%s/附件/深圳-深圳市同仁科技实业有限公司-社保缴费明细.xlsx", date);
+        String housingPath = String.format("D:/各地区社保公积金数据表/%s/附件/深圳-深圳市同仁科技实业有限公司-公积金缴费明细.xlsx", date);
         mergedExcel(socialPath, housingPath);
-        // 写入到Excel
+        // 写入到 Excel
         writeExcel();
     }
 
@@ -83,10 +74,7 @@ public class ExcelReadDemo {
      */
     private static boolean isExcelFile(File file) {
         String fileName = file.getName().toLowerCase();
-        return fileName.endsWith(".xls") || 
-                fileName.endsWith(".xlsx") || 
-                fileName.endsWith(".xlsm") ||
-                fileName.endsWith(".xlt");
+        return fileName.endsWith(".xls") || fileName.endsWith(".xlsx") || fileName.endsWith(".xlsm") || fileName.endsWith(".xlt");
     }
 
 
@@ -127,7 +115,7 @@ public class ExcelReadDemo {
      * Excel写入
      */
     private static void writeExcel() {
-        String name = "D:/" + LocalDate.now().getYear() + "-" + LocalDate.now().getMonthValue() + "社保公积金汇总.xlsx";
+        String name = "D:/" + YearMonth.now() + "社保公积金汇总.xlsx";
         String templateFileName = "D:/社保公积金汇总表.xlsx";
 
         // 创建字体样式 - 设置为宋体
@@ -142,45 +130,27 @@ public class ExcelReadDemo {
         // 创建水平样式处理器
         HorizontalCellStyleStrategy styleStrategy = new HorizontalCellStyleStrategy(null, writeCellStyle);
 
-        EasyExcel.write(name, WriteExcelData.class)
-                .withTemplate(templateFileName)
-                .sheet()
-                .needHead(false)  // 不生成标题
-                .registerWriteHandler(styleStrategy)
-                .doWrite(DATA);
+        EasyExcel.write(name, WriteExcelData.class).withTemplate(templateFileName).sheet().needHead(false)  // 不生成标题
+                .registerWriteHandler(styleStrategy).doWrite(DATA);
 
     }
 
     /**
-     * 合并Excel数据
+     *
+     * 合并 Excel 数据
+     *
+     * @param socialPath  社保文件路径
+     * @param housingPath 公积金文件路径
      */
     private static void mergedExcel(String socialPath, String housingPath) {
         // 读取社保数据
-        List<EmployeeSocialSecurityPlus> socialList = EasyExcel.read(
-                        socialPath,
-                        EmployeeSocialSecurityPlus.class,
-                        null
-                )
-                .headRowNumber(4)
-                .sheet()
-                .doReadSync();
+        List<EmployeeSocialSecurityPlus> socialList = EasyExcel.read(socialPath, EmployeeSocialSecurityPlus.class, null).headRowNumber(4).sheet().doReadSync();
 
         // 读取公积金数据
-        List<EmployeeSocialSecurityPlus> housingList = EasyExcel.read(
-                        housingPath,
-                        EmployeeSocialSecurityPlus.class,
-                        null
-                )
-                .headRowNumber(4)
-                .sheet()
-                .doReadSync();
+        List<EmployeeSocialSecurityPlus> housingList = EasyExcel.read(housingPath, EmployeeSocialSecurityPlus.class, null).headRowNumber(4).sheet().doReadSync();
 
         // 创建公积金数据的查找映射
-        Map<String, EmployeeSocialSecurityPlus> housingMap = housingList.stream()
-                .collect(Collectors.toMap(
-                        housing -> housing.getName() + "-" + housing.getDepartment(),
-                        housing -> housing
-                ));
+        Map<String, EmployeeSocialSecurityPlus> housingMap = housingList.stream().collect(Collectors.toMap(housing -> housing.getName() + "-" + housing.getDepartment(), housing -> housing));
 
         socialList.stream()
                 .filter(social -> housingMap.containsKey(social.getName() + "-" + social.getDepartment()))
@@ -194,9 +164,15 @@ public class ExcelReadDemo {
                 });
     }
 
-    public static <T> void copyWriteExcelData (T social) {
+    /**
+     * 将数据复制到 writeExcelData 对象中
+     *
+     * @param data 数据
+     * @param <T>  泛型
+     */
+    public static <T> void copyWriteExcelData(T data) {
         WriteExcelData writeExcelData = new WriteExcelData();
-        BeanUtil.copyProperties(social, writeExcelData);
+        BeanUtil.copyProperties(data, writeExcelData);
         String rosterKey = writeExcelData.getName() + "-" + writeExcelData.getDepartment();
         Roster roster = ROSTERMap.get(rosterKey);
         if (roster != null) {
