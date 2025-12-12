@@ -18,6 +18,7 @@ public class TestCallableAndFuture implements Callable<String> {
         new Thread(now, "现在").start();
         // 使用 JDK 8 的 Lambda 创建线程
         new Thread(() -> System.out.println(Thread.currentThread().getName() + "在运行！")).start();
+
     }
 
     @Override
