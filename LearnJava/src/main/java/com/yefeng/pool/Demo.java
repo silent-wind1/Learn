@@ -1,6 +1,8 @@
 package com.yefeng.pool;
 
 import java.time.LocalDate;
+import java.time.Year;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -46,5 +48,9 @@ public class Demo {
         System.out.println("finished");
         System.out.println(futureTask.get());
         System.out.println("等待线程结束");
+
+        // 获取年月类
+        YearMonth now = YearMonth.now();
+        System.out.println("yearMonth:" + now);
     }
 }
