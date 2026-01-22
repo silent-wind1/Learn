@@ -26,8 +26,9 @@ public class Demo {
 
         // 获取当前日期
         LocalDate currentDate = LocalDate.now();
+        System.out.println(currentDate);
         // 格式化日期为 "YYYY-MM" 格式
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String formattedDate = currentDate.format(formatter);
 
         // 获取28天前的日期
