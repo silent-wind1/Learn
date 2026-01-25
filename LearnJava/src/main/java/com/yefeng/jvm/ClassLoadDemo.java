@@ -10,11 +10,10 @@ package com.yefeng.jvm;
  */
 public class ClassLoadDemo {
     public static void main(String[] args) {
-        /**
-
-         */
-
-
-
+        ClassLoader classLoader = ClassLoadDemo.class.getClassLoader();
+        while (classLoader != null) {
+            System.out.println(classLoader);
+            classLoader = classLoader.getParent();
+        }
     }
 }
