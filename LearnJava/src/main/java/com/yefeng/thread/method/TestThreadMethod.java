@@ -34,7 +34,7 @@ public class TestThreadMethod {
                 // 如果不显式指定线程组，JVM 会将创建的线程归到当前线程所属的线程组中。
                 System.out.println(Thread.currentThread().getThreadGroup().getName() + "：" + Thread.currentThread().getName());
             }
-        }, "thread-demo");
+        }, "thread-demo.java");
         thread2.start();
     }
 
