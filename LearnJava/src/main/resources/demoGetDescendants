@@ -87,6 +87,7 @@
             if (tempFile != null) {
                 Files.deleteIfExists(tempFile);
             }
+            // 没有关闭流出现问题
             url.openStream().close();
         }
     }
