@@ -1,4 +1,4 @@
-/**
+    /**
      * 获取指定用户的所有下级用户（无限级，过滤status=1），迭代实现
      */
     @Override
@@ -66,3 +66,27 @@
             children.addAll(subChildren);
             return children;
         }
+
+
+    /**
+     * 没有关闭 url.openStream() 导致出现 java.lang.OutOfMemoryError: Direct buffer memory
+     */
+    private byte[] downloadImageFromUrl(String imageUrl) throws IOException {
+        Path tempFile = null;
+        try{
+            URL url = new URL(imageUrl);
+            tempFile = Files.createTempFile("wecom_", ".tmp");
+
+            Files.copy(url.openStream(), tempFile, java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+            return Files.readAllBytes(tempFile);
+        } catch (IOException e) {
+            log.error("downloadImageFromUrl,下载图片异常：{}", e);
+            throw new IOException("Failed to download image", e);
+        } finally {
+            // 删除临时文件
+            if (tempFile != null) {
+                Files.deleteIfExists(tempFile);
+            }
+            url.openStream().close();
+        }
+    }
