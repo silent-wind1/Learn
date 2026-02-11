@@ -1,0 +1,19 @@
+{
+  "data": {
+    "orderId": "202602111737492481571873",
+    "payPremium": "1018.00",
+    "payUrl": "http://106.120.193.138:7779/xsffmobile/polyCodePayPC?param=FED8D0CFEF699CBB7C8BE794091F0403320891A0ED8DD842719390C0D6DBA5DFA58567BBC8BEDBC7ECAB9B7189E16399A96ED07656530BB8119B92529959B1C3",
+    "policyResInfos": [
+      {
+        "proposalNo": "TWAS20262101QX00A00010",
+        "resTimes": "2026-02-11 17:37:50",
+        "serialNo": "1"
+      }
+    ],
+    "rdSeq": ""
+  },
+  "message": "Success",
+  "status": 0,
+  "statusText": "Success",
+  "timestamp": 1770802670911
+}
