@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
  * @author wind
- * @description:
+ * @description: 模拟实体类
  * @date 2025/12/4 19:05
  */
 @Data
