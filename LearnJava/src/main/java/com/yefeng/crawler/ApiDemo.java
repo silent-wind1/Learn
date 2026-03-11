@@ -3,6 +3,9 @@ package com.yefeng.crawler;
 import cn.hutool.json.JSONUtil;
 import com.yefeng.crawler.entity.SurveyResponse;
 
+/**
+ * 测试QQ学校调查
+ */
 public class ApiDemo {
     public static void main(String[] args) {
         try {
