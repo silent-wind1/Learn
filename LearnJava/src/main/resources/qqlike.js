@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  在QQ空间添加一个按钮，点击后自动点赞并滚动
-// @author       yefeng
+// @author       叶枫
 // @match        https://user.qzone.qq.com/*
 // @grant        none
 // ==/UserScript==
