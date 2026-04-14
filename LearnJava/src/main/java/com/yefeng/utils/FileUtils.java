@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.time.LocalDateTime;
 
 /**
@@ -46,6 +47,34 @@ public class FileUtils {
         java.nio.file.Files.copy(file.toPath(), dest.toPath());
         log.info("文件保存成功: {} -> {}", originalFilename, dest.getAbsolutePath());
         return dest.getAbsolutePath();
+    }
+
+    public static void main(String[] args) {
+        FileUtils fileUtils = new FileUtils();
+
+        // 创建测试文件
+        File testFile = new File("test.txt");
+        try {
+           Files.writeString(testFile.toPath(), "Hello, this is a test file.");
+
+            // 测试保存文件
+            String savedPath = fileUtils.saveFileToLocal(testFile, "F:/temp/upload");
+            System.out.println("文件已保存到: " + savedPath);
+
+            // 验证文件是否存在
+            File savedFile = new File(savedPath);
+            if (savedFile.exists()) {
+                System.out.println("文件保存成功！");
+                System.out.println("文件大小: " + savedFile.length() + " bytes");
+                System.out.println("文件内容: " + Files.readString(savedFile.toPath()));
+            }
+
+            // 清理测试文件
+            testFile.delete();
+        } catch (IOException e) {
+            System.err.println("文件保存失败: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
 }
