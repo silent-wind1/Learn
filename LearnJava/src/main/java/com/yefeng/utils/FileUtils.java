@@ -44,7 +44,7 @@ public class FileUtils {
         String savedName = String.format("%04d%02d%02d%02d%02d%02d", now.getYear(), now.getMonthValue(), now.getDayOfMonth(), now.getHour(), now.getMinute(), now.getSecond()) + extension;
 
         File dest = new File(dir, savedName);
-        java.nio.file.Files.copy(file.toPath(), dest.toPath());
+        Files.copy(file.toPath(), dest.toPath());
         log.info("文件保存成功: {} -> {}", originalFilename, dest.getAbsolutePath());
         return dest.getAbsolutePath();
     }
