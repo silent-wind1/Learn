@@ -17,7 +17,6 @@ public class OkHttpApiCaller {
             if (!response.isSuccessful()) {
                 System.out.println("请求失败" + response);
                 return null;
-//                throw new RuntimeException("请求失败: " + response);
             }
             return response.body().string();
         }
