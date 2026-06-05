@@ -29,7 +29,6 @@ public class OrderController {
     @RequestMapping("/getById")
     public Order getById(@RequestParam("id") Long id) {
         //根据id查询订单
-        Order order = orderService.getById(id);
-        return order;
+        return orderService.getById(id);
     }
 }

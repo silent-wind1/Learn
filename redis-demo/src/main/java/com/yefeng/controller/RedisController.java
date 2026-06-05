@@ -103,7 +103,7 @@ public class RedisController {
     }
 
     @GetMapping("/list/get/{key}/{start}/{end}")
-    public String getListRedis(@PathVariable("key") String key,  @PathVariable("start") Long start, @PathVariable("end") Long end){
+    public String getListRedis(@PathVariable String key, @PathVariable Long start, @PathVariable Long end){
         String keys = "yefeng:" + key;
         log.info("获取redis list index 键值对，key：{}", keys);
         return Objects.requireNonNull(stringRedisTemplate.opsForList().range(keys, start, end)).toString();
