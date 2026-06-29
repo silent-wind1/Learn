@@ -1,5 +1,8 @@
 package com.yefeng.thread.guardian;
 
+/**
+ * 守护线程: 如果所有的前台线程都死亡，后台线程会自动死亡。当整个JVM中只存在后台线程，那么程序就没有运行的必要了，整个JVM就退出了。
+ */
 public class TestGuardianThread {
     public static void main(String[] args) {
         Thread t1 = new Thread(() -> {

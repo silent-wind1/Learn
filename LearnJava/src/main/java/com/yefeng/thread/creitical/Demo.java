@@ -1,5 +1,8 @@
 package com.yefeng.thread.creitical;
 
+/**
+ * 线程安全问题代码
+ */
 public class Demo {
     static int counter = 0;
 

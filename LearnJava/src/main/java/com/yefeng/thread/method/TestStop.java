@@ -12,7 +12,7 @@ public class TestStop implements Runnable {
                 testStop.stop();
                 System.out.println("线程该停止了");
             }
-
+            System.out.println(Thread.currentThread().getName() + ":" + i);
         }
     }
 

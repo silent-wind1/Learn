@@ -1,5 +1,8 @@
 package com.yefeng.thread.method;
 
+/**
+ * 线程状态测试
+ */
 public class TestState {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(() -> {

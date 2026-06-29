@@ -1,5 +1,8 @@
 package com.yefeng.thread.method;
 
+/**
+ * 线程创建方法
+ */
 public class TestThreadMethod {
     public static void ConstructionMethod() {
         // 常见的构造方法

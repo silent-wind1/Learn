@@ -14,11 +14,8 @@ public class TestThreadBuyTicket implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
-            if (tickNumber <= 0) {
-                break;
-            }
-//            模拟延时
+        while (tickNumber > 0) {
+            //  模拟延时
             try {
                 Thread.sleep(200);
             } catch (Exception ex) {

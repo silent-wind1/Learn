@@ -1,5 +1,10 @@
-package com.yefeng.thread.method;
+package com.yefeng.thread.method.joindemo;
 
+
+/**
+ *  join: 把某一个线程加入到当前线程的执行流程中。
+ *  当某一个程序执行流中调用了其他线程的join()方法，调用线程暂停执行，直到被join()方法加入的join线程执行完成为止。
+ */
 public class TestJoin implements Runnable {
     public static void main(String[] args) throws InterruptedException {
         TestJoin testJoin = new TestJoin();
