@@ -14,35 +14,41 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  */
 public class FlinkMain {
     public static void main(String[] args) throws Exception {
-            // 1. 创建环境
-            StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-            env.setParallelism(1);
+        // 1. 创建环境
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        // 为了方便本地观察，设置并行度为 1
+        env.setParallelism(1);
+        // 开启 Checkpoint (生产环境必须开启，用于故障恢复和保证 Exactly-Once)
+        // 每 3000ms 做一次 Checkpoint
+        env.enableCheckpointing(300000);
 
-            // 3. 构建 MySQL CDC Source
-            MySqlSource<String> mySqlSource = MySqlSource.<String>builder()
-                    .serverTimeZone("Asia/Shanghai")
-                    .hostname("127.0.0.1")        // 数据库地址 // ⚠️ 坑点2：务必使用真实 IP，不要无脑写 localhost
-                    .port(3306)                   // 端口
-                    .databaseList("new_taizhan")   // 监控的数据库
-                    .tableList("new_taizhan.sys_user") // 监控的表 (库名.表名)
-                    .username("root")             // 用户名
-                    .password("123456")    // 替换为你的密码！！！
+        // 3. 构建 MySQL CDC Source
+        MySqlSource<String> mySqlSource = MySqlSource.<String>builder()
+                .serverTimeZone("Asia/Shanghai")
+                .hostname("127.0.0.1")        // 数据库地址 // ⚠️ 坑点2：务必使用真实 IP，不要无脑写 localhost
+                .port(3306)                   // 端口
+                .databaseList("new_taizhan")   // 监控的数据库
+                .tableList("new_taizhan.sys_user") // 监控的表 (库名.表名)
+                .username("root")             // 用户名
+                .password("123456")    // 替换为你的密码！！！
 
-                    // initial(): 第一次启动时，读取全量数据，然后切换到 Binlog。
-                    // latest(): 只读取启动之后的新变更。
-                    .startupOptions(StartupOptions.initial())
-                    .deserializer(new JsonDebeziumDeserializationSchema()) // 将变更数据转为 JSON 字符串
-                    .build();
+                // initial(): 第一次启动时，读取全量数据，然后切换到 Binlog。
+                // latest(): 只读取启动之后的新变更。
+                .startupOptions(StartupOptions.initial())
+                .deserializer(new JsonDebeziumDeserializationSchema()) // 将变更数据转为 JSON 字符串
+                .build();
 
-            // 4.读取数据
-            DataStreamSource<String> source = env.fromSource(
-                    mySqlSource, WatermarkStrategy.noWatermarks(), "MySQL CDC Source"
-            );
+        // 4.读取数据
+        DataStreamSource<String> source = env.fromSource(
+                mySqlSource,
+                WatermarkStrategy.noWatermarks(),
+                "MySQL CDC Source"
+        );
 
-            // 打印
-            source.print();
+        // 打印
+        source.print();
 
-            // 执行
-            env.execute();
+        // 执行
+        env.execute();
     }
 }
