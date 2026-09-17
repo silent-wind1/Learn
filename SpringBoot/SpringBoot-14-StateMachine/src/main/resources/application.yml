@@ -5,9 +5,9 @@ spring:
   application:
     name: SpringBoot-14-StateMachine
   datasource:
-    url: jdbc:mysql://localhost:3306/statemachine_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/my_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456
+    password: 031214t+
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis-plus:
