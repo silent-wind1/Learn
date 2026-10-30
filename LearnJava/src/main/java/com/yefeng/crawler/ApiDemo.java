@@ -21,13 +21,12 @@ public class ApiDemo {
                 }
                 SurveyResponse bean = JSONUtil.toBean(result, SurveyResponse.class);
                 if(bean.getCode() == 0) {
-                    System.out.println(url);
                     System.out.println("学校名称为: " + bean.getResult().getTemplateName());
                 }
                 i++;
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }

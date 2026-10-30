@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author wind
- * @description:
+ * @description: 堆内存溢出测试
  * @date 2025/12/19 12:22
  */
 public class HeapMaxDemo {
