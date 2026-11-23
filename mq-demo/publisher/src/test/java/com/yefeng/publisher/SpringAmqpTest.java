@@ -123,7 +123,7 @@ public class SpringAmqpTest {
     }
     @Test
     void send() {
-        String msg = "123&&123&&1&&";
+        String msg = "123&&123&&1&&123";
         String delimiter = "&&";
         List<String> result = new ArrayList<>();
         int startIndex = 0;
@@ -135,7 +135,8 @@ public class SpringAmqpTest {
             endIndex = msg.indexOf(delimiter, startIndex);
         }
 
-        result.add(msg.substring(startIndex)); // 添加最后一个部分
+        // 添加最后一个部分
+        result.add(msg.substring(startIndex));
 
         for (String s : result) {
             System.out.println(s);

@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Slf4j
-//@Component
+@Component
 public class MqListen {
     // 利用RabbitListener来声明要监听的队列信息
     // 将来一旦监听的队列中有了消息，就会推送给当前服务，调用当前方法，处理消息。
@@ -25,59 +25,61 @@ public class MqListen {
         log.info("接收到 simple.queue的消息：{}", msg);
     }
 
-    @RabbitListener(queues = "work.queue")
-    public void listenWorkQueue1(String msg) throws InterruptedException {
-        System.out.println("消费者1接收到消息：【" + msg + "】" + LocalTime.now());
-        log.info("消费者1接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
-        Thread.sleep(20);
-    }
-
-    @RabbitListener(queues = "work.queue")
-    public void listenWorkQueue2(String msg) throws InterruptedException {
-        log.info("消费者2接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
-        Thread.sleep(200);
-    }
+//    @RabbitListener(queues = "work.queue")
+//    public void listenWorkQueue1(String msg) throws InterruptedException {
+//        log.info("消费者1接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
+//        Thread.sleep(20);
+//    }
+//
+//    @RabbitListener(queues = "work.queue")
+//    public void listenWorkQueue2(String msg) throws InterruptedException {
+//        log.info("消费者2接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
+//        Thread.sleep(200);
+//    }
 
     // Fanout交换机类似于广播
-    @RabbitListener(queues = "fanout.queue2")
-    public void listenFanoutQueueMessage2(String msg) {
-        System.out.println("yefeng.queue2：【" + msg + "】");
-        log.info("yefeng.queue2:{}", msg);
-    }
+//    @RabbitListener(queues = "fanout.queue2")
+//    public void listenFanoutQueueMessage2(String msg) {
+//        log.info("yefeng.queue1:{}", msg);
+//    }
+//
+//    @RabbitListener(queues = "fanout.queue1")
+//    public void listenFanoutQueueMessage1(String msg) {
+//        log.info("yefeng.queue2:{}", msg);
+//    }
 
-    @RabbitListener(queues = "fanout.queue1")
-    public void listenFanoutQueueMessage1(String msg) {
-        System.out.println("yefeng.queue2：【" + msg + "】");
-    }
+//    @RabbitListener(queues = "direct.queue1")
+//    public void listenDirectQueue1(String msg) {
+//        log.info("消费者1接收到direct.queue1的消息 messages = {}", msg);
+//    }
+//
+//    @RabbitListener(queues = "direct.queue2")
+//    public void listenDirectQueue2(String msg) {
+//        log.info("消费者1接收到direct.queue2的消息 messages = {}", msg);
+//    }
+//
+//    @RabbitListener(queues = "topic.queue1")
+//    public void listenTopicQueue1(String msg) {
+//        log.info("消费者1接收到topic.queue1的消息 messages = {}", msg);
+//    }
+//
+//    @RabbitListener(queues = "topic.queue2")
+//    public void listenTopicQueue2(String msg) {
+//        log.info("消费者2接收到topic.queue2的消息 messages = {}", msg);
+//    }
 
-    @RabbitListener(queues = "direct.queue1")
-    public void listenDirectQueue1(String msg) {
-        log.info("消费者1接收到direct.queue1的消息 messages = {}", msg);
-    }
-
-    @RabbitListener(queues = "direct.queue2")
-    public void listenDirectQueue2(String msg) {
-        log.info("消费者1接收到direct.queue2的消息 messages = {}", msg);
-    }
-
-    @RabbitListener(queues = "topic.queue1")
-    public void listenTopicQueue1(String msg) {
-        log.info("消费者1接收到topic.queue1的消息 messages = {}", msg);
-    }
-
-    @RabbitListener(queues = "topic.queue2")
-    public void listenTopicQueue2(String msg) {
-        log.info("消费者2接收到topic.queue2的消息 messages = {}", msg);
-    }
-
-    @RabbitListener(bindings = @QueueBinding(value = @Queue(name = "yesterday", durable = "true"), exchange =
-    @Exchange(name = "yefeng.fanout", type = ExchangeTypes.FANOUT)))
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "yesterday", durable = "true"),
+            exchange = @Exchange(name = "yefeng.fanout", type = ExchangeTypes.FANOUT)
+    ))
     public void listeningMessageByFanout(String msg) {
         System.out.println(msg);
     }
 
-    @RabbitListener(bindings = @QueueBinding(value = @Queue(name = "direct.queue"), exchange = @Exchange(name =
-            "yefeng.direct")))
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "direct.queue"),
+            exchange = @Exchange(name = "yefeng.direct")
+    ))
     public void listeningMessageAnnotated(String msg) {
         log.info("接收到消息：{}", msg);
     }
