@@ -25,17 +25,18 @@ public class MqListen {
         log.info("接收到 simple.queue的消息：{}", msg);
     }
 
-//    @RabbitListener(queues = "work.queue")
-//    public void listenWorkQueue1(String msg) throws InterruptedException {
-//        log.info("消费者1接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
-//        Thread.sleep(20);
-//    }
-//
-//    @RabbitListener(queues = "work.queue")
-//    public void listenWorkQueue2(String msg) throws InterruptedException {
-//        log.info("消费者2接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
-//        Thread.sleep(200);
-//    }
+    @RabbitListener(queues = "work.queue")
+    public void listenWorkQueue1(String msg) throws InterruptedException {
+        log.info("消费者1接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
+        Thread.sleep(20);
+    }
+
+
+    @RabbitListener(queues = "work.queue")
+    public void listenWorkQueue2(String msg) throws InterruptedException {
+        log.info("消费者2接收到消息 = {}, 时间 = {}", msg, LocalTime.now());
+        Thread.sleep(200);
+    }
 
     // Fanout交换机类似于广播
 //    @RabbitListener(queues = "fanout.queue2")
@@ -68,6 +69,11 @@ public class MqListen {
 //        log.info("消费者2接收到topic.queue2的消息 messages = {}", msg);
 //    }
 
+
+    /**
+     * Fanout交换机类似于广播
+     * @param msg
+     */
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(name = "yesterday", durable = "true"),
             exchange = @Exchange(name = "yefeng.fanout", type = ExchangeTypes.FANOUT)
@@ -84,24 +90,50 @@ public class MqListen {
         log.info("接收到消息：{}", msg);
     }
 
-    @RabbitListener(bindings = @QueueBinding(value = @Queue(name = "object.queue"), exchange = @Exchange(name =
-            "yefeng.object", type = ExchangeTypes.TOPIC), key = "#.yefeng"))
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "2026year"),
+            exchange = @Exchange(name = "yefeng.direct"),
+            key = "2026"
+    ))
+    public void listeningMessageRed(String msg) {
+        log.info("2026 接收到消息：{}", msg);
+    }
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "2025year"),
+            exchange = @Exchange(name = "yefeng.direct"),
+            key = "2025"
+    ))
+    public void listeningMessageBlue(String msg) {
+        log.info("2025 接收到消息：{}", msg);
+    }
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "object.queue"),
+            exchange = @Exchange(name = "yefeng.object", type = ExchangeTypes.TOPIC), key = "#.yefeng")
+    )
     public void listeningMessageByPrintout(Map<String, Object> msg) {
         log.info("map key food = {}", msg.get("food").toString());
     }
 
-    @RabbitListener(bindings = @QueueBinding(value = @Queue(name = "direct.queue"), exchange = @Exchange(name =
-            "object.direct", type = ExchangeTypes.DIRECT)))
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "direct.queue"),
+            exchange = @Exchange(name = "object.direct")
+    ))
     public void listenLazyQueue(String msg) {
         log.info("接收到 lazy.queue的消息：{}", msg);
     }
+
 
     /**
      * 字符串拆分成数组，例如”ab&&2”通过”&&”做分隔符，分割得到字符串数组[“ab”,”2”]
      * 实现字符串组合，例如[“ab”,”2”]通过”&&”分隔符，组合成字符串”ab&&2”
      */
-    @RabbitListener(bindings = @QueueBinding(value = @Queue(name = "mom", durable = "true"), exchange =
-    @Exchange(name = "yefeng.headers", type = ExchangeTypes.HEADERS)))
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(name = "mom", durable = "true"),
+            exchange = @Exchange(name = "yefeng.headers", type = ExchangeTypes.HEADERS)
+    ))
     public void listeningMessageByHeaders(String msg) {
         String delimiter = "&&";
         List<String> result = new ArrayList<>();
